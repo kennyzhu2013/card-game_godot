@@ -1,0 +1,75 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "steelworks",
+  "display_name": "铸钢区",
+  "ap_to_enter": 0,
+  "unlock_condition": null,
+  "tower_theme": "missing_case_machine",
+  "hotspots": [
+    {
+      "id": "tower_entry_steelworks",
+      "label": "失踪案机械塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 2,
+      "payload": {
+        "tower_size": "small",
+        "tower_template": "steel_small"
+      },
+      "visible_when": "always",
+      "position_norm": [0.28, 0.48]
+    },
+    {
+      "id": "npc_martha",
+      "label": "玛莎",
+      "icon": "M",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "martha_rich"
+      },
+      "visible_when": "always",
+      "position_norm": [0.55, 0.58]
+    },
+    {
+      "id": "npc_peter_furnace",
+      "label": "锅炉工·彼得",
+      "icon": "B",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "peter_furnace"
+      },
+      "visible_when": "always",
+      "position_norm": [0.68, 0.60]
+    },
+    {
+      "id": "job_factory_shift",
+      "label": "工厂打工",
+      "icon": "J",
+      "type": "minigame_job",
+      "ap_cost": 3,
+      "payload": {
+        "job_id": "factory_shift"
+      },
+      "visible_when": "always",
+      "position_norm": [0.44, 0.35]
+    },
+    {
+      "id": "rumor_factory_tabloid",
+      "label": "街角小报",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "steelworks_tabloid"
+      },
+      "visible_when": "church_awareness < 75",
+      "position_norm": [0.18, 0.72]
+    }
+  ],
+  "encounter_pool": "steelworks_encounters",
+  "constant_npcs": ["martha_rich", "peter_furnace"],
+  "main_story_hooks": ["node_3"],
+  "ambient_music": "steelworks_day"
+}

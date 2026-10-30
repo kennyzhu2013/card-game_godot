@@ -1,0 +1,43 @@
+{
+  "id": "reflection",
+  "display_name": "倒影",
+  "default_district": "shadow_alley",
+  "placeholder": false,
+  "public": {"role": "半月之约同伴", "appearance": "经常在风里沉默，视线像隔着一层水"},
+  "hidden": {"actual_age": "不详", "past_secrets": ["情感线回声", "知道半月之约第二条守则"]},
+  "truth": {"true_name": "艾莉丝·凡恩", "true_origin": "雾港旧水镜"},
+  "default_trust": 10,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "shadow_alley", "time_of_day": "evening", "label_suffix": "（站在井边看水）", "icon": "R", "interactable": true},
+    {"district": "misty_port", "time_of_day": "night", "label_suffix": "（在码头水面倒影里）", "icon": "R", "interactable": true}
+  ],
+  "dialogue_tree": "reflection_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_reflection_halfmoon_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "halfmoon_vow",
+      "summary": "倒影提醒你半月之约不是同盟名，而是一种互相见证的契约。"
+    },
+    {
+      "intel_id": "intel_reflection_river_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "romance_line",
+      "summary": "雾港夜里出现的第二个倒影会比本人先说出真话。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "ascetic_mountain_reflection",
+  "commission_templates": ["commission_reflection_halfmoon_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "rule_unlock", "payload": {"rule_id": "halfmoon_reflection"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

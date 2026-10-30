@@ -1,0 +1,18 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_steelworks_peter_furnace",
+  "encounter_type": "encounter_npc",
+  "display_name": "Peter By The Furnace",
+  "districts": ["steelworks"],
+  "time_of_day": ["morning", "noon", "evening"],
+  "weight": 12,
+  "preconditions": [],
+  "step_count": 1,
+  "dialogue_tree": "npc/peter_furnace_main",
+  "scene_payload": {"text": "Peter wipes soot from his hands before speaking.", "npc_id": "peter_furnace", "choices": [{"id": "nod", "label": "Nod", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

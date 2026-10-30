@@ -1,0 +1,21 @@
+{
+  "id": "commission_moonlight_grass_001",
+  "commission_type": "gather",
+  "difficulty": "small",
+  "display_name": "月光草采集",
+  "description": "Vera needs three moonlight grass stems from a night harbor encounter.",
+  "issuer_npc": "vera_lighthouse",
+  "district": "misty_port",
+  "min_day": 1,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 2,
+  "dispatch_target": {"kind": "encounter", "district": "misty_port", "time": "night", "item_id": "moonlight_grass", "count": 3},
+  "time_limit_days": 5,
+  "allowed_modifiers": ["urgent", "extra_evidence", "familiar_issuer"],
+  "rewards": [{"type": "lingstones", "amount": 80}, {"type": "temp_card", "id": "commission_moonlight_card", "amount": 1, "sequence": 9}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

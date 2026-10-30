@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cjo48h8jlrl7p"]
+
+[ext_resource type="Script" uid="uid://b312x28uvmfma" path="res://scripts/battle/phigros/stage/phigros_battle_scene.gd" id="1"]
+
+[node name="PhigrosBattleScene" type="Node2D" unique_id=2095782147]
+script = ExtResource("1")

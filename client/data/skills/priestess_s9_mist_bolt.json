@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "priestess_s9_mist_bolt",
+  "display_name": "雾针",
+  "description": "雾里飞出细小的白针，刺中后才听见水声。",
+  "pathway": "priestess",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "水",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 7, "heal": 0, "target": "single", "range": 5, "status_effects": [{"id": "slow", "duration": 1}]}
+}

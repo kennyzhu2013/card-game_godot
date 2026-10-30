@@ -1,0 +1,18 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_sacred_seven_brendan_temple",
+  "encounter_type": "encounter_npc",
+  "display_name": "Brendan's Notice",
+  "districts": ["sacred_seven"],
+  "time_of_day": ["morning", "noon", "evening"],
+  "weight": 12,
+  "preconditions": [],
+  "step_count": 1,
+  "dialogue_tree": "npc/brendan_main",
+  "scene_payload": {"text": "Brendan pauses beside a public notice board.", "npc_id": "brendan", "choices": [{"id": "listen", "label": "Listen", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

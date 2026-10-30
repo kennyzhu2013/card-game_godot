@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "priestess_s7_space_fold",
+  "display_name": "折距",
+  "description": "两点之间被轻轻折起，远处的术式贴脸爆开。",
+  "pathway": "priestess",
+  "card_pool": "enemy_spell",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "空间",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 14, "heal": 0, "target": "single", "range": 8, "status_effects": [{"id": "range_bonus", "magnitude": 3}, {"id": "pierce_block", "magnitude": 3}]}
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_red_hand_first",
+  "encounter_type": "mystery_seed",
+  "display_name": "Red Hand Contact",
+  "districts": ["steelworks"],
+  "time_of_day": ["night"],
+  "weight": 5,
+  "preconditions": ["cycle >= 1"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "Red Hand Carl leaves a red thumbprint on a furnace notice.",
+    "choices": [
+      {"id": "answer", "label": "Answer", "outcome": {"unlock_chain_step": 1}},
+      {"id": "burn", "label": "Burn it", "outcome": {"chain_lock": true}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "red_hand_chain",
+  "chain_step": 0,
+  "resolutions": []
+}

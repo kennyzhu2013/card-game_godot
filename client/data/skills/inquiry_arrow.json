@@ -1,0 +1,21 @@
+{
+  "id": "inquiry_arrow",
+  "display_name": "问箭",
+  "description": "箭代你飞向答案所在，穿透防御",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["inquiry", "arrow"],
+  "tier": 1,
+  "mp_cost": 10,
+  "cooldown": 2,
+  "pollution_per_use": 2,
+  "combat_effect": {
+    "damage": 10,
+    "heal": 0,
+    "target": "single",
+    "range": 5,
+    "status_effects": [{"id": "pierce_block", "magnitude": 2}]
+  }
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "weather_id": "sunny",
+    "display_name": "晴",
+    "prob": 0.35,
+    "visual": "sunny_overlay",
+    "pathway_bonus": {},
+    "global_modifiers": {}
+  },
+  {
+    "weather_id": "fog",
+    "display_name": "雾",
+    "prob": 0.20,
+    "visual": "fog_overlay",
+    "pathway_bonus": {
+      "fool": {
+        "sequence_exp": 20,
+        "acting_check": 1,
+        "forge": 20,
+        "pollution": 0
+      }
+    },
+    "global_modifiers": {}
+  },
+  {
+    "weather_id": "rain",
+    "display_name": "雨",
+    "prob": 0.25,
+    "visual": "rain_overlay",
+    "pathway_bonus": {},
+    "global_modifiers": {
+      "dream_quality": 1
+    }
+  },
+  {
+    "weather_id": "storm",
+    "display_name": "暴风",
+    "prob": 0.05,
+    "visual": "storm_overlay",
+    "pathway_bonus": {},
+    "global_modifiers": {
+      "tower_size_up": 100,
+      "pollution": 2
+    }
+  },
+  {
+    "weather_id": "full_moon",
+    "display_name": "月圆",
+    "prob": 0.15,
+    "visual": "full_moon_overlay",
+    "pathway_bonus": {
+      "priestess": {
+        "sequence_exp": 20,
+        "forge": 1
+      }
+    },
+    "global_modifiers": {}
+  }
+]

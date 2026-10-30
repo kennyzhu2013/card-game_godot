@@ -1,0 +1,21 @@
+{
+  "id": "jester_arrow",
+  "display_name": "戏箭",
+  "description": "射出一支方向随机的恶作剧之箭",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["jester", "arrow"],
+  "tier": 1,
+  "mp_cost": 8,
+  "cooldown": 1,
+  "pollution_per_use": 2,
+  "combat_effect": {
+    "damage": 14,
+    "heal": 0,
+    "target": "random",
+    "range": 4,
+    "status_effects": [{"id": "confusion", "duration": 1}]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "sfx": {
+    "card_draw":     { "path": "res://assets/audio/sfx/card_draw.ogg",     "volume_db": -6.0 },
+    "card_hover":    { "path": "res://assets/audio/sfx/card_hover.ogg",    "volume_db": -12.0 },
+    "card_play":     { "path": "res://assets/audio/sfx/card_play.ogg",     "volume_db": -4.0 },
+    "card_discard":  { "path": "res://assets/audio/sfx/card_discard.ogg",  "volume_db": -6.0 },
+    "damage_player": { "path": "res://assets/audio/sfx/damage_player.ogg", "volume_db": -3.0 },
+    "damage_enemy":  { "path": "res://assets/audio/sfx/damage_enemy.ogg",  "volume_db": -4.0 },
+    "turn_end":      { "path": "res://assets/audio/sfx/turn_end.ogg",      "volume_db": -6.0 },
+    "victory":       { "path": "res://assets/audio/sfx/victory.ogg",       "volume_db": -3.0 },
+    "defeat":        { "path": "res://assets/audio/sfx/defeat.ogg",        "volume_db": -3.0 },
+    "ui_click":      { "path": "res://assets/audio/sfx/ui_click.ogg",      "volume_db": -10.0 }
+  }
+}

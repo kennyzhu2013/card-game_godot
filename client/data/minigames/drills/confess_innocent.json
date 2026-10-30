@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "confess_innocent",
+  "type": "drill",
+  "display_name": "告解演练",
+  "city": "sacred_seven",
+  "ap_cost": 1,
+  "witness_npc_id": "thomas_priest",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "plain_story", "label": "把故事说得朴素"},
+    {"id": "no_occult_word", "label": "避开神秘学字眼"},
+    {"id": "humble_exit", "label": "谦卑离开"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "innocent_confession"}, {"type": "church_awareness", "amount": -10}],
+  "rewards_partial": [{"type": "church_awareness", "amount": -5}],
+  "punishment_fail": [{"type": "church_awareness", "amount": 10}]
+}

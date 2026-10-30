@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_sacred_seven_stone_steps",
+  "encounter_type": "flavor",
+  "display_name": "Stone Steps",
+  "districts": ["sacred_seven"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A pilgrim counts the same seven steps again and again.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "A pilgrim counts the same seven steps again and again."},
+    "1": {"text": "The pilgrim reaches eight and quickly starts over."},
+    "2": {"text": "Every step has your heel print before you climb it."},
+    "3": {"text": "The seventh step sinks like flesh under your boot."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

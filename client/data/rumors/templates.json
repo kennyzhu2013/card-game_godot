@@ -1,0 +1,21 @@
+{
+  "$schema": "rumor_templates_v1",
+  "templates": [
+    "They say {district} opens a different door after dusk.",
+    "A courier swears the tower moved one floor overnight.",
+    "A clerk left a note where the church would not look.",
+    "Someone counted the bells and found one missing.",
+    "The market price is wrong when the fog is thick.",
+    "The old route is watched; use the side stair.",
+    "A shrine answers only before the boss wakes.",
+    "A witness remembers the wrong name on purpose.",
+    "The newspaper cut the most useful line.",
+    "A sailor traded a tower floor for a cup of wine.",
+    "An apprentice marked the safe lever with soot.",
+    "The noble salon repeats passwords in pairs.",
+    "The mountain tea cools when a true lead is spoken.",
+    "A sermon hid a map reference in its third verse.",
+    "The alley storyteller knows which rumor is bait.",
+    "The last floor listens for a weakness tag."
+  ]
+}

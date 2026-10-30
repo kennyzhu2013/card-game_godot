@@ -1,0 +1,22 @@
+{
+  "npcs": [
+    {"id": "old_li", "path": "res://data/npc/shadow_alley/old_li.json"},
+    {"id": "xiao_ran", "path": "res://data/npc/shadow_alley/xiao_ran.json"},
+    {"id": "ah_du_streettalker", "path": "res://data/npc/shadow_alley/ah_du_streettalker.json"},
+    {"id": "martha_rich", "path": "res://data/npc/steelworks/martha_rich.json"},
+    {"id": "peter_furnace", "path": "res://data/npc/steelworks/peter_furnace.json"},
+    {"id": "red_hand_carl", "path": "res://data/npc/steelworks/red_hand_carl.json"},
+    {"id": "carl_smuggler", "path": "res://data/npc/misty_port/carl_smuggler.json"},
+    {"id": "eel_fan", "path": "res://data/npc/misty_port/eel_fan.json"},
+    {"id": "vera_lighthouse", "path": "res://data/npc/misty_port/vera_lighthouse.json"},
+    {"id": "victor_kelsey", "path": "res://data/npc/sacred_seven/victor_kelsey.json"},
+    {"id": "brendan", "path": "res://data/npc/sacred_seven/brendan.json"},
+    {"id": "thomas_priest", "path": "res://data/npc/sacred_seven/thomas_priest.json"},
+    {"id": "marquis_eng", "path": "res://data/npc/stone_tower/marquis_eng.json"},
+    {"id": "hanna_gardener", "path": "res://data/npc/stone_tower/hanna_gardener.json"},
+    {"id": "pendulum", "path": "res://data/npc/ascetic_mountain/pendulum.json"},
+    {"id": "reflection", "path": "res://data/npc/ascetic_mountain/reflection.json"},
+    {"id": "xuming_recluse", "path": "res://data/npc/ascetic_mountain/xuming_recluse.json"},
+    {"id": "widow_isa", "path": "res://data/npc/special/widow_isa.json"}
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "$schema": "gray_crown_daily_v1",
+  "pool_id": "gray_crown_daily",
+  "publication": "灰冠日报",
+  "source_type": "newspaper",
+  "source_district": "shadow_alley",
+  "fake_marker": "伪刊",
+  "church_marker": "教会改写 / 污染走版",
+  "editions": [
+    {
+      "week": 0,
+      "edition_id": "gray_crown_daily_week_0",
+      "headlines": [
+        {
+          "id": "gray_crown_daily_w0_main",
+          "category": "main_story",
+          "display_text": "灰冠日报头版写道：影巷失踪案的旧门牌又被人擦亮，夜里有人听见里面传出第二个脚步。",
+          "source_type": "newspaper",
+          "source_district": "shadow_alley",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "main_story_unlock.branch",
+            "payload": {
+              "branch_id": "shadow_alley_missing_door",
+              "node_id": "node_3_shadow"
+            }
+          }
+        },
+        {
+          "id": "gray_crown_daily_w0_politics",
+          "category": "politics",
+          "display_text": "议会副刊称雾港税船迟到三日，码头行会正在暗中换一批无章货箱。",
+          "source_type": "newspaper",
+          "source_district": "misty_port",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "tower_intel.enemy_intent_reveal",
+            "payload": {
+              "tower_template": "mist_small",
+              "floor_index_min": 0,
+              "floor_index_max": 1
+            }
+          }
+        },
+        {
+          "id": "gray_crown_daily_w0_church",
+          "category": "church",
+          "display_text": "教会栏只刊出一句短讯：七圣广场钟楼本周二清晨闭门，访客需绕行忏悔室。",
+          "source_type": "newspaper",
+          "source_district": "sacred_seven",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "npc_relation_boost.gift_topic",
+            "payload": {
+              "npc_id": "victor_kelsey",
+              "topic_id": "confession_room"
+            }
+          }
+        }
+      ],
+      "fake_headlines": [
+        {
+          "id": "gray_crown_daily_w0_fake",
+          "category": "false",
+          "display_text": "灰冠日报补版声称铸钢区今日有免费塔图出售，落款却把教会印章盖反了。",
+          "source_type": "newspaper",
+          "source_district": "steelworks",
+          "expires_after": "permanent",
+          "truth_value": 0,
+          "apply_target": {
+            "kind": "false_lead.cost",
+            "payload": {
+              "lingstone": 80,
+              "ap": 1,
+              "suspicion": 8
+            }
+          },
+          "false_lead": {
+            "cost": {
+              "lingstone": 80,
+              "ap": 1,
+              "suspicion": 8
+            },
+            "target_npc_id": "peter_furnace"
+          }
+        }
+      ]
+    },
+    {
+      "week": 1,
+      "edition_id": "gray_crown_daily_week_1",
+      "headlines": [
+        {
+          "id": "gray_crown_daily_w1_main",
+          "category": "main_story",
+          "display_text": "灰冠日报头版追问：石塔区昨夜熄灯后，仍有一盏灯在塔腹里向外眨眼。",
+          "source_type": "newspaper",
+          "source_district": "stone_tower",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "main_story_unlock.branch",
+            "payload": {
+              "branch_id": "stone_tower_blinking_lamp",
+              "node_id": "node_4_stone"
+            }
+          }
+        },
+        {
+          "id": "gray_crown_daily_w1_politics",
+          "category": "politics",
+          "display_text": "政务栏记录苦修山修道院拒收一批军械账册，送信人次日失踪。",
+          "source_type": "newspaper",
+          "source_district": "ascetic_mountain",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "tower_intel.enemy_intent_reveal",
+            "payload": {
+              "tower_template": "ascetic_small",
+              "floor_index_min": 1,
+              "floor_index_max": 2
+            }
+          }
+        },
+        {
+          "id": "gray_crown_daily_w1_church",
+          "category": "church",
+          "display_text": "教会栏称忏悔室新增银线窗帘，祷告者被建议不要在帘后说真名。",
+          "source_type": "newspaper",
+          "source_district": "sacred_seven",
+          "expires_after": "permanent",
+          "truth_value": 100,
+          "apply_target": {
+            "kind": "npc_relation_boost.gift_topic",
+            "payload": {
+              "npc_id": "thomas_priest",
+              "topic_id": "silver_curtain"
+            }
+          }
+        }
+      ],
+      "fake_headlines": [
+        {
+          "id": "gray_crown_daily_w1_fake",
+          "category": "false",
+          "display_text": "灰冠日报伪刊宣称雾港今夜无巡逻，字缝却渗出旧油墨和告解香。",
+          "source_type": "newspaper",
+          "source_district": "misty_port",
+          "expires_after": "permanent",
+          "truth_value": 0,
+          "apply_target": {
+            "kind": "false_lead.cost",
+            "payload": {
+              "lingstone": 120,
+              "ap": 2,
+              "suspicion": 10
+            }
+          },
+          "false_lead": {
+            "cost": {
+              "lingstone": 120,
+              "ap": 2,
+              "suspicion": 10
+            },
+            "target_npc_id": "vera_lighthouse"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_alley_cat",
+  "encounter_type": "flavor",
+  "display_name": "巷尾瘦猫",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "巷尾一只瘦猫追着一片飘落的纸钱。它看你一眼，又跑开。",
+    "choices": [
+      {
+        "id": "give_food",
+        "label": "扔给它一块肉干（-1 灵石）",
+        "outcome": {"lingstones_delta": -1, "trust_world_delta": 1}
+      },
+      {
+        "id": "watch",
+        "label": "看着它跑开",
+        "outcome": {}
+      },
+      {
+        "id": "ignore",
+        "label": "继续走",
+        "outcome": {}
+      }
+    ]
+  },
+  "pollution_variant": {
+    "0": {"text": "A thin alley cat follows a paper scrap and vanishes behind a drain."},
+    "1": {"text": "The alley cat pauses. Its shadow keeps moving for one extra step."},
+    "2": {"text": "The cat's paper scrap is wet with ink that smells like old blood."},
+    "3": {"text": "The cat looks at you with a child's eyes, then the drain answers in your voice."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

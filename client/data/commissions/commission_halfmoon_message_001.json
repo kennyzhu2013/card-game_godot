@@ -1,0 +1,20 @@
+{
+  "id": "commission_halfmoon_message_001",
+  "commission_type": "perform",
+  "difficulty": "small",
+  "display_name": "半月密信",
+  "description": "Pendulum asks you to rehearse a message that must not name its sender.",
+  "issuer_npc": "pendulum",
+  "district": "ascetic_mountain",
+  "min_day": 6,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 35,
+  "dispatch_target": {"kind": "drill", "drill_id": "mirror_step", "district": "ascetic_mountain", "action_id": "halfmoon_message", "witness_check": false},
+  "time_limit_days": 3,
+  "rewards": [{"type": "halfmoon_trust", "amount": 5}, {"type": "lingstones", "amount": 80}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

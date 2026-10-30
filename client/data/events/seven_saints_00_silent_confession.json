@@ -1,0 +1,1 @@
+{"id":"saints_silent_confession","district":"seven_saints","title":"无声告解室","narrative_template":"告解室里没有神父，帘幕后却递出一张写好的忏悔词。","choices":[{"id":"read","text":"读完忏悔词","outcome":{"pollution":5,"church_awareness":2}},{"id":"fold","text":"折成纸刃","outcome":{"card_drop":"fool_s8_paper_blade_volley"}}]}

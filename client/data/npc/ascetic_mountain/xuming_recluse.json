@@ -1,0 +1,45 @@
+{
+  "id": "xuming_recluse",
+  "display_name": "山中独修者·虚明",
+  "default_district": "ascetic_mountain",
+  "placeholder": false,
+  "public": {"role": "隐者", "appearance": "衣袖里有香灰，背篓里装着旧符纸"},
+  "hidden": {"actual_age": "不详", "past_secrets": ["隐者之道路线", "修炼买卖只收情报不收钱"]},
+  "truth": {"true_name": "虚明", "true_origin": "苦修山闭关室"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "ascetic_mountain", "time_of_day": "evening", "label_suffix": "（在石阶上静修）", "icon": "X", "interactable": true}
+  ],
+  "dialogue_tree": "xuming_recluse_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_xuming_ascetic_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "ascetic_trade",
+      "summary": "虚明说苦修山的买卖不按灵石算，而按你愿意失去什么算。"
+    },
+    {
+      "intel_id": "intel_xuming_hidden_path_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "hidden_path",
+      "summary": "苦修山晚风停下时，石阶后会露出一条只供独行者走的小路。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "ascetic_mountain_recluse",
+  "commission_templates": ["commission_ascetic_trade_001"],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对。山风绕开你，是因为它认出了别的东西。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

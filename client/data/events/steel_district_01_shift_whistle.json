@@ -1,0 +1,1 @@
+{"id":"steel_shift_whistle","district":"steel_district","title":"无人换班哨","narrative_template":"换班哨声从废厂深处传来，工牌自行排成队。","choices":[{"id":"join_line","text":"排到队尾","outcome":{"lingstones":25,"pollution":3}},{"id":"scatter_cards","text":"打乱工牌","outcome":{"enemy_pack_id":"steel_district_t1"}}]}

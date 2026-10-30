@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_sacred_seven_prayer_tag",
+  "encounter_type": "resource",
+  "display_name": "Prayer Tag",
+  "districts": ["sacred_seven"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 15,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A folded prayer tag has been left under a stone cup.", "choices": [{"id": "take", "label": "Take it", "outcome": {"lingstones_delta": 2}}, {"id": "leave", "label": "Leave it", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

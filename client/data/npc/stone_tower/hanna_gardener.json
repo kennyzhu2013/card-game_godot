@@ -1,0 +1,45 @@
+{
+  "id": "hanna_gardener",
+  "display_name": "园丁·汉娜",
+  "default_district": "stone_tower",
+  "placeholder": false,
+  "public": {"role": "贵族府邸园丁", "appearance": "手套上沾着泥，围裙里藏着一把小剪刀"},
+  "hidden": {"actual_age": "26", "past_secrets": ["府邸邮差线索", "知道贵族府邸仆役通道"]},
+  "truth": {"true_name": "汉娜·贝尔", "true_origin": "石塔后院"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "stone_tower", "time_of_day": "noon", "label_suffix": "（在花园里修枝）", "icon": "H", "interactable": true}
+  ],
+  "dialogue_tree": "hanna_gardener_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_hanna_garden_route_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "garden_route",
+      "summary": "汉娜说贵族府邸后花园的旧门午后不会上锁。"
+    },
+    {
+      "intel_id": "intel_hanna_household_mail_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "household_mail",
+      "summary": "府邸邮差的信袋里有一封写给七圣会的空白邀请函。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "stone_tower_garden",
+  "commission_templates": ["commission_stone_garden_errand_001"],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对，花园里的镜池刚才比你先皱了一下。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

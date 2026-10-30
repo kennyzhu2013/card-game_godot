@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_pendulum_dialog_0",
+  "encounter_type": "mystery_seed",
+  "display_name": "Pendulum Question",
+  "districts": ["stone_tower", "ascetic_mountain"],
+  "time_of_day": ["evening", "night"],
+  "weight": 5,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "Pendulum asks whether a name can survive thirty years in a locked room.",
+    "choices": [
+      {"id": "answer", "label": "Answer", "outcome": {"unlock_chain_step": 1}},
+      {"id": "silence", "label": "Stay silent", "outcome": {}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "pendulum_chain",
+  "chain_step": 0,
+  "resolutions": []
+}

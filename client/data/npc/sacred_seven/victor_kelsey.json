@@ -1,0 +1,44 @@
+{
+  "id": "victor_kelsey",
+  "display_name": "维克托·凯尔西",
+  "default_district": "sacred_seven",
+  "placeholder": false,
+  "public": {"role": "七圣会主教", "appearance": "总带着圣徽，声音在广场上显得过分安静"},
+  "hidden": {"actual_age": "49", "past_secrets": ["远程压迫方案", "主线节点 4 提前调查者"]},
+  "truth": {"true_name": "维克托·凯尔西", "true_origin": "七圣会内庭主教"},
+  "default_trust": 0,
+  "default_suspicion": 20,
+  "city_presence": [
+    {"district": "sacred_seven", "time_of_day": "morning", "visible_when": "day % 7 == 0", "label_suffix": "（周日礼拜的主教席）", "icon": "V", "interactable": true}
+  ],
+  "dialogue_tree": "victor_kelsey_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_victor_pressure_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "distant_pressure",
+      "summary": "维克托极少开口，但每次周日礼拜都会准确提到哈维没去过的地方。"
+    },
+    {
+      "intel_id": "intel_victor_investigation_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "church_investigation",
+      "summary": "主教的直接调查会在教会查觉度足够高时提前越过普通侦缉流程。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "sacred_seven_commissions",
+  "commission_templates": [],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对。七圣会会把这种变化记进名册。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 50, "type": "report_to_church", "payload": {"church_awareness": 10}},
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 10}}
+  ]
+}

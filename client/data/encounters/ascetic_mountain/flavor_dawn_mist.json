@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_ascetic_mountain_dawn_mist",
+  "encounter_type": "flavor",
+  "display_name": "Dawn Mist",
+  "districts": ["ascetic_mountain"],
+  "time_of_day": ["morning"],
+  "weight": 30,
+  "preconditions": ["trigger_source == 'time_segment'"],
+  "step_count": 1,
+  "scene_payload": {"text": "At dawn, mist folds itself into the shape of a gate.", "choices": [{"id": "wait", "label": "Wait", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "At dawn, mist folds itself into the shape of a gate."},
+    "1": {"text": "The mist gate opens only wide enough for your shadow."},
+    "2": {"text": "The mist gate shows a room where the mountain should continue."},
+    "3": {"text": "The mist gate opens inward, and something behind you steps through."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

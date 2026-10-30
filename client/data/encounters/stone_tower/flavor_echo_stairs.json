@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_stone_tower_echo_stairs",
+  "encounter_type": "flavor",
+  "display_name": "Echo Stairs",
+  "districts": ["stone_tower"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "The stairwell echoes before anyone climbs it.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The stairwell echoes before anyone climbs it."},
+    "1": {"text": "The echo reaches the landing before your foot does."},
+    "2": {"text": "The stairwell repeats a conversation you have not had yet."},
+    "3": {"text": "The echo walks down while you walk up, wearing your breath."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "steelworks_tabloid",
+  "district": "steelworks",
+  "entries": [
+    {"id":"intel_steel_enemy_001","category":"tower_hint","display_text":"steel_small floor 1 shows enemy intent","source_type":"newspaper","source_district":"steelworks","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"steel_small","floor_index_min":0,"floor_index_max":1}},"truth_value":100,"weight":20},
+    {"id":"intel_steel_shrine_001","category":"tower_hint","display_text":"A furnace shrine appears on steel floor 2","source_type":"newspaper","source_district":"steelworks","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"steel_small","floor_index":1}},"truth_value":90,"weight":12},
+    {"id":"intel_steel_event_001","category":"tower_hint","display_text":"Factory event choice should pull the red lever","source_type":"newspaper","source_district":"steelworks","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"steel_small","event_id":"steel_factory_event","correct_choice_id":"red_lever"}},"truth_value":80,"weight":10},
+    {"id":"intel_steel_boss_001","category":"tower_hint","display_text":"The furnace boss is weak to cold ash","source_type":"newspaper","source_district":"steelworks","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"steel_small","boss_id":"furnace_foreman","weakness_tag":"cold_ash"}},"truth_value":80,"weight":8},
+    {"id":"intel_steel_shop_001","category":"shop_offer","display_text":"Factory scrip cuts material prices once","source_type":"newspaper","source_district":"steelworks","expires_after":"permanent","apply_target":{"kind":"shop_discount.one_time","payload":{"shop_id":"donen_blackmarket","pct":8,"sku_filter":"material"}},"truth_value":80,"weight":6},
+    {"id":"intel_steel_npc_001","category":"npc","display_text":"Peter trusts work talk before noble talk","source_type":"newspaper","source_district":"steelworks","expires_after":"permanent","apply_target":{"kind":"npc_relation_boost.gift_topic","payload":{"npc_id":"peter_furnace","topic_id":"shift_terms","trust_delta":5}},"truth_value":100,"weight":6},
+    {"id":"intel_steel_weather_001","category":"weather","display_text":"Tomorrow's smoke predicts fog","source_type":"newspaper","source_district":"steelworks","expires_after":"next_morning","apply_target":{"kind":"weather_forecast.next_day","payload":{"predicted_weather_id":"fog"}},"truth_value":70,"weight":5}
+  ]
+}

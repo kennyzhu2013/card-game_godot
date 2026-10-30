@@ -1,0 +1,112 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "misty_port",
+  "display_name": "雾港区",
+  "ap_to_enter": 0,
+  "unlock_condition": null,
+  "tower_theme": "smuggler_market",
+  "hotspots": [
+    {
+      "id": "tower_entry_misty_port",
+      "label": "走私塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 2,
+      "payload": {
+        "tower_size": "small",
+        "tower_template": "mist_small"
+      },
+      "visible_when": "always",
+      "position_norm": [0.30, 0.52]
+    },
+    {
+      "id": "npc_carl_smuggler",
+      "label": "卡尔",
+      "icon": "C",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "carl_smuggler"
+      },
+      "visible_when": "always",
+      "position_norm": [0.48, 0.62]
+    },
+    {
+      "id": "npc_eel_fan",
+      "label": "鳗鱼·凡",
+      "icon": "E",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "eel_fan"
+      },
+      "visible_when": "time_of_day == 'night'",
+      "position_norm": [0.64, 0.56]
+    },
+    {
+      "id": "npc_vera_lighthouse",
+      "label": "灯塔守人薇拉",
+      "icon": "K",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "vera_lighthouse"
+      },
+      "visible_when": "always",
+      "position_norm": [0.82, 0.34]
+    },
+    {
+      "id": "casino_eel_fan",
+      "label": "鳗鱼·凡的赌窟",
+      "icon": "G",
+      "type": "minigame_casino",
+      "ap_cost": 1,
+      "payload": {
+        "npc_id": "eel_fan",
+        "game_ids": ["dice_cup", "tarot_divination", "fate_cards"]
+      },
+      "visible_when": "time_of_day == 'night'",
+      "position_norm": [0.42, 0.28]
+    },
+    {
+      "id": "auction_smuggler",
+      "label": "走私者拍卖会",
+      "icon": "A",
+      "type": "minigame_auction",
+      "ap_cost": 0,
+      "payload": {
+        "auction_id": "misty_port_weekly"
+      },
+      "visible_when": "day % 7 == 6 AND time_of_day == 'night'",
+      "position_norm": [0.58, 0.25]
+    },
+    {
+      "id": "job_dock_shift",
+      "label": "码头打工",
+      "icon": "J",
+      "type": "minigame_job",
+      "ap_cost": 2,
+      "payload": {
+        "job_id": "dock_shift"
+      },
+      "visible_when": "always",
+      "position_norm": [0.22, 0.68]
+    },
+    {
+      "id": "rumor_misty_port_tavern",
+      "label": "码头消息桌",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "misty_port_rumors"
+      },
+      "visible_when": "church_awareness < 75",
+      "position_norm": [0.74, 0.72]
+    }
+  ],
+  "encounter_pool": "misty_port_encounters",
+  "constant_npcs": ["carl_smuggler", "eel_fan", "vera_lighthouse"],
+  "main_story_hooks": ["node_3"],
+  "ambient_music": "misty_port_night"
+}

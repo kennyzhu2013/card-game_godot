@@ -1,0 +1,75 @@
+{
+  "$schema": "enemy_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §G.3",
+  "id": "inquisitor",
+  "display_name": "教会侦缉者",
+  "actor_id": "thomas_priest",
+  "description": "七圣会派出搜查异端的精英，能感知污染气息",
+  "intent_text": "抬起圣徽锁定异端",
+  "sprite": "inquisitor.png",
+  "tier": 2,
+  "stats": {
+    "hp": 45,
+    "max_hp": 45,
+    "atk": 14,
+    "def": 5,
+    "spd": 10,
+    "crit_rate": 0.08
+  },
+  "element": "明",
+  "weakness": ["影", "灵"],
+  "resistance": ["明", "信"],
+  "special_effects": [
+    {"id": "suspicion_aura", "description": "战斗中每回合提升玩家怀疑度 +1", "trigger": "turn_start"}
+  ],
+  "skills": [
+    {
+      "id": "holy_strike",
+      "name": "神圣打击",
+      "damage": 18,
+      "element": "明",
+      "cooldown": 2,
+      "target": "single",
+      "pierce_defense": 2,
+      "description": "圣光灌注的剑刃"
+    },
+    {
+      "id": "pious_chant",
+      "name": "虔诚祷告",
+      "damage": 0,
+      "element": "信",
+      "cooldown": 4,
+      "target": "self",
+      "description": "祷告自卫",
+      "status_effects": [
+        {"id": "def_buff", "chance": 1.0, "duration": 3, "magnitude": 5}
+      ]
+    },
+    {
+      "id": "silver_bullet",
+      "name": "银弹",
+      "damage": 22,
+      "element": "明",
+      "cooldown": 4,
+      "target": "single",
+      "ignore_defense": true,
+      "description": "贯穿一切邪物的银制子弹",
+      "trigger_condition": "hp_below_50_percent"
+    }
+  ],
+  "ai_pattern": [
+    {"condition": "hp_below_30_percent", "action": "use_skill", "skill": "silver_bullet"},
+    {"condition": "turn == 1 or turn == 5 or turn == 9", "action": "use_skill", "skill": "pious_chant"},
+    {"condition": "default", "action": "use_skill", "skill": "holy_strike"}
+  ],
+  "drops": [
+    {"item": "faith_glyph_raw", "chance": 0.20, "notes": "禁忌符号 — 持有上限触发怀疑"},
+    {"item": "inquiry_glyph_raw", "chance": 0.30},
+    {"item": "silver_coin", "chance": 1.00, "amount_min": 15, "amount_max": 30},
+    {"item": "codex_fragment", "chance": 0.05}
+  ],
+  "spawn_locations": ["seven_saints_plaza", "steelworks"],
+  "spawn_weight": 20,
+  "trigger_condition": {"suspicion_threshold": 30}
+}

@@ -1,0 +1,21 @@
+{
+  "id": "commission_old_li_letter_001",
+  "commission_type": "perform",
+  "difficulty": "small",
+  "display_name": "老李的信",
+  "description": "Old Li asks you to recite one unsent letter at Sacred Seven without witnesses.",
+  "issuer_npc": "old_li",
+  "district": "sacred_seven",
+  "min_day": 1,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 30,
+  "dispatch_target": {"kind": "drill", "drill_id": "confess_innocent", "district": "sacred_seven", "action_id": "recite_letter", "witness_check": true},
+  "time_limit_days": 1,
+  "allowed_modifiers": ["urgent", "discreet", "familiar_issuer"],
+  "rewards": [{"type": "rule_unlock", "id": "shadow_silence", "amount": 1}, {"type": "halfmoon_trust", "amount": 5}],
+  "main_story_hook": "",
+  "contract_rule_hook": "shadow_silence",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

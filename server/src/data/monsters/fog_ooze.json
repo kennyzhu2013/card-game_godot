@@ -1,0 +1,62 @@
+{
+  "monsterId": "fog_ooze",
+  "templateHash": "fog_ooze-v1",
+  "displayName": "雾髓黏液体",
+  "speciesId": "ooze",
+  "spriteSheet": "res://assets/sprites/characters/enemy_fog_ooze_sheet.png",
+  "stats": {
+    "maxHp": 70,
+    "atk": 14,
+    "def": 5,
+    "spd": 8,
+    "shieldPoints": 2,
+    "weaknesses": ["fire", "lightning"],
+    "skills": [
+      { "id": "ooze_strike", "name": "黏液冲撞", "type": "attack", "power": 1.0, "costAp": 1, "element": "physical" },
+      { "id": "mist_spit", "name": "雾液喷吐", "type": "attack", "power": 1.2, "costAp": 2, "element": "poison" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 4,
+    "visionConeDeg": 240,
+    "blockingTileTags": ["wall", "fence", "thick_fog"],
+    "alertCooldownMs": 1500
+  },
+  "aggro": {
+    "initial": "passive",
+    "decayPerSec": 0.5,
+    "maxThreat": 100,
+    "alertThreshold": 35,
+    "huntThreshold": 65,
+    "huntPlayerSpeciesPenalty": 0,
+    "transformedPlayerImmunity": true
+  },
+  "patrol": {
+    "type": "circular",
+    "radiusCells": 3,
+    "speedCellsPerSec": 0.5,
+    "idleMsRange": [800, 2400],
+    "anchorOverride": null
+  },
+  "respawn": {
+    "timerMs": 60000,
+    "scatterRadiusCells": 2,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "shoreline_ooze_pack",
+    "role": "scout",
+    "callAlliesRadiusCells": 6,
+    "maxConcurrentMembers": 3
+  },
+  "loot": {
+    "table": "fog_ooze_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "instant",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:fled"]
+  }
+}

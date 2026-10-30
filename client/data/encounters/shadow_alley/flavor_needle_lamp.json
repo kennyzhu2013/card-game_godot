@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_shadow_alley_needle_lamp",
+  "encounter_type": "flavor",
+  "display_name": "Needle Lamp",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A lamp over the needle shop clicks twice without wind.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "A lamp over the needle shop clicks twice without wind."},
+    "1": {"text": "The needle-shop lamp clicks twice; a third click answers from your sleeve."},
+    "2": {"text": "The lamp flame bends toward you like it knows your false name."},
+    "3": {"text": "The lamp shows a queue of shadows waiting where your body should stand."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

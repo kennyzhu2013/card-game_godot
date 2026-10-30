@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_stone_tower_night_watch",
+  "encounter_type": "flavor",
+  "display_name": "Night Watch",
+  "districts": ["stone_tower"],
+  "time_of_day": ["night"],
+  "weight": 30,
+  "preconditions": ["trigger_source == 'time_segment'"],
+  "step_count": 1,
+  "scene_payload": {"text": "The night watch salutes a window with no room behind it.", "choices": [{"id": "observe", "label": "Observe", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The night watch salutes a window with no room behind it."},
+    "1": {"text": "The watchman salutes and waits for your shadow to answer."},
+    "2": {"text": "The empty window salutes back with a pale sleeve."},
+    "3": {"text": "Every window turns toward you and raises the same hand."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

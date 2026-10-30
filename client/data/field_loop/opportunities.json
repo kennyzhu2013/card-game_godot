@@ -1,0 +1,109 @@
+{
+  "$schema": "slice35_field_opportunities_v1",
+  "npc_opportunities": {
+    "old_li": [
+      {
+        "id": "old_li_short_warning",
+        "display_name": "Alley warning",
+        "source_type": "free_rumor",
+        "cost": {},
+        "gates": {"trust_min": 30},
+        "fatigue_max": 2,
+        "grant": {"intel_id": "intel_shadow_alley_church_patrol_001"},
+        "result_text": "Old Li passes along a short warning from the alley end."
+      },
+      {
+        "id": "old_li_private_request",
+        "display_name": "Private request",
+        "source_type": "npc_commission",
+        "cost": {"favor_debt": 1},
+        "gates": {"trust_min": 40},
+        "fatigue_max": 0,
+        "commission_id": "commission_old_li_letter_001",
+        "result_text": "Old Li is willing to trust you with a quiet errand."
+      }
+    ],
+    "xiao_ran": [
+      {
+        "id": "xiao_ran_well_confession",
+        "display_name": "Well confession",
+        "source_type": "npc_deep_chat",
+        "cost": {"ap": 1},
+        "gates": {"trust_min": 20},
+        "fatigue_max": 1,
+        "grant": {"intel_id": "intel_xiao_ran_well_node4_001"},
+        "result_text": "Xiao Ran finally tells the full story of what he saw by the well."
+      },
+      {
+        "id": "xiao_ran_shadow_watch",
+        "display_name": "Shadow watch",
+        "source_type": "free_rumor",
+        "cost": {},
+        "gates": {"trust_min": 12},
+        "fatigue_max": 2,
+        "grant": {"intel_id": "intel_shadow_story_001"},
+        "result_text": "Xiao Ran points toward an unnatural shadow near the alley mouth."
+      }
+    ],
+    "vera_lighthouse": [
+      {
+        "id": "vera_tide_note",
+        "display_name": "Tide note",
+        "source_type": "free_rumor",
+        "cost": {},
+        "gates": {"trust_min": 5},
+        "fatigue_max": 2,
+        "grant": {"intel_id": "intel_vera_lighthouse_tide_001"},
+        "result_text": "Vera marks the safest tide route under the lighthouse."
+      },
+      {
+        "id": "vera_moonlight_watch",
+        "display_name": "Moonlight watch",
+        "source_type": "job_result",
+        "cost": {"ap": 1},
+        "gates": {"trust_min": 20},
+        "fatigue_max": 1,
+        "job_id": "fishing_shift",
+        "grant": {"intel_id": "intel_vera_lighthouse_moonlight_001"},
+        "result_text": "After you cover a watch, Vera explains when moonlight grass glows."
+      }
+    ],
+    "carl_smuggler": [
+      {
+        "id": "carl_manifest_whisper",
+        "display_name": "Manifest whisper",
+        "source_type": "paid_npc_intel",
+        "cost": {"lingstones": 10},
+        "gates": {"trust_min": 0},
+        "fatigue_max": 2,
+        "grant": {"intel_id": "intel_carl_smuggler_auction_001"},
+        "result_text": "Carl pockets the tip and names the next auction night."
+      },
+      {
+        "id": "carl_sealed_gate",
+        "display_name": "Sealed gate",
+        "source_type": "npc_deep_chat",
+        "cost": {"ap": 1},
+        "gates": {"trust_min": 20},
+        "risk": {"suspicion_delta_on_fail": 5},
+        "fatigue_max": 1,
+        "grant": {"intel_id": "intel_carl_smuggler_port_gate_001"},
+        "result_text": "Carl confirms that someone swapped crates behind the sealed gate."
+      }
+    ]
+  },
+  "district_opportunities": {
+    "shadow_alley": [
+      {"id": "shadow_needle_lamp", "encounter_id": "enc_shadow_alley_needle_lamp", "category": "free_flavor", "hidden": false, "weight": 20},
+      {"id": "shadow_rag_picker", "encounter_id": "enc_shadow_alley_rag_picker", "category": "resource", "hidden": false, "weight": 15},
+      {"id": "shadow_old_li_relay", "encounter_id": "enc_shadow_alley_old_li_relay", "category": "npc_lead", "hidden": true, "weight": 10, "gates": {"trust_npc": "old_li", "trust_min": 30}},
+      {"id": "shadow_church_tail", "encounter_id": "enc_shadow_alley_church_tail", "category": "risk", "hidden": true, "weight": 8}
+    ],
+    "misty_port": [
+      {"id": "misty_tide_light", "encounter_id": "enc_misty_port_tide_light", "category": "free_flavor", "hidden": false, "weight": 20},
+      {"id": "misty_moonlight_grass", "encounter_id": "enc_misty_port_moonlight_grass", "category": "resource", "hidden": false, "weight": 15},
+      {"id": "misty_carl_manifest", "encounter_id": "enc_misty_port_carl_manifest", "category": "npc_lead", "hidden": true, "weight": 10, "gates": {"trust_npc": "carl_smuggler", "trust_min": 20}},
+      {"id": "misty_smuggler_check", "encounter_id": "enc_misty_port_smuggler_check", "category": "risk", "hidden": true, "weight": 8}
+    ]
+  }
+}

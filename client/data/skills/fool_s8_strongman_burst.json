@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列8",
+  "id": "fool_s8_strongman_burst",
+  "display_name": "力士爆发",
+  "description": "肌肉绷紧的不是手臂，是台下三千个观众屏住的呼吸。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "物理",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 11, "heal": 0, "target": "single", "range": 1, "status_effects": [{"id": "block_break", "magnitude": 3}]},
+  "tags": ["attack", "block_break"]
+}

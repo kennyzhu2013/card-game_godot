@@ -1,0 +1,126 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/world/city_scene.gd" id="1_city_scene"]
+[ext_resource type="Script" path="res://scripts/world/encounter_trigger.gd" id="2_encounter_trigger"]
+[ext_resource type="Script" path="res://scripts/world/encounter_runner.gd" id="3_encounter_runner"]
+
+[node name="CityScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_city_scene")
+
+[node name="DistrictBackdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.055, 0.06, 0.07, 1)
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="TimeOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+
+[node name="FogOverlay" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.533333, 0.533333, 0.533333, 0)
+
+[node name="EncounterTrigger" type="Node" parent="."]
+script = ExtResource("2_encounter_trigger")
+
+[node name="UILayer" type="CanvasLayer" parent="."]
+
+[node name="EncounterRunner" type="PanelContainer" parent="UILayer"]
+visible = false
+script = ExtResource("3_encounter_runner")
+
+[node name="RootMargin" type="MarginContainer" parent="UILayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 18
+
+[node name="Root" type="VBoxContainer" parent="UILayer/RootMargin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TopBar" type="HBoxContainer" parent="UILayer/RootMargin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="DistrictNameLabel" type="Label" parent="UILayer/RootMargin/Root/TopBar"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "District"
+
+[node name="DayLabel" type="Label" parent="UILayer/RootMargin/Root/TopBar"]
+layout_mode = 2
+text = "第 ? 天"
+
+[node name="TimeLabel" type="Label" parent="UILayer/RootMargin/Root/TopBar"]
+layout_mode = 2
+text = "?"
+
+[node name="ApLabel" type="Label" parent="UILayer/RootMargin/Root/TopBar"]
+layout_mode = 2
+text = "AP ?/?"
+
+[node name="LingstonesLabel" type="Label" parent="UILayer/RootMargin/Root/TopBar"]
+layout_mode = 2
+text = "灵石 ?"
+
+[node name="Scroll" type="ScrollContainer" parent="UILayer/RootMargin/Root"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="HotspotLayer" type="VBoxContainer" parent="UILayer/RootMargin/Root/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="Footer" type="HBoxContainer" parent="UILayer/RootMargin/Root"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ReturnButton" type="Button" parent="UILayer/RootMargin/Root/Footer"]
+layout_mode = 2
+text = "返回洞府"
+
+[node name="TimeAdvanceButton" type="Button" parent="UILayer/RootMargin/Root/Footer"]
+layout_mode = 2
+text = "推进时段"

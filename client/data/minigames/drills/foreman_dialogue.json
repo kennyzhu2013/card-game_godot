@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "foreman_dialogue",
+  "type": "drill",
+  "display_name": "工头对答",
+  "city": "steelworks",
+  "ap_cost": 1,
+  "witness_npc_id": "peter_furnace",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "use_shift_terms", "label": "使用班组术语"},
+    {"id": "ask_for_tools", "label": "先问工具再接命令"},
+    {"id": "avoid_noble_words", "label": "避开贵族腔"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "shift_terms"}, {"type": "job_bonus", "job_id": "factory_shift", "pct": 20, "days": 7}],
+  "rewards_partial": [{"type": "job_bonus", "job_id": "factory_shift", "pct": 10, "days": 7}],
+  "punishment_fail": [{"type": "npc_trust_delta", "npc_id": "peter_furnace", "amount": -10}]
+}

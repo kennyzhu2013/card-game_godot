@@ -1,0 +1,46 @@
+{
+  "id": "brendan",
+  "display_name": "布兰登",
+  "default_district": "sacred_seven",
+  "placeholder": false,
+  "public": {"role": "圣审庭侦缉者", "appearance": "衣领整得发硬，笔记本从不离手"},
+  "hidden": {"actual_age": "36", "past_secrets": ["怀疑度阈值触发者", "会在教会查觉度 10 时盘问哈维"]},
+  "truth": {"true_name": "布兰登·霍克", "true_origin": "七圣广场巡察队"},
+  "default_trust": 0,
+  "default_suspicion": 15,
+  "city_presence": [
+    {"district": "sacred_seven", "time_of_day": "morning", "label_suffix": "（在教会台阶盘查）", "icon": "B", "interactable": true},
+    {"district": "sacred_seven", "time_of_day": "noon", "label_suffix": "（在教会外巡逻）", "icon": "B", "interactable": true},
+    {"district": "sacred_seven", "time_of_day": "evening", "label_suffix": "（在广场边记名）", "icon": "B", "interactable": true},
+    {"district": "sacred_seven", "time_of_day": "night", "label_suffix": "（守着告解室侧门）", "icon": "B", "interactable": true}
+  ],
+  "dialogue_tree": "brendan_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_brendan_watch_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "church_watch",
+      "summary": "布兰登的盘问簿按教会查觉度分层标记目标。"
+    },
+    {
+      "intel_id": "intel_brendan_investigation_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "investigator_visit",
+      "summary": "教会查觉度到 10 时，侦缉者会优先来 Hub 盘问。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "sacred_seven_watch",
+  "commission_templates": ["commission_church_cover_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "rule_unlock", "payload": {"rule_id": "church_smalltalk"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 50, "type": "report_to_church", "payload": {"church_awareness": 10}},
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 10}}
+  ]
+}

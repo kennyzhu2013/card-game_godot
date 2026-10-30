@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "chariot_s9_tide_cut",
+  "display_name": "潮刃",
+  "description": "潮水卷成刀背，劈开最近的敌人。",
+  "pathway": "chariot",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "水",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 8, "heal": 0, "target": "single", "range": 2, "status_effects": []}
+}

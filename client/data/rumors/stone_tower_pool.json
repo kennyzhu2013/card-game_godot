@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "stone_tower_streets",
+  "district": "stone_tower",
+  "entries": [
+    {"id":"intel_stone_enemy_001","category":"tower_hint","display_text":"stone_medium first two floors reveal enemy intent","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"stone_medium","floor_index_min":0,"floor_index_max":1}},"truth_value":100,"weight":20,"filters":{"sequence_max":8}},
+    {"id":"intel_stone_shrine_001","category":"tower_hint","display_text":"A noble shrine hides on floor 3","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"stone_medium","floor_index":2}},"truth_value":90,"weight":12,"filters":{"sequence_max":8}},
+    {"id":"intel_stone_event_001","category":"tower_hint","display_text":"The salon event correct answer is leave_with_grace","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"stone_medium","event_id":"salon_event","correct_choice_id":"leave_with_grace"}},"truth_value":80,"weight":10},
+    {"id":"intel_stone_boss_001","category":"tower_hint","display_text":"The marquis shade is weak to mirror_title","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"stone_medium","boss_id":"marquis_shade","weakness_tag":"mirror_title"}},"truth_value":80,"weight":8},
+    {"id":"intel_stone_shop_001","category":"shop_offer","display_text":"A noble token discounts rare brands once","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"permanent","apply_target":{"kind":"shop_discount.one_time","payload":{"shop_id":"donen_blackmarket","pct":12,"sku_filter":"brand"}},"truth_value":80,"weight":6},
+    {"id":"intel_stone_npc_001","category":"npc","display_text":"Hanna responds to garden-route talk","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"permanent","apply_target":{"kind":"npc_relation_boost.gift_topic","payload":{"npc_id":"hanna_gardener","topic_id":"garden_route","trust_delta":5}},"truth_value":100,"weight":6},
+    {"id":"intel_stone_false_001","category":"false","display_text":"A fake salon invitation blocks the district for a day","source_type":"rumor_streettalker","source_district":"stone_tower","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":150,"ap":2,"suspicion_delta":6}},"false_lead":{"cost":{"lingstone":150,"ap":2,"suspicion":6}},"truth_value":10,"weight":4}
+  ]
+}

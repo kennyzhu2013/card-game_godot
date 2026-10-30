@@ -1,0 +1,47 @@
+{
+  "$schema": "skill_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §C.1 / §L.4 反应 4",
+  "notes": "双重效果反应（问 + 镜）。社交仪式核心：读取 NPC 一句真话。Week 4 §L 演示。",
+  "id": "inquiry_mirror",
+  "display_name": "镜中问",
+  "description": "显化目标内心一句真话",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "灵",
+  "required_symbols": ["inquiry", "mirror"],
+  "tier": 2,
+  "mp_cost": 7,
+  "cooldown": 3,
+  "pollution_per_use": 2,
+
+  "combat_effect": {
+    "damage": 8,
+    "heal": 0,
+    "target": "single",
+    "range": 3,
+    "status_effects": [
+      {"id": "mind_revealed", "chance": 1.0, "duration": 1, "notes": "揭示敌人下回合行动"}
+    ]
+  },
+
+  "social_effect": {
+    "type": "read_truth",
+    "duration_days": 0,
+    "parameters": {
+      "extracts": "NPC 一句真话（从 NPC 隐藏对话池抽取）",
+      "rebound_chance_high_sequence": 0.30,
+      "rebound_effect": "玩家污染 +5，怀疑度 +10"
+    },
+    "church_awareness_delta": 1
+  },
+
+  "world_effect": {
+    "type": "reveal_hidden_lore",
+    "parameters": {
+      "lore_entry": "该 NPC 的真实想法",
+      "unlocks_codex_entry": true
+    }
+  }
+}

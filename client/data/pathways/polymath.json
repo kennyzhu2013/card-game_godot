@@ -1,0 +1,210 @@
+{
+  "id": "polymath",
+  "name": "万象学者",
+  "name_en": "Polymath of Myriad Forms",
+  "description": "全才/变身/知识解密",
+  "god_name": "万象之书 The Codex of Myriad Forms",
+  "sequences": {
+    "9": {
+      "title": "博闻学徒", "title_en": "Lore Apprentice",
+      "tier": "apprentice",
+      "potion_name": "初识之墨",
+      "materials": [
+        {"id": "squid_ink", "name": "墨鱼墨汁", "count": 10},
+        {"id": "old_parchment", "name": "旧羊皮纸", "count": 5},
+        {"id": "crystal_lens", "name": "水晶透镜", "count": 2},
+        {"id": "copper_pot", "name": "铜壶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "鉴定术", "type": "detect", "power": 0, "cost_mp": 8, "effect": "view_target_full_stats"},
+        {"name": "弱化变形", "type": "special", "power": 0, "cost_mp": 10, "effect": "self_transform_small_animal_high_dodge_no_attack", "duration": 3}
+      ],
+      "stats_bonus": {"hp": 18, "mp": 12, "spd": 5},
+      "acting_task": "在图书馆鉴定5件来历不明的物品",
+      "loss_of_control_form": {"name": "墨迹怪", "hp": 20},
+      "ritual_types": ["divine", "enhance"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "抄书匠", "title_en": "Codex Scribe",
+      "tier": "apprentice",
+      "potion_name": "抄录之章",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "parchment", "name": "羊皮纸", "count": 8},
+        {"id": "alchemy_ink", "name": "炼金墨水", "count": 5},
+        {"id": "crystal_lens", "name": "水晶透镜", "count": 3},
+        {"id": "knowledge_dust", "name": "知识之尘", "count": 2}
+      ],
+      "abilities": [
+        {"name": "临时抄录", "type": "special", "power": 0, "cost_mp": 15, "effect": "copy_one_seen_skill_use_once"},
+        {"name": "博闻强记", "type": "passive", "power": 0, "cost_mp": 0, "effect": "permanently_record_seen_skills_to_codex"}
+      ],
+      "stats_bonus": {"hp": 25, "mp": 22, "all_resist": 0.05},
+      "acting_task": "在一场混战中记录下10种不同的技能并归档",
+      "loss_of_control_form": {"name": "知识暴走者", "hp": 90},
+      "ritual_types": ["divine", "enhance", "commune"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "镜像者", "title_en": "Mirror Shifter",
+      "tier": "apprentice",
+      "potion_name": "镜像之泉",
+      "materials": [
+        {"id": "seq8_potion", "name": "序列8灵药", "count": 1},
+        {"id": "silver_mirror_shard", "name": "银镜碎片", "count": 4},
+        {"id": "alchemy_ink", "name": "炼金墨水", "count": 8},
+        {"id": "morph_grass", "name": "变形草", "count": 3},
+        {"id": "beast_core", "name": "兽核", "count": 2}
+      ],
+      "abilities": [
+        {"name": "完整变形", "type": "special", "power": 0, "cost_mp": 20, "effect": "transform_into_seen_monster_get_appearance_and_basic_attack", "duration": 5},
+        {"name": "弱点分析", "type": "detect", "power": 0, "cost_mp": 10, "effect": "view_target_lowest_resist_and_weakness"}
+      ],
+      "stats_bonus": {"hp": 35, "mp": 32, "all_resist": 0.08},
+      "acting_task": "变形为目标怪物混入兽群中获取情报",
+      "loss_of_control_form": {"name": "镜像碎裂者", "hp": 120},
+      "ritual_types": ["divine", "enhance", "commune", "summon"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "形态编者", "title_en": "Form Weaver",
+      "tier": "walker",
+      "potion_name": "形态织锦",
+      "materials": [
+        {"id": "seq7_potion", "name": "序列7灵药", "count": 1},
+        {"id": "silver_mirror_shard", "name": "银镜碎片", "count": 8},
+        {"id": "boss_heart", "name": "Boss之心", "count": 1},
+        {"id": "morph_grass", "name": "变形草", "count": 8},
+        {"id": "beast_core", "name": "兽核", "count": 5}
+      ],
+      "abilities": [
+        {"name": "双形态切换", "type": "special", "power": 0, "cost_mp": 15, "effect": "store_2_forms_switch_costs_1_turn"},
+        {"name": "知识护盾", "type": "passive", "power": 0, "cost_mp": 0, "effect": "shield_equals_codex_skill_count_times_5"}
+      ],
+      "stats_bonus": {"hp": 50, "mp": 48, "all_resist": 0.12},
+      "acting_task": "以两种不同形态分别完成需要不同能力的双重任务",
+      "loss_of_control_form": {"name": "形态混乱体", "hp": 280},
+      "ritual_types": ["divine", "enhance", "commune", "summon", "curse"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "万象炼成", "title_en": "Myriad Alchemist",
+      "tier": "walker",
+      "potion_name": "万象之炼",
+      "materials": [
+        {"id": "seq6_potion", "name": "序列6灵药", "count": 1},
+        {"id": "dark_iron_ingot", "name": "玄铁锭", "count": 2},
+        {"id": "ancient_rune", "name": "古代符文", "count": 3},
+        {"id": "silver_mirror_shard", "name": "银镜碎片", "count": 10},
+        {"id": "alchemy_core", "name": "炼金核心", "count": 1}
+      ],
+      "abilities": [
+        {"name": "临时合成", "type": "special", "power": 0, "cost_mp": 25, "effect": "craft_temp_potion_in_battle"},
+        {"name": "借能术", "type": "special", "power": 0, "cost_mp": 20, "effect": "copy_1_ally_skill_for_battle"}
+      ],
+      "stats_bonus": {"hp": 70, "mp": 70, "all_resist": 0.18},
+      "acting_task": "在一场紧急战斗中临时合成出扭转局势的关键药剂",
+      "loss_of_control_form": {"name": "炼金暴走者", "hp": 450},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "真知窃取者", "title_en": "Gnosis Thief",
+      "tier": "walker",
+      "potion_name": "真知解封",
+      "materials": [
+        {"id": "seq5_potion", "name": "序列5灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 1},
+        {"id": "dragon_blood", "name": "龙血", "count": 1},
+        {"id": "silver_mirror_shard", "name": "银镜碎片", "count": 15},
+        {"id": "outer_god_whisper_scroll", "name": "外神低语录残卷", "count": 1}
+      ],
+      "abilities": [
+        {"name": "DSL解析", "type": "special", "power": 0, "cost_mp": 30, "effect": "view_target_equipment_dsl_triggers"},
+        {"name": "完全复制", "type": "special", "power": 0, "cost_mp": 40, "effect": "copy_target_appearance_all_skills_base_stats", "duration": 5}
+      ],
+      "stats_bonus": {"hp": 95, "mp": 100, "all_resist": 0.15},
+      "acting_task": "解析一件远古神器的DSL蓝图并成功复现其效果",
+      "loss_of_control_form": {"name": "全知碎片", "hp": 800},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "万象审判", "title_en": "Form Arbiter",
+      "tier": "saint",
+      "potion_name": "万象裁决",
+      "materials": [
+        {"id": "seq4_potion", "name": "序列4灵药", "count": 1},
+        {"id": "saint_fragment", "name": "封圣残片", "count": 1},
+        {"id": "divine_rune", "name": "神铸符文", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 2},
+        {"id": "myriad_key", "name": "万象之钥", "count": 1}
+      ],
+      "abilities": [
+        {"name": "强制变形", "type": "cc", "power": 0, "cost_mp": 55, "effect": "transform_enemy_to_weak_animal_lose_all_skills", "duration": 3},
+        {"name": "全知之眼", "type": "detect", "power": 0, "cost_mp": 40, "effect": "view_all_units_full_stats_skills_dsl"}
+      ],
+      "stats_bonus": {"hp": 145, "mp": 180, "all_resist": 0.22},
+      "acting_task": "以全知之眼找出隐藏在城市中的变形怪物并恢复其原形（剧情任务）",
+      "loss_of_control_form": {"name": "万象暴君", "hp": 1300},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 28},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "活体典籍", "title_en": "Living Codex",
+      "tier": "saint",
+      "potion_name": "典籍化身",
+      "materials": [
+        {"id": "seq3_potion", "name": "序列3灵药", "count": 1},
+        {"id": "world_tree_bark", "name": "世界树皮", "count": 3},
+        {"id": "dragon_blood", "name": "龙血", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 3},
+        {"id": "omniscient_reflection", "name": "全知者倒影", "count": 1}
+      ],
+      "abilities": [
+        {"name": "三形态切换", "type": "special", "power": 0, "cost_mp": 0, "effect": "store_3_forms_plus_base_instant_switch"},
+        {"name": "解密万物", "type": "special", "power": 0, "cost_mp": 50, "effect": "break_any_seal_lock_dsl_encryption"}
+      ],
+      "stats_bonus": {"hp": 200, "mp": 260, "all_resist": 0.26},
+      "acting_task": "以三种不同形态连续攻克三道远古封印",
+      "loss_of_control_form": {"name": "活体典籍暴走", "hp": 2600},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 30},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "万象归一", "title_en": "Convergence of All Forms",
+      "tier": "saint",
+      "potion_name": "万象之约",
+      "materials": [
+        {"id": "seq2_potion", "name": "序列2灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 5},
+        {"id": "outer_god_eye", "name": "外神之眼", "count": 1},
+        {"id": "omniscient_reflection", "name": "全知者倒影", "count": 3},
+        {"id": "myriad_crown", "name": "万象之冠", "count": 1}
+      ],
+      "abilities": [
+        {"name": "终极变形", "type": "ultimate", "power": 0, "cost_mp": 100, "uses_per_week": 1, "effect": "transform_into_strongest_unit_150_percent_for_entire_battle"},
+        {"name": "万象归一", "type": "passive", "power": 0, "cost_mp": 0, "effect": "on_kill_permanently_record_form_can_transform_anytime"}
+      ],
+      "stats_bonus": {"hp": 350, "mp": 380, "all_resist": 0.45},
+      "acting_task": "以万象归一之名完成形态巡礼剧情链",
+      "loss_of_control_form": {"name": "不可控——世界Boss万象畸变体", "hp": 0},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": -1, "sanity_cost": -1},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

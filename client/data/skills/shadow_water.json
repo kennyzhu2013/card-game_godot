@@ -1,0 +1,21 @@
+{
+  "id": "shadow_water",
+  "display_name": "影潭",
+  "description": "地面渗出黑色水洼，倒映内心恐惧并造成伤害",
+  "pathway": "priestess",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "element": "影",
+  "required_symbols": ["shadow", "water"],
+  "tier": 2,
+  "mp_cost": 12,
+  "cooldown": 2,
+  "pollution_per_use": 2,
+  "combat_effect": {
+    "damage": 10,
+    "heal": 0,
+    "target": "aoe",
+    "range": 2,
+    "status_effects": [{"id": "fear", "duration": 1}]
+  }
+}

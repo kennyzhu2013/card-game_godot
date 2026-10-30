@@ -1,0 +1,10 @@
+{
+  "$schema": "tower_boss_table_v1",
+  "bosses": {
+    "shadow_alley": {"boss_id": "alley_horror", "boss_pack": [], "victory_drops": {"brand_guaranteed": true, "brand_pool": "fool_low_tier_brands", "lingstones": [80, 150], "dao_page_chance": 0.05}, "defeat_penalty": {"pollution": 20, "tower_collapse": true}},
+    "steelworks": {"boss_id": "slag_golem", "boss_pack": ["vagrant"], "victory_drops": {"brand_guaranteed": true, "brand_pool": "fool_low_tier_brands", "lingstones": [90, 160], "dao_page_chance": 0.05}, "defeat_penalty": {"pollution": 20, "tower_collapse": true}},
+    "misty_port": {"boss_id": "smuggler_captain", "boss_pack": ["vagrant"], "victory_drops": {"brand_guaranteed": true, "brand_pool": "fool_low_tier_brands", "lingstones": [90, 170], "dao_page_chance": 0.06}, "defeat_penalty": {"pollution": 20, "tower_collapse": true}},
+    "stone_tower": {"boss_id": "noble_conspirator", "boss_pack": ["inquisitor"], "victory_drops": {"brand_guaranteed": true, "brand_pool": "fool_low_tier_brands", "lingstones": [100, 180], "dao_page_chance": 0.06}, "defeat_penalty": {"pollution": 20, "tower_collapse": true}},
+    "sacred_seven": {"boss_id": "church_inquisitor", "boss_pack": ["inquisitor"], "victory_drops": {"brand_guaranteed": true, "brand_pool": "fool_low_tier_brands", "lingstones": [110, 200], "dao_page_chance": 0.07}, "defeat_penalty": {"pollution": 20, "tower_collapse": true}}
+  }
+}

@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/hanna_gardener_main
+# Slice 3 T4: Hanna Gardener simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+汉娜: 花园里不该有陌生脚印。可石塔区每天都长出新的陌生人。
+
+# branch:garden_rumor
+汉娜: 你听过贵族们说话吗？他们把求救说得像邀请函。
+
+# branch:ask_intel
+# grant_intel:intel_hanna_garden_route_001
+汉娜: 后花园的旧门午后不会上锁。
+# grant_intel:intel_hanna_household_mail_001
+汉娜: 邮差的信袋里有一封写给七圣会的空白邀请函。
+
+# branch:commission
+# commission_pool:stone_tower_garden
+# dispatch_placeholder:R17 stone_tower_garden
+汉娜: 如果你要送信，先学会像仆役一样不被人看见。
+
+# branch:leave
+汉娜: 别踩花。花比人记仇。

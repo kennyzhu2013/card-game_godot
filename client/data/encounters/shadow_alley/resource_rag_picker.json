@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_shadow_alley_rag_picker",
+  "encounter_type": "resource",
+  "display_name": "Rag Picker",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 18,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A rag picker leaves a tied scrap bundle beside the gutter.", "choices": [{"id": "take", "label": "Take the bundle", "outcome": {"lingstones_delta": 2}}, {"id": "leave", "label": "Leave it", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

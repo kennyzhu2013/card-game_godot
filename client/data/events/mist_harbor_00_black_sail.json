@@ -1,0 +1,1 @@
+{"id":"mist_black_sail","district":"mist_harbor","title":"黑帆擦过雾墙","narrative_template":"一面黑帆在雾里划过，海水味从塔砖里渗出。","choices":[{"id":"signal","text":"点灯回应","outcome":{"lingstones":40,"pollution":4}},{"id":"hide","text":"熄灯躲避","outcome":{"card_drop":"priestess_s9_mist_bolt"}}]}

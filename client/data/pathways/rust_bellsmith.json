@@ -1,0 +1,210 @@
+{
+  "id": "rust_bellsmith",
+  "name": "锈钟匠",
+  "name_en": "Rust Bellsmith",
+  "description": "控场/工匠/时间操控",
+  "god_name": "锈蚀钟王 The Rust Bell Sovereign",
+  "sequences": {
+    "9": {
+      "title": "修钟学徒", "title_en": "Clock Mender",
+      "tier": "apprentice",
+      "potion_name": "初始之齿",
+      "materials": [
+        {"id": "copper_gear", "name": "铜齿轮", "count": 10},
+        {"id": "rust_iron_powder", "name": "锈铁粉", "count": 5},
+        {"id": "fine_sand", "name": "细沙", "count": 3},
+        {"id": "copper_pot", "name": "铜壶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "修复术", "type": "heal", "power": 30, "cost_mp": 10, "effect": "repair_equipment_20_durability_or_heal_mech_30hp"},
+        {"name": "微量加速", "type": "buff", "power": 0, "cost_mp": 8, "effect": "self_spd_plus_10_percent", "duration": 2}
+      ],
+      "stats_bonus": {"hp": 20, "mp": 10, "spd": 5},
+      "acting_task": "修复城镇钟楼的3个损坏齿轮使其恢复运转",
+      "loss_of_control_form": {"name": "锈蚀齿轮", "hp": 25},
+      "ritual_types": ["enhance", "divine"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "锈铁匠人", "title_en": "Rustforge Smith",
+      "tier": "apprentice",
+      "potion_name": "锈铁之歌",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "refined_iron_ingot", "name": "精铁锭", "count": 5},
+        {"id": "copper_gear", "name": "铜齿轮", "count": 8},
+        {"id": "rust_core", "name": "锈蚀之核", "count": 2},
+        {"id": "bell_tower_shard", "name": "钟塔残片", "count": 1}
+      ],
+      "abilities": [
+        {"name": "强化锻造", "type": "buff", "power": 0, "cost_mp": 12, "effect": "ally_equipment_plus_15_percent_stats", "duration": 3},
+        {"name": "腐蚀触碰", "type": "attack", "power": 18, "cost_mp": 10, "effect": "target_equipment_durability_minus_10"}
+      ],
+      "stats_bonus": {"hp": 28, "mp": 20, "atk": 8},
+      "acting_task": "为一支冒险队伍修复并强化全部装备",
+      "loss_of_control_form": {"name": "锈蚀巨人", "hp": 110},
+      "ritual_types": ["enhance", "divine", "summon"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "齿轮诵者", "title_en": "Gear Cantor",
+      "tier": "apprentice",
+      "potion_name": "齿轮之韵",
+      "materials": [
+        {"id": "seq8_potion", "name": "序列8灵药", "count": 1},
+        {"id": "refined_iron_ingot", "name": "精铁锭", "count": 8},
+        {"id": "time_sand", "name": "时沙", "count": 3},
+        {"id": "copper_gear", "name": "铜齿轮", "count": 12},
+        {"id": "rust_core", "name": "锈蚀之核", "count": 4}
+      ],
+      "abilities": [
+        {"name": "减速术", "type": "debuff", "power": 0, "cost_mp": 15, "effect": "target_spd_minus_30_percent", "duration": 3},
+        {"name": "加速术", "type": "buff", "power": 0, "cost_mp": 15, "effect": "ally_spd_plus_30_percent", "duration": 3}
+      ],
+      "stats_bonus": {"hp": 38, "mp": 30, "spd": 8},
+      "acting_task": "在一场限时任务中用加速术帮助队友在时限内完成",
+      "loss_of_control_form": {"name": "时间紊乱者", "hp": 125},
+      "ritual_types": ["enhance", "divine", "summon", "curse"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "时沙行者", "title_en": "Timesand Walker",
+      "tier": "walker",
+      "potion_name": "时沙受洗",
+      "materials": [
+        {"id": "seq7_potion", "name": "序列7灵药", "count": 1},
+        {"id": "time_sand", "name": "时沙", "count": 8},
+        {"id": "boss_heart", "name": "Boss之心", "count": 1},
+        {"id": "refined_iron_ingot", "name": "精铁锭", "count": 10},
+        {"id": "rust_core", "name": "锈蚀之核", "count": 6}
+      ],
+      "abilities": [
+        {"name": "回溯一动", "type": "special", "power": 0, "cost_mp": 30, "effect": "undo_last_action_restore_state", "uses_per_battle": 1},
+        {"name": "衰朽领域", "type": "terrain", "power": 0, "cost_mp": 20, "effect": "3x3_enemy_equipment_durability_minus_5_per_turn", "duration": 3}
+      ],
+      "stats_bonus": {"hp": 55, "mp": 50, "spd": 10},
+      "acting_task": "利用时间回溯能力修正一个关键性的战术失误",
+      "loss_of_control_form": {"name": "时间循环体", "hp": 300},
+      "ritual_types": ["enhance", "divine", "summon", "curse", "commune"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "锈钟编者", "title_en": "Rust Bell Weaver",
+      "tier": "walker",
+      "potion_name": "锈钟之织",
+      "materials": [
+        {"id": "seq6_potion", "name": "序列6灵药", "count": 1},
+        {"id": "dark_iron_ingot", "name": "玄铁锭", "count": 3},
+        {"id": "ancient_rune", "name": "古代符文", "count": 2},
+        {"id": "time_sand", "name": "时沙", "count": 6},
+        {"id": "eternal_gear", "name": "永恒齿轮", "count": 1}
+      ],
+      "abilities": [
+        {"name": "造物强化", "type": "buff", "power": 0, "cost_mp": 25, "effect": "add_temp_dsl_trigger_to_ally_equipment", "duration": 5},
+        {"name": "时间锚点", "type": "special", "power": 0, "cost_mp": 30, "effect": "snapshot_battlefield_state_can_revert_later"}
+      ],
+      "stats_bonus": {"hp": 75, "mp": 70, "spd": 12},
+      "acting_task": "为队友的武器临时附加一个扭转战局的触发效果",
+      "loss_of_control_form": {"name": "过载钟匠", "hp": 480},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "衰朽先知", "title_en": "Entropy Seer",
+      "tier": "walker",
+      "potion_name": "衰朽天启",
+      "materials": [
+        {"id": "seq5_potion", "name": "序列5灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 1},
+        {"id": "dragon_blood", "name": "龙血", "count": 1},
+        {"id": "time_sand", "name": "时沙", "count": 10},
+        {"id": "outer_god_whisper_scroll", "name": "外神低语录残卷", "count": 1}
+      ],
+      "abilities": [
+        {"name": "加速腐蚀", "type": "debuff", "power": 0, "cost_mp": 35, "effect": "target_equipment_durability_to_zero"},
+        {"name": "时间牢笼", "type": "cc", "power": 0, "cost_mp": 30, "effect": "stun_target_time_loop", "duration": 2}
+      ],
+      "stats_bonus": {"hp": 100, "mp": 95, "all_resist": 0.12},
+      "acting_task": "预见并阻止一件远古神器的自毁倒计时",
+      "loss_of_control_form": {"name": "时间崩解者", "hp": 850},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "永恒裁断", "title_en": "Eternal Arbiter",
+      "tier": "saint",
+      "potion_name": "永恒裁决",
+      "materials": [
+        {"id": "seq4_potion", "name": "序列4灵药", "count": 1},
+        {"id": "saint_fragment", "name": "封圣残片", "count": 1},
+        {"id": "divine_rune", "name": "神铸符文", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 2},
+        {"id": "eternal_hourglass", "name": "永恒沙漏", "count": 1}
+      ],
+      "abilities": [
+        {"name": "时间回溯", "type": "ultimate", "power": 0, "cost_mp": 80, "uses_per_week": 1, "effect": "revert_entire_battlefield_2_turns_back"},
+        {"name": "绝对修复", "type": "special", "power": 0, "cost_mp": 50, "effect": "repair_any_item_to_full_including_destroyed_artifacts"}
+      ],
+      "stats_bonus": {"hp": 155, "mp": 180, "all_resist": 0.22},
+      "acting_task": "以时间回溯修正一场已经失败的战役（剧情任务）",
+      "loss_of_control_form": {"name": "时间暴君", "hp": 1400},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 28},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "钟塔之主", "title_en": "Belltower Lord",
+      "tier": "saint",
+      "potion_name": "钟塔加冕",
+      "materials": [
+        {"id": "seq3_potion", "name": "序列3灵药", "count": 1},
+        {"id": "world_tree_bark", "name": "世界树皮", "count": 3},
+        {"id": "dragon_blood", "name": "龙血", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 3},
+        {"id": "eternal_bellsmith_reflection", "name": "永恒钟匠倒影", "count": 1}
+      ],
+      "abilities": [
+        {"name": "时间领域", "type": "terrain", "power": 0, "cost_mp": 70, "effect": "5x5_allies_act_twice_enemies_spd_minus_50", "duration": 3},
+        {"name": "铸造神器", "type": "special", "power": 0, "cost_mp": 0, "uses_per_week": 1, "effect": "craft_a_rank_equipment_with_dsl_trigger"}
+      ],
+      "stats_bonus": {"hp": 215, "mp": 250, "all_resist": 0.26},
+      "acting_task": "铸造一件能改变战局的神器并在关键战役中使用它",
+      "loss_of_control_form": {"name": "时间风暴", "hp": 3000},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 30},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "永恒之钟", "title_en": "The Eternal Bell",
+      "tier": "saint",
+      "potion_name": "永恒之约",
+      "materials": [
+        {"id": "seq2_potion", "name": "序列2灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 5},
+        {"id": "outer_god_eye", "name": "外神之眼", "count": 1},
+        {"id": "eternal_bellsmith_reflection", "name": "永恒钟匠倒影", "count": 3},
+        {"id": "eternal_crown", "name": "永恒之冠", "count": 1}
+      ],
+      "abilities": [
+        {"name": "时间停止", "type": "ultimate", "power": 0, "cost_mp": 100, "uses_per_week": 1, "effect": "freeze_all_units_3_turns_only_self_can_act"},
+        {"name": "永恒铸造", "type": "special", "power": 0, "cost_mp": 0, "uses_per_week": 1, "effect": "craft_s_rank_equipment"}
+      ],
+      "stats_bonus": {"hp": 370, "mp": 380, "all_resist": 0.48},
+      "acting_task": "以永恒之钟之名完成时间巡礼剧情链",
+      "loss_of_control_form": {"name": "不可控——世界Boss时间崩解体", "hp": 0},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": -1, "sanity_cost": -1},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

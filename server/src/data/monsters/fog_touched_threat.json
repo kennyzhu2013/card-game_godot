@@ -1,0 +1,61 @@
+{
+  "monsterId": "fog_touched_threat",
+  "templateHash": "fog_touched_threat-v1",
+  "displayName": "雾触威胁",
+  "speciesId": "fog_touched",
+  "spriteSheet": "res://assets/sprites/characters/enemy_fog_ooze_sheet.png",
+  "stats": {
+    "maxHp": 60,
+    "atk": 12,
+    "def": 4,
+    "spd": 8,
+    "shieldPoints": 2,
+    "weaknesses": ["fire", "lightning"],
+    "skills": [
+      { "id": "fog_touch", "name": "雾触", "type": "attack", "power": 1.0, "costAp": 1, "element": "physical" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 4,
+    "visionConeDeg": 240,
+    "blockingTileTags": ["wall", "fence", "thick_fog"],
+    "alertCooldownMs": 1500
+  },
+  "aggro": {
+    "initial": "passive",
+    "decayPerSec": 0.5,
+    "maxThreat": 100,
+    "alertThreshold": 35,
+    "huntThreshold": 65,
+    "huntPlayerSpeciesPenalty": 0,
+    "transformedPlayerImmunity": true
+  },
+  "patrol": {
+    "type": "stationary",
+    "radiusCells": 1,
+    "speedCellsPerSec": 0.4,
+    "idleMsRange": [800, 2400],
+    "anchorOverride": null
+  },
+  "respawn": {
+    "timerMs": 60000,
+    "scatterRadiusCells": 1,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "m2_intro_threat",
+    "role": "scout",
+    "callAlliesRadiusCells": 4,
+    "maxConcurrentMembers": 1
+  },
+  "loot": {
+    "table": "fog_touched_threat_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "instant",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:fled"]
+  }
+}

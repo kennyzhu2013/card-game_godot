@@ -1,0 +1,63 @@
+{
+  "mapId": "mist-harbor-test",
+  "templateHash": "mist-harbor-test-v1",
+  "meta": {
+    "mapId": "mist-harbor-test",
+    "templateHash": "mist-harbor-test-v1",
+    "displayName": "Mist Harbor Test",
+    "layers": ["surface"],
+    "defaultLayer": "surface",
+    "recommendedAoiZoneId": "default",
+    "contentRevision": 2,
+    "serverVisibleIdNamespace": ""
+  },
+  "width": 40,
+  "height": 40,
+  "blocked": [
+    { "x": 5, "y": 5 },
+    { "x": 5, "y": 6 },
+    { "x": 6, "y": 5 },
+    { "x": 12, "y": 1 },
+    { "x": 12, "y": 2 },
+    { "x": 12, "y": 3 }
+  ],
+  "spawn": { "x": 2, "y": 2 },
+  "regions": [],
+  "portals": [],
+  "defaultAoiZoneId": "default",
+  "aoiZones": [
+    {
+      "zoneId": "default",
+      "playersRadiusCells": 30,
+      "entitiesRadiusCells": 30,
+      "combatLocksRadiusCells": 6,
+      "deltaMode": "full"
+    }
+  ],
+  "contentExtensions": [],
+  "landmarks": [
+    { "landmarkId": "village_gate", "role": "spawn", "position": { "x": 2, "y": 2 }, "radius": 2 },
+    { "landmarkId": "main_street", "role": "street", "position": { "x": 5, "y": 2 }, "radius": 3 },
+    { "landmarkId": "old_lighthouse_road", "role": "route", "position": { "x": 8, "y": 2 }, "radius": 2 },
+    { "landmarkId": "shoreline", "role": "shore", "position": { "x": 4, "y": 6 }, "radius": 3 },
+    { "landmarkId": "forge", "role": "service", "position": { "x": 3, "y": 4 }, "radius": 1 },
+    { "landmarkId": "ritual_pier", "role": "ritual", "position": { "x": 9, "y": 6 }, "radius": 2 },
+    { "landmarkId": "creation_yard", "role": "creation", "position": { "x": 6, "y": 4 }, "radius": 2 },
+    { "landmarkId": "fog_tide_blockade", "role": "blockade", "position": { "x": 12, "y": 2 }, "radius": 2 }
+  ],
+  "monsterSpawns": [
+    {
+      "spawnId": "wolf-1",
+      "monsterId": "fog_ooze",
+      "position": { "x": 8, "y": 8 },
+      "initialState": "patrol",
+      "active": true,
+      "storyVisibleId": "wolf-1"
+    }
+  ],
+  "entities": [
+    { "entityId": "tree-1", "type": "resource", "position": { "x": 4, "y": 2 }, "state": { "kind": "tree", "depleted": false }, "version": 1 },
+    { "entityId": "ore-1", "type": "resource", "position": { "x": 6, "y": 2 }, "state": { "kind": "ore", "depleted": false }, "version": 1 },
+    { "entityId": "crate-1", "type": "prop", "position": { "x": 3, "y": 4 }, "state": { "pushable": true }, "version": 1 }
+  ]
+}

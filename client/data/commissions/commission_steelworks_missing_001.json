@@ -1,0 +1,20 @@
+{
+  "id": "commission_steelworks_missing_001",
+  "commission_type": "battle",
+  "difficulty": "medium",
+  "display_name": "铸钢失踪案",
+  "description": "Martha's foreman vanished beyond the seventh furnace.",
+  "issuer_npc": "martha_rich",
+  "district": "steelworks",
+  "min_day": 1,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 20,
+  "dispatch_target": {"district": "steelworks", "tower_size": "medium", "theme": "missing_case", "boss": "slag_golem"},
+  "time_limit_days": 3,
+  "rewards": [{"type": "lingstones", "amount": 200}, {"type": "brand", "id": "commission_low_brand", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

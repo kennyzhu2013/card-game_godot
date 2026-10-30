@@ -1,0 +1,34 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列9",
+  "id": "fool_s9_premonition",
+  "display_name": "第六感",
+  "description": "脚步声还在二十米外，脖子已经先一步躲开了刀。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "命运",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "damage_reduction", "magnitude": 0.5, "duration": 1}]},
+  "social_effect": {
+    "type": "modify_suspicion",
+    "duration_days": 0,
+    "suspicion_delta": -5,
+    "parameters": {
+      "suspicion_delta": -5,
+      "notes": "目标对你的怀疑短暂松动"
+    },
+    "church_awareness_delta": 1
+  },
+  "world_effect": {
+    "type": "spawn_event",
+    "event": "premonition_flash",
+    "parameters": {
+      "event": "premonition_flash"
+    }
+  },
+  "tags": ["status", "damage_reduction"]
+}

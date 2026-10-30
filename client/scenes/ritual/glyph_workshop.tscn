@@ -1,0 +1,205 @@
+[gd_scene load_steps=2 format=3 uid="uid://glyph_workshop_001"]
+
+[ext_resource type="Script" path="res://scripts/ritual/glyph_workshop.gd" id="1_script"]
+
+[node name="GlyphWorkshop" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.035, 0.04, 0.052, 1)
+
+[node name="ForgeSafeMargin" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 18
+
+[node name="ForgeWorkbenchRoot" type="VBoxContainer" parent="ForgeSafeMargin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ForgeStatusBar" type="PanelContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 58)
+
+[node name="Margin" type="MarginContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeStatusBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 8
+
+[node name="StatusRow" type="HBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeStatusBar/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="ReturnButton" type="Button" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeStatusBar/Margin/StatusRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(132, 48)
+text = "← 返回洞府"
+
+[node name="ForgeWorkshopTitle" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeStatusBar/Margin/StatusRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "锻造台"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ForgeInventoryStatus" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeStatusBar/Margin/StatusRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(220, 0)
+text = "符号 / AP"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="ForgeMainArea" type="HBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="SymbolPalettePanel" type="PanelContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(260, 0)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="PaletteBody" type="VBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PaletteTitle" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel/Margin/PaletteBody"]
+layout_mode = 2
+text = "符号库存"
+horizontal_alignment = 1
+
+[node name="PaletteHint" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel/Margin/PaletteBody"]
+layout_mode = 2
+text = "拖动符号到中间坯槽"
+horizontal_alignment = 1
+
+[node name="PaletteScroll" type="ScrollContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel/Margin/PaletteBody"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="PaletteGrid" type="GridContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/SymbolPalettePanel/Margin/PaletteBody/PaletteScroll"]
+layout_mode = 2
+columns = 3
+
+[node name="ArrangementPanel" type="PanelContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(300, 0)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 12
+
+[node name="ArrangementBody" type="VBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ArrangementTitle" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel/Margin/ArrangementBody"]
+layout_mode = 2
+text = "符阵坯槽"
+horizontal_alignment = 1
+
+[node name="ArrangementHint" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel/Margin/ArrangementBody"]
+layout_mode = 2
+text = "排列决定反应与污染"
+horizontal_alignment = 1
+
+[node name="SlotCenter" type="CenterContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel/Margin/ArrangementBody"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SlotContainer" type="HBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ArrangementPanel/Margin/ArrangementBody/SlotCenter"]
+layout_mode = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="ReactionPreviewPanel" type="PanelContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea"]
+layout_mode = 2
+custom_minimum_size = Vector2(260, 0)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Margin" type="MarginContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ReactionPreviewPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="PreviewBody" type="VBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ReactionPreviewPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="PreviewTitle" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ReactionPreviewPanel/Margin/PreviewBody"]
+layout_mode = 2
+text = "反应预览"
+horizontal_alignment = 1
+
+[node name="PreviewLabel" type="RichTextLabel" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeMainArea/ReactionPreviewPanel/Margin/PreviewBody"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "反应预览"
+scroll_active = false
+autowrap_mode = 2
+
+[node name="ForgeActionBar" type="PanelContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 66)
+
+[node name="Margin" type="MarginContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeActionBar"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 9
+
+[node name="ActionRow" type="HBoxContainer" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeActionBar/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="ReforgeEntryButton" type="Button" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeActionBar/Margin/ActionRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(168, 48)
+text = "重锻已有卡"
+
+[node name="ReforgeStatusLabel" type="Label" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeActionBar/Margin/ActionRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = ""
+vertical_alignment = 1
+
+[node name="ConfirmButton" type="Button" parent="ForgeSafeMargin/ForgeWorkbenchRoot/ForgeActionBar/Margin/ActionRow"]
+layout_mode = 2
+custom_minimum_size = Vector2(220, 48)
+text = "确认排列 → 开始锻造"

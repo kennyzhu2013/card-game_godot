@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列8",
+  "id": "fool_s8_acrobat_strike",
+  "display_name": "杂技乱打",
+  "description": "观众看见的是翻滚，对手感受到的是三道刀光。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "物理",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 12, "heal": 0, "target": "single", "range": 1, "status_effects": [{"id": "multi_strike", "hits": 3, "damage_each": 4}, {"id": "vulnerable_if_skill_played", "duration": 1}]},
+  "tags": ["attack", "multi_strike"]
+}

@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/xuming_recluse_main
+# Slice 3 T4: Xuming Recluse simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+虚明: 山路不认识你，但你的脚步认识山路。
+
+# branch:hidden_path
+虚明: 晚风停下的时候，石阶后有一条路。别带第二个人。
+
+# branch:ask_intel
+# grant_intel:intel_xuming_ascetic_001
+虚明: 苦修山的买卖不按灵石算，按你愿意失去什么算。
+# grant_intel:intel_xuming_hidden_path_001
+虚明: 独行者的小路只在你不想被人看见时出现。
+
+# branch:ascetic_trade
+# commission_pool:ascetic_mountain_recluse
+# dispatch_placeholder:R17 commission_ascetic_trade_001
+虚明: 你拿一个秘密来，我给你一段路。
+
+# branch:leave
+虚明: 别向山道告别。它会以为你还想回来。

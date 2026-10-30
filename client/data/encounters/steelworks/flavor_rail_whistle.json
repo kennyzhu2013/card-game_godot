@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_steelworks_rail_whistle",
+  "encounter_type": "flavor",
+  "display_name": "Rail Whistle",
+  "districts": ["steelworks"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A rail whistle blows although no tram is scheduled.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "A rail whistle blows although no tram is scheduled."},
+    "1": {"text": "The whistle lingers until workers look away from you."},
+    "2": {"text": "The rail vibrates with a tram that has not arrived for years."},
+    "3": {"text": "The whistle splits into voices calling you foreman, priest, and thief."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

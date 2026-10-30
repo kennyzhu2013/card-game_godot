@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "tower_s7_dream_eclipse",
+  "display_name": "梦蚀",
+  "description": "梦境缺了一角，缺口里流出黑色潮声。",
+  "pathway": "tower",
+  "card_pool": "enemy_spell",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "梦",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 13, "heal": 0, "target": "all_enemies", "range": 5, "status_effects": [{"id": "confusion", "duration": 1}, {"id": "nightmare", "duration": 2}]}
+}

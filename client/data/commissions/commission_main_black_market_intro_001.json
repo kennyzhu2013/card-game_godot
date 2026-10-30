@@ -1,0 +1,20 @@
+{
+  "id": "commission_main_black_market_intro_001",
+  "commission_type": "investigate",
+  "difficulty": "medium",
+  "display_name": "黑市引线",
+  "description": "Follow the Shadow Alley night clue into a black-market tower event.",
+  "issuer_npc": "old_li",
+  "district": "shadow_alley",
+  "min_day": 3,
+  "max_day": 3,
+  "min_sequence": 9,
+  "refresh_priority": 0,
+  "dispatch_target": {"district": "shadow_alley", "tower_size": "medium", "required_event_id": "black_market_intro", "accepted_choices": ["enter_with_mask"]},
+  "time_limit_days": 2,
+  "rewards": [{"type": "dao_pages", "amount": 2}, {"type": "mainline_node", "id": "node_2_black_market_intro", "amount": 1}],
+  "main_story_hook": "node_2_black_market_intro",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

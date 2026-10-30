@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_casino_leave_echo",
+  "encounter_type": "flavor",
+  "display_name": "Casino Door Echo",
+  "districts": ["misty_port"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 24,
+  "preconditions": ["trigger_source == 'casino_leave'"],
+  "step_count": 1,
+  "scene_payload": {"text": "Outside the casino, a drunk repeats the exact number you just rolled.", "choices": [{"id": "walk", "label": "Walk away", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

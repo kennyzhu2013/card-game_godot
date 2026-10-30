@@ -1,0 +1,32 @@
+[
+  {
+    "pollution_stage": 0,
+    "title": "平静梦",
+    "tone": "calm",
+    "text": "你睡得很沉。窗外有人推车经过，铃声很远。"
+  },
+  {
+    "pollution_stage": 1,
+    "title": "旧名梦",
+    "tone": "old_memory",
+    "text": "你梦到一个不认识的人在喊你的旧名，但旧名你也想不起来。"
+  },
+  {
+    "pollution_stage": 2,
+    "title": "井边梦",
+    "tone": "reflection",
+    "text": "你梦见自己坐在井边，井水里有别人的脸。那张脸认识你。"
+  },
+  {
+    "pollution_stage": 3,
+    "title": "钟摆梦",
+    "tone": "warning",
+    "text": "钟摆穿过你的梦：你必须停下。醒来时你以为是自己说的。"
+  },
+  {
+    "pollution_stage": 4,
+    "title": "半月梦",
+    "tone": "threat",
+    "text": "半月之约的伙伴站在床尾，他们的脸在抖动：够了。"
+  }
+]

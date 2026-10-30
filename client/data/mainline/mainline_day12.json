@@ -1,0 +1,22 @@
+{
+  "day": 12,
+  "node_id": "node_5_church_investigation",
+  "title": "教会调查塔",
+  "popup_text": "Day 12 占位：圣审庭记录了你的名字。",
+  "flags": {"church_investigation_tower": true},
+  "forced_tower": {
+    "id": "mainline_day12_church_investigation_tower",
+    "node_id": "node_5_church_investigation",
+    "label": "圣审庭调查塔",
+    "district_ids": ["sacred_seven"],
+    "tower_size": "small",
+    "tower_template": "church_investigation",
+    "required": true,
+    "requires": {
+      "any": [
+        {"church_awareness_min": 25},
+        {"pseudo_god_contract_violated": true}
+      ]
+    }
+  }
+}

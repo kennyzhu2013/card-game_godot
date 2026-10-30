@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_ascetic_mountain_herbal_water",
+  "encounter_type": "resource",
+  "display_name": "Herbal Water",
+  "districts": ["ascetic_mountain"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 15,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A clay cup of herbal water waits beside the path.", "choices": [{"id": "drink", "label": "Drink", "outcome": {}}, {"id": "leave", "label": "Leave", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

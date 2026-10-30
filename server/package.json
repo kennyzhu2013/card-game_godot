@@ -1,0 +1,32 @@
+{
+  "name": "greycrown-authoritative-server",
+  "version": "1.0.0",
+  "description": "Authoritative game-server prototype for Greycrown",
+  "private": true,
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "npm run m3:start",
+    "dev": "npm run m3:dev",
+    "m3:dev": "tsx src/main.ts",
+    "m3:build": "tsc -p tsconfig.json",
+    "m3:start": "node dist/main.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": ["game", "server", "forge", "ritual"],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.22.2",
+    "msgpackr": "^1.11.2",
+    "ws": "^8.21.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.2",
+    "@types/ws": "^8.5.13",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^4.1.10"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "xiao_ran",
+  "display_name": "小染",
+  "default_district": "shadow_alley",
+  "placeholder": false,
+  "public": {"role": "巷子里的孩子", "appearance": "总爱蹲在墙根看人"},
+  "hidden": {"actual_age": "未明", "past_secrets": ["与主线节点 4 有关"]},
+  "truth": {"true_name": "染星", "true_origin": "被遗忘的见证者"},
+  "default_trust": 12,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "shadow_alley", "time_of_day": "evening", "label_suffix": "（在巷口看热闹）", "icon": "🌙", "interactable": true},
+    {"district": "shadow_alley", "time_of_day": "night", "label_suffix": "（在屋檐下等人）", "icon": "🌙", "interactable": true}
+  ],
+  "dialogue_tree": "xiao_ran_main",
+  "mainline_anchors": ["node_4"],
+  "available_intels": [
+    {
+      "intel_id": "intel_xiao_ran_well_node4_001",
+      "trust": 20,
+      "source_type": "npc_chat",
+      "mainline_node_id": "node_4",
+      "topic": "shadow_alley_well",
+      "summary": "小染说井底的脸不是影子，是在等人回头。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "shadow_alley_child_commissions",
+  "commission_templates": ["commission_shadow_well_inquiry_001", "commission_main_promotion_prepare_001"],
+  "field_opportunities": ["xiao_ran_well_confession", "xiao_ran_shadow_watch"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 30, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": []
+}

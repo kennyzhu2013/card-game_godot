@@ -1,0 +1,87 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "sacred_seven",
+  "display_name": "七圣广场",
+  "ap_to_enter": 0,
+  "unlock_condition": null,
+  "tower_theme": "church_investigation",
+  "hotspots": [
+    {
+      "id": "tower_entry_sacred_seven",
+      "label": "教会调查塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 2,
+      "payload": {
+        "tower_size": "small",
+        "tower_template": "saints_small"
+      },
+      "visible_when": "always",
+      "position_norm": [0.34, 0.48]
+    },
+    {
+      "id": "npc_brendan",
+      "label": "布兰登",
+      "icon": "B",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "brendan"
+      },
+      "visible_when": "always",
+      "position_norm": [0.55, 0.58]
+    },
+    {
+      "id": "npc_thomas_priest",
+      "label": "神父·托马斯",
+      "icon": "P",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "thomas_priest"
+      },
+      "visible_when": "always",
+      "position_norm": [0.68, 0.52]
+    },
+    {
+      "id": "drill_confess_innocent",
+      "label": "告解演练",
+      "icon": "D",
+      "type": "minigame_drill",
+      "ap_cost": 1,
+      "payload": {
+        "drill_id": "confess_innocent"
+      },
+      "visible_when": "always",
+      "position_norm": [0.44, 0.68]
+    },
+    {
+      "id": "job_worship_observation",
+      "label": "礼拜旁观",
+      "icon": "W",
+      "type": "minigame_job",
+      "ap_cost": 1,
+      "payload": {
+        "job_id": "worship_observation"
+      },
+      "visible_when": "day % 7 == 0 AND time_of_day == 'morning'",
+      "position_norm": [0.46, 0.30]
+    },
+    {
+      "id": "rumor_sacred_notice",
+      "label": "布道告示",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "sacred_seven_rumors"
+      },
+      "visible_when": "church_awareness < 75",
+      "position_norm": [0.30, 0.70]
+    }
+  ],
+  "encounter_pool": "sacred_seven_encounters",
+  "constant_npcs": ["brendan", "thomas_priest"],
+  "main_story_hooks": ["node_5"],
+  "ambient_music": "sacred_seven_morning"
+}

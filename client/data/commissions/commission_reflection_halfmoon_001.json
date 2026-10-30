@@ -1,0 +1,20 @@
+{
+  "id": "commission_reflection_halfmoon_001",
+  "commission_type": "investigate",
+  "difficulty": "medium",
+  "display_name": "倒影半月线索",
+  "description": "The Reflection asks you to confirm a halfmoon image in a mountain tower event.",
+  "issuer_npc": "reflection",
+  "district": "ascetic_mountain",
+  "min_day": 7,
+  "max_day": 14,
+  "min_sequence": 8,
+  "refresh_priority": 85,
+  "dispatch_target": {"district": "ascetic_mountain", "tower_size": "medium", "required_event_id": "reflection_halfmoon", "accepted_choices": ["touch_reflection"]},
+  "time_limit_days": 3,
+  "rewards": [{"type": "dao_pages", "amount": 2}, {"type": "halfmoon_trust", "amount": 5}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

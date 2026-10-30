@@ -1,0 +1,28 @@
+{
+  "$schema": "skill_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §C.1",
+  "notes": "纯治疗反应（坎 + 触）。target=self 时治玩家自己；target=ally 时未来联机用。",
+  "id": "water_touch",
+  "display_name": "水抚",
+  "description": "治愈之水接触目标",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "坎",
+  "required_symbols": ["water", "touch"],
+  "tier": 1,
+  "mp_cost": 6,
+  "cooldown": 1,
+  "pollution_per_use": 0,
+
+  "combat_effect": {
+    "damage": 0,
+    "heal": 12,
+    "target": "self",
+    "range": 1,
+    "status_effects": []
+  },
+  "social_effect": null,
+  "world_effect": null
+}

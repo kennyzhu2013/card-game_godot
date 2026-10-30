@@ -1,0 +1,46 @@
+{
+  "id": "peter_furnace",
+  "display_name": "锅炉工·彼得",
+  "default_district": "steelworks",
+  "placeholder": false,
+  "public": {"role": "打工向导", "appearance": "袖口常烫焦，靴底沾着煤灰"},
+  "hidden": {"actual_age": "27", "past_secrets": ["炉边传闻收集者", "知道夜班换岗漏洞"]},
+  "truth": {"true_name": "彼得·弗恩", "true_origin": "铸钢区第七炉房"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "steelworks", "time_of_day": "morning", "label_suffix": "（在炉房点名）", "icon": "P", "interactable": true},
+    {"district": "steelworks", "time_of_day": "noon", "label_suffix": "（在厂门口招工）", "icon": "P", "interactable": true}
+  ],
+  "dialogue_tree": "peter_furnace_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_peter_furnace_shift_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "factory_shift",
+      "summary": "彼得说夜班表里有一个从不签名的空班。"
+    },
+    {
+      "intel_id": "intel_peter_furnace_smoke_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "smoke_color",
+      "summary": "蓝黑色炉烟只会在塔影靠近厂区时出现。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": ["factory_shift"],
+  "commission_pool": "steelworks_jobs",
+  "commission_templates": ["commission_factory_shift_001"],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对，像刚从没有火的炉膛里爬出来。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

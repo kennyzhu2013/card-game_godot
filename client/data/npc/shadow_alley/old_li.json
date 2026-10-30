@@ -1,0 +1,52 @@
+{
+  "id": "old_li",
+  "display_name": "老李",
+  "default_district": "shadow_alley",
+  "placeholder": false,
+  "public": {"role": "黑市主", "appearance": "老者，左手戴一只墨绿手套"},
+  "hidden": {"actual_age": "百岁有余", "past_secrets": ["曾是隐者之道序列 7"]},
+  "truth": {"true_name": "李慎独", "true_origin": "三周目前轮回失败者"},
+  "default_trust": 30,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "shadow_alley", "time_of_day": "night", "label_suffix": "（在巷尾摆摊）", "icon": "🛒", "interactable": true},
+    {"district": "shadow_alley", "time_of_day": "evening", "label_suffix": "（在井边和小染聊天）", "icon": "🛒", "interactable": true},
+    {"district": "shadow_alley", "time_of_day": "morning", "label_suffix": "（还没出摊）", "icon": "🛒", "interactable": false},
+    {"district": "shadow_alley", "time_of_day": "noon", "label_suffix": "（在巷子里抽烟）", "icon": "🛒", "interactable": true}
+  ],
+  "dialogue_tree": "old_li_main",
+  "available_drills": ["underground_signal"],
+  "available_jobs": [],
+  "commission_pool": "old_li_commissions",
+  "commission_templates": ["commission_old_li_letter_001", "commission_main_black_market_intro_001"],
+  "field_opportunities": ["old_li_short_warning", "old_li_private_request"],
+  "available_intels": [
+    {
+      "intel_id": "intel_shadow_alley_church_patrol_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "church_patrol",
+      "summary": "圣审庭的人今天在影巷来回走。"
+    },
+    {
+      "intel_id": "intel_xiao_ran_gift_001",
+      "trust": 20,
+      "source_type": "npc_chat",
+      "topic": "xiao_ran_gift",
+      "summary": "小染最喜欢被油纸包起来的甜饼。"
+    }
+  ],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对。别急着解释，我见过这种影子贴在人的皮肤下面。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 40, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}},
+    {"trust": 70, "type": "rule_unlock", "payload": {"rule_id": "shadow_silence"}},
+    {"trust": 90, "type": "shop_discount", "payload": {"shop_id": "donen_blackmarket", "pct": 10}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 50, "type": "tower_extra_elite", "payload": {"chance": 0.30}},
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 10}}
+  ]
+}

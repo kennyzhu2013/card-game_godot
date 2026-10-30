@@ -1,0 +1,210 @@
+{
+  "id": "duke_eternal_night",
+  "name": "永夜公爵",
+  "name_en": "Duke of Eternal Night",
+  "description": "死灵召唤/暗杀/情报窃取",
+  "god_name": "永夜君王 The Sovereign of Endless Dark",
+  "sequences": {
+    "9": {
+      "title": "夜行徒", "title_en": "Night Prowler",
+      "tier": "apprentice",
+      "potion_name": "暗夜初染",
+      "materials": [
+        {"id": "nightshade", "name": "夜影草", "count": 10},
+        {"id": "bat_wing", "name": "蝙蝠翼", "count": 5},
+        {"id": "poison_mushroom", "name": "毒蘑菇", "count": 3},
+        {"id": "black_iron_bottle", "name": "黑铁瓶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "阴影潜行", "type": "stealth", "power": 0, "cost_mp": 10, "effect": "stealth_next_attack_plus_50_percent"},
+        {"name": "毒刃", "type": "attack", "power": 15, "cost_mp": 8, "dot": 12, "dot_duration": 3}
+      ],
+      "stats_bonus": {"hp": 18, "atk": 10, "spd": 8},
+      "acting_task": "在夜间潜行完成3次情报传递任务",
+      "loss_of_control_form": {"name": "影行尸", "hp": 25},
+      "ritual_types": ["enhance", "curse"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "墓语者", "title_en": "Grave Whisperer",
+      "tier": "apprentice",
+      "potion_name": "墓土之声",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "grave_soil", "name": "墓土", "count": 8},
+        {"id": "dry_bone", "name": "枯骨", "count": 5},
+        {"id": "nightshade", "name": "夜影草", "count": 6},
+        {"id": "phosphor_essence", "name": "磷火精华", "count": 2}
+      ],
+      "abilities": [
+        {"name": "召唤骷髅", "type": "summon", "power": 0, "cost_mp": 15, "summon_hp": 40, "summon_atk": 15, "duration": 3, "count": 1},
+        {"name": "暗影视觉", "type": "passive", "power": 0, "cost_mp": 0, "effect": "double_vision_in_dark"}
+      ],
+      "stats_bonus": {"hp": 25, "atk": 18, "dark_bonus": 0.1},
+      "acting_task": "在墓地为5个不安的亡灵完成遗愿使其安息",
+      "loss_of_control_form": {"name": "唤骨者", "hp": 110},
+      "ritual_types": ["enhance", "curse", "summon"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "黄昏刺客", "title_en": "Dusk Assassin",
+      "tier": "apprentice",
+      "potion_name": "黄昏之刃",
+      "materials": [
+        {"id": "seq8_potion", "name": "序列8灵药", "count": 1},
+        {"id": "dark_silver_dagger", "name": "暗银匕首", "count": 2},
+        {"id": "snake_venom_gland", "name": "蛇毒腺", "count": 3},
+        {"id": "nightshade", "name": "夜影草", "count": 10},
+        {"id": "shadow_crystal", "name": "暗影水晶", "count": 2}
+      ],
+      "abilities": [
+        {"name": "暗杀术", "type": "attack", "power_mult": 3.0, "cost_mp": 20, "effect": "from_stealth_3x_damage"},
+        {"name": "毒雾", "type": "dot_aoe", "power": 10, "cost_mp": 18, "radius": 3, "duration": 2}
+      ],
+      "stats_bonus": {"hp": 35, "atk": 28, "spd": 12, "crit_rate": 0.08},
+      "acting_task": "以暗杀术击杀一名被悬赏的罪犯（不伤及旁人）",
+      "loss_of_control_form": {"name": "失控刺客", "hp": 130},
+      "ritual_types": ["enhance", "curse", "summon", "divine"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "亡灵牧者", "title_en": "Wraith Shepherd",
+      "tier": "walker",
+      "potion_name": "亡灵牧歌",
+      "materials": [
+        {"id": "seq7_potion", "name": "序列7灵药", "count": 1},
+        {"id": "shadow_crystal", "name": "暗影水晶", "count": 6},
+        {"id": "boss_heart", "name": "Boss之心", "count": 1},
+        {"id": "dry_bone", "name": "枯骨", "count": 15},
+        {"id": "phosphor_essence", "name": "磷火精华", "count": 5}
+      ],
+      "abilities": [
+        {"name": "召唤亡灵小队", "type": "summon", "power": 0, "cost_mp": 25, "summon_hp": 60, "summon_atk": 20, "duration": 3, "count": 3},
+        {"name": "暗影传送", "type": "movement", "power": 0, "cost_mp": 15, "effect": "teleport_to_shadow_area"}
+      ],
+      "stats_bonus": {"hp": 50, "atk": 40, "dark_bonus": 0.2, "spd": 15},
+      "acting_task": "指挥一支亡灵小队防守一座被围攻的哨站",
+      "loss_of_control_form": {"name": "亡灵暴君", "hp": 300},
+      "ritual_types": ["enhance", "curse", "summon", "divine", "commune"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "暗影编者", "title_en": "Shadow Weaver",
+      "tier": "walker",
+      "potion_name": "暗影之织",
+      "materials": [
+        {"id": "seq6_potion", "name": "序列6灵药", "count": 1},
+        {"id": "dark_iron_ingot", "name": "玄铁锭", "count": 2},
+        {"id": "ancient_rune", "name": "古代符文", "count": 3},
+        {"id": "shadow_crystal", "name": "暗影水晶", "count": 8},
+        {"id": "undead_heart", "name": "亡灵之心", "count": 1}
+      ],
+      "abilities": [
+        {"name": "阴影分身", "type": "summon", "power": 0, "cost_mp": 30, "effect": "shadow_clone_50hp_70atk_percent", "duration": 3},
+        {"name": "窃密术", "type": "special", "power": 0, "cost_mp": 20, "effect": "read_target_equipment_stats"}
+      ],
+      "stats_bonus": {"hp": 75, "atk": 60, "dark_bonus": 0.3, "crit_rate": 0.1},
+      "acting_task": "利用阴影分身同时在两个地点执行任务",
+      "loss_of_control_form": {"name": "影分裂者", "hp": 500},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "夜幕窃语", "title_en": "Nightfall Whisperer",
+      "tier": "walker",
+      "potion_name": "夜幕低语",
+      "materials": [
+        {"id": "seq5_potion", "name": "序列5灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 1},
+        {"id": "dragon_blood", "name": "龙血", "count": 1},
+        {"id": "shadow_crystal", "name": "暗影水晶", "count": 12},
+        {"id": "outer_god_whisper_scroll", "name": "外神低语录残卷", "count": 1}
+      ],
+      "abilities": [
+        {"name": "夜幕降临", "type": "debuff_aoe", "power": 0, "cost_mp": 40, "effect": "vision_2_tiles_non_night_accuracy_minus_30", "duration": 3},
+        {"name": "亡灵军团", "type": "summon", "power": 0, "cost_mp": 45, "summon_hp": 80, "summon_atk": 25, "duration": 4, "count": 6}
+      ],
+      "stats_bonus": {"hp": 100, "atk": 85, "all_resist": 0.12},
+      "acting_task": "在夜幕掩护下从敌方要塞窃取一份机密文件",
+      "loss_of_control_form": {"name": "永夜降临者", "hp": 900},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "永夜审判", "title_en": "Night Arbiter",
+      "tier": "saint",
+      "potion_name": "永夜裁决",
+      "materials": [
+        {"id": "seq4_potion", "name": "序列4灵药", "count": 1},
+        {"id": "saint_fragment", "name": "封圣残片", "count": 1},
+        {"id": "divine_rune", "name": "神铸符文", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 2},
+        {"id": "eternal_night_key", "name": "永夜之匙", "count": 1}
+      ],
+      "abilities": [
+        {"name": "暗影法庭", "type": "special", "power": 0, "cost_mp": 60, "effect": "drag_target_to_shadow_1v1_time_pause"},
+        {"name": "死亡宣告", "type": "debuff", "power": 0, "cost_mp": 50, "effect": "instant_death_after_5_turns_if_not_dispelled", "duration": 5}
+      ],
+      "stats_bonus": {"hp": 150, "atk": 130, "all_resist": 0.2},
+      "acting_task": "以永夜审判者身份审判一个叛逃的序列者（剧情任务）",
+      "loss_of_control_form": {"name": "暗影审判官", "hp": 1500},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 28},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "暗影王座", "title_en": "Shadow Throne",
+      "tier": "saint",
+      "potion_name": "暗影加冕",
+      "materials": [
+        {"id": "seq3_potion", "name": "序列3灵药", "count": 1},
+        {"id": "world_tree_bark", "name": "世界树皮", "count": 3},
+        {"id": "dragon_blood", "name": "龙血", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 3},
+        {"id": "eternal_night_lord_reflection", "name": "永夜之主倒影", "count": 1}
+      ],
+      "abilities": [
+        {"name": "暗影领域", "type": "terrain", "power": 0, "cost_mp": 65, "effect": "dark_damage_plus_50_non_dark_minus_20", "duration": 5},
+        {"name": "召唤暗影巨龙", "type": "summon", "power": 0, "cost_mp": 70, "summon_hp": 1200, "summon_atk": 150, "duration": 3}
+      ],
+      "stats_bonus": {"hp": 220, "atk": 190, "all_resist": 0.28},
+      "acting_task": "在一场大规模亡灵暴走事件中重新收服所有失控亡灵",
+      "loss_of_control_form": {"name": "暗影王", "hp": 3000},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 30},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "永夜降临", "title_en": "Descent of Eternal Night",
+      "tier": "saint",
+      "potion_name": "永夜之约",
+      "materials": [
+        {"id": "seq2_potion", "name": "序列2灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 5},
+        {"id": "outer_god_eye", "name": "外神之眼", "count": 1},
+        {"id": "eternal_night_lord_reflection", "name": "永夜之主倒影", "count": 3},
+        {"id": "eternal_night_crown", "name": "永夜之冠", "count": 1}
+      ],
+      "abilities": [
+        {"name": "永夜", "type": "ultimate", "power": 0, "cost_mp": 100, "uses_per_week": 1, "effect": "permanent_darkness_8_percent_hp_dark_damage_per_turn"},
+        {"name": "灵魂收割", "type": "passive", "power": 0, "cost_mp": 0, "effect": "on_kill_summon_target_as_ally"}
+      ],
+      "stats_bonus": {"hp": 360, "atk": 300, "all_resist": 0.45},
+      "acting_task": "以永夜降临之名完成暗影巡礼剧情链",
+      "loss_of_control_form": {"name": "不可控——世界Boss永夜暴君", "hp": 0},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": -1, "sanity_cost": -1},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

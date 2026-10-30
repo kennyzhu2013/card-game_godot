@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_air_bullet",
+  "display_name": "空气弹",
+  "description": "响指清脆，子弹更脆。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "风",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 8, "heal": 0, "target": "single", "range": 5, "status_effects": [{"id": "pierce_block", "magnitude": 3}, {"id": "attack_play_damage_growth", "magnitude": 2, "cap": 6}]},
+  "tags": ["attack", "pierce"]
+}

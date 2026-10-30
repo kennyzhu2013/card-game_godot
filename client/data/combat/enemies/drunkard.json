@@ -1,0 +1,46 @@
+{
+  "$schema": "enemy_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §G.1",
+  "id": "drunkard",
+  "display_name": "醉汉",
+  "actor_id": "drunkard",
+  "description": "在影巷区到处晃悠的可怜人，因酒精降低了对污染的抗性",
+  "intent_text": "摇晃着寻找破绽",
+  "sprite": "drunkard.png",
+  "tier": 1,
+  "stats": {
+    "hp": 30,
+    "max_hp": 30,
+    "atk": 10,
+    "def": 2,
+    "spd": 8,
+    "crit_rate": 0.05
+  },
+  "element": "普通",
+  "weakness": ["影", "离"],
+  "resistance": [],
+  "skills": [
+    {
+      "id": "drunken_swing",
+      "name": "醉拳",
+      "damage": 8,
+      "element": "普通",
+      "cooldown": 1,
+      "target": "single",
+      "description": "踉跄一拳，威力不稳"
+    }
+  ],
+  "ai_pattern": [
+    {"condition": "turn % 2 == 0", "action": "use_skill", "skill": "drunken_swing"},
+    {"condition": "turn % 2 == 1", "action": "defend", "params": {"damage_reduction": 0.5}}
+  ],
+  "drops": [
+    {"item": "shadow_glyph_raw", "chance": 0.30},
+    {"item": "jester_glyph_raw", "chance": 0.20},
+    {"item": "silver_coin", "chance": 1.00, "amount_min": 5, "amount_max": 15}
+  ],
+  "spawn_locations": ["shadow_alley"],
+  "spawn_weight": 50,
+  "trigger_condition": null
+}

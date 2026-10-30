@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_widow_child_resemble",
+  "encounter_type": "mystery_seed",
+  "display_name": "The Child's Face",
+  "districts": ["shadow_alley", "steelworks"],
+  "time_of_day": ["evening", "night"],
+  "weight": 5,
+  "preconditions": ["day >= 4", "mainline.node_2.completed == true"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "The child's face looks briefly like someone you were told to forget.",
+    "choices": [
+      {"id": "approach", "label": "Stay", "outcome": {"unlock_chain_step": 2}},
+      {"id": "leave", "label": "Leave", "outcome": {}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "widow_child_chain",
+  "chain_step": 1,
+  "resolutions": []
+}

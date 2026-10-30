@@ -1,0 +1,21 @@
+{
+  "id": "mirror_arrow",
+  "display_name": "镜箭",
+  "description": "箭从镜中飞出，方向与你射出的相反，双重打击",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["mirror", "arrow"],
+  "tier": 2,
+  "mp_cost": 15,
+  "cooldown": 3,
+  "pollution_per_use": 3,
+  "combat_effect": {
+    "damage": 20,
+    "heal": 0,
+    "target": "dual",
+    "range": 4,
+    "status_effects": []
+  }
+}

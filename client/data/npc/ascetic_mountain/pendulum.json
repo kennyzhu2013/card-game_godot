@@ -1,0 +1,43 @@
+{
+  "id": "pendulum",
+  "display_name": "钟摆",
+  "default_district": "ascetic_mountain",
+  "placeholder": false,
+  "public": {"role": "半月之约见证者", "appearance": "背着旧钟摆，衣摆总像被风推迟一步"},
+  "hidden": {"actual_age": "不详", "past_secrets": ["真名仪式钥匙", "曾是教会主教"]},
+  "truth": {"true_name": "艾本·罗德", "true_origin": "苦修山山脊"},
+  "default_trust": 10,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "ascetic_mountain", "time_of_day": "evening", "label_suffix": "（在山脊边静坐）", "icon": "P", "interactable": true},
+    {"district": "shadow_alley", "time_of_day": "night", "label_suffix": "（在巷口校准钟摆）", "icon": "P", "interactable": true}
+  ],
+  "dialogue_tree": "pendulum_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_pendulum_true_name_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "true_name_rite",
+      "summary": "钟摆说真名仪式不能从名字开始，而要从沉默开始。"
+    },
+    {
+      "intel_id": "intel_pendulum_halfmoon_rule_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "halfmoon_vow",
+      "summary": "半月之约的守则会先惩罚犹豫，而不是惩罚失败。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "ascetic_mountain_contracts",
+  "commission_templates": ["commission_halfmoon_message_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "rule_unlock", "payload": {"rule_id": "halfmoon_silence"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

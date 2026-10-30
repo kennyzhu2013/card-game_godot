@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "chariot_s8_reef_breaker",
+  "display_name": "碎礁击",
+  "description": "拳头像船首撞上暗礁，防御随浪花一起碎开。",
+  "pathway": "chariot",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "水",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 11, "heal": 0, "target": "single", "range": 1, "status_effects": [{"id": "block_break", "magnitude": 3}]}
+}

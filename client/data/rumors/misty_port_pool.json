@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "misty_port_rumors",
+  "district": "misty_port",
+  "entries": [
+    {"id":"intel_misty_enemy_001","category":"tower_hint","display_text":"mist_small first floors reveal enemy intent","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"mist_small","floor_index_min":0,"floor_index_max":1}},"truth_value":100,"weight":20},
+    {"id":"intel_misty_shrine_001","category":"tower_hint","display_text":"Smugglers left a shrine on mist floor 2","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"mist_small","floor_index":1}},"truth_value":90,"weight":12},
+    {"id":"intel_misty_event_001","category":"tower_hint","display_text":"Dock event favors the sealed crate","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"mist_small","event_id":"dock_crate_event","correct_choice_id":"sealed_crate"}},"truth_value":80,"weight":10},
+    {"id":"intel_misty_boss_001","category":"tower_hint","display_text":"The smuggler captain is weak to lantern light","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"mist_small","boss_id":"smuggler_captain","weakness_tag":"lantern"}},"truth_value":80,"weight":8},
+    {"id":"intel_misty_story_001","category":"main_story","display_text":"The port knows the church cleaning schedule","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"next_morning","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_5_church_investigation","branch_id":"port_warning"}},"truth_value":80,"weight":8},
+    {"id":"intel_misty_shop_001","category":"shop_offer","display_text":"A dock receipt discounts black market cards","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"permanent","apply_target":{"kind":"shop_discount.one_time","payload":{"shop_id":"donen_blackmarket","pct":10,"sku_filter":"temporary_card"}},"truth_value":80,"weight":6},
+    {"id":"intel_misty_false_001","category":"false","display_text":"A fake ship manifest sends you to an empty pier","source_type":"rumor_streettalker","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":80,"ap":1,"suspicion_delta":4}},"false_lead":{"cost":{"lingstone":80,"ap":1,"suspicion":4}},"truth_value":20,"weight":4}
+  ]
+}

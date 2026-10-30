@@ -1,0 +1,27 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_minor_trick",
+  "display_name": "戏台小术",
+  "description": "变出一只鸽子，变出一根羽毛，变出对方的疏忽。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "戏法",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "deck", "range": 0, "status_effects": [{"id": "create_random_temp_card", "options": [{"id": "minor_trick_temp_draw", "template_id": "minor_trick_temp_draw", "display_name": "临时抽牌", "pathway": "fool", "sequence": 9, "energy_cost": 0, "element": "戏法", "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": []}, "tags": ["skill", "temporary"]}, {"id": "minor_trick_temp_block", "template_id": "minor_trick_temp_block", "display_name": "临时格挡", "pathway": "fool", "sequence": 9, "energy_cost": 0, "element": "戏法", "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": []}, "tags": ["status", "temporary"]}, {"id": "minor_trick_temp_damage", "template_id": "minor_trick_temp_damage", "display_name": "临时伤害", "pathway": "fool", "sequence": 9, "energy_cost": 0, "element": "戏法", "combat_effect": {"damage": 1, "heal": 0, "target": "single", "range": 1, "status_effects": []}, "tags": ["attack", "temporary"]}, {"id": "minor_trick_temp_cleanse", "template_id": "minor_trick_temp_cleanse", "display_name": "临时净化", "pathway": "fool", "sequence": 9, "energy_cost": 0, "element": "戏法", "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "cleanse_debuff", "types": ["weak", "vulnerable", "confusion", "burn", "poison", "nightmare", "obscure_intent", "suffocate", "silence", "bind", "root", "paralyze"]}]}, "tags": ["skill", "temporary"]}]}]},
+  "social_effect": {
+    "type": "influence_behavior",
+    "duration_days": 1,
+    "effect": "random_favor",
+    "parameters": {
+      "effect": "random_favor",
+      "notes": "让目标短暂顺着你的戏法走"
+    },
+    "church_awareness_delta": 1
+  },
+  "tags": ["skill", "temporary_card"]
+}

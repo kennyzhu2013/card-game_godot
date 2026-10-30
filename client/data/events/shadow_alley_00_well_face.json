@@ -1,0 +1,1 @@
+{"id":"shadow_alley_well_face","district":"shadow_alley","title":"井底有别人的脸","narrative_template":"你低头看井，井水里有一张迟半拍眨眼的脸。","choices":[{"id":"look_long","text":"盯着看","outcome":{"pollution":5,"card_drop":"fool_s9_premonition"}},{"id":"leave","text":"走开","outcome":{}}]}

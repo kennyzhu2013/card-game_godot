@@ -1,0 +1,20 @@
+{
+  "id": "commission_red_hand_probe_001",
+  "commission_type": "battle",
+  "difficulty": "medium",
+  "display_name": "红手会探查",
+  "description": "Carl of the Red Hand asks for a steelworks tower probe.",
+  "issuer_npc": "red_hand_carl",
+  "district": "steelworks",
+  "min_day": 3,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 60,
+  "dispatch_target": {"district": "steelworks", "tower_size": "small", "theme": "red_hand_probe", "boss": "red_hand_debtman"},
+  "time_limit_days": 3,
+  "rewards": [{"type": "lingstones", "amount": 140}, {"type": "brand", "id": "red_hand_mark", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

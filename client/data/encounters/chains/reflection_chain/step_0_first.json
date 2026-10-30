@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_reflection_first",
+  "encounter_type": "mystery_seed",
+  "display_name": "Reflection Finds You",
+  "districts": ["misty_port", "sacred_seven"],
+  "time_of_day": ["evening", "night"],
+  "weight": 5,
+  "preconditions": ["mainline.node_3.completed == true", "halfmoon_trust >= 0"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "A reflection in dark glass speaks before the person beside it moves.",
+    "choices": [
+      {"id": "listen", "label": "Listen", "outcome": {"unlock_chain_step": 1}},
+      {"id": "refuse", "label": "Refuse", "outcome": {"chain_lock": true}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "reflection_chain",
+  "chain_step": 0,
+  "resolutions": []
+}

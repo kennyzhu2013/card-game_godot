@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_ascetic_mountain_bitter_path",
+  "encounter_type": "flavor",
+  "display_name": "Bitter Path",
+  "districts": ["ascetic_mountain"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Bitter leaves crack underfoot though the path is bare stone.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "Bitter leaves crack underfoot though the path is bare stone."},
+    "1": {"text": "Each dry leaf carries the print of a hand, not a tree."},
+    "2": {"text": "The bare stone crunches like leaves and tastes of medicine."},
+    "3": {"text": "The path cracks open and bitter leaves spill upward like smoke."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

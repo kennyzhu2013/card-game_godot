@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_stone_tower_crest_wind",
+  "encounter_type": "flavor",
+  "display_name": "Crest Wind",
+  "districts": ["stone_tower"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Wind moves over the tower crest without touching the banners.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "Wind moves over the tower crest without touching the banners."},
+    "1": {"text": "The banners stay still while the wind pulls at your collar."},
+    "2": {"text": "The crest wind smells of tomb dust and polished silver."},
+    "3": {"text": "The wind enters your mouth and leaves through the stone joints."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

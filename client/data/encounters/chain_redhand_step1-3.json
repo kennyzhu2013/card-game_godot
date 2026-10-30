@@ -1,0 +1,75 @@
+{
+  "$schema": "encounter_pack_v1",
+  "encounters": [
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_red_hand_proof_2",
+      "encounter_type": "mystery_seed",
+      "display_name": "第二份证明",
+      "districts": ["steelworks"],
+      "time_of_day": ["night"],
+      "weight": 5,
+      "preconditions": ["cycle >= 1"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "红手会要第二份证明：从炉灰里取回一枚没有登记的手印。",
+        "choices": [
+          {"id": "accept", "label": "接下第二份证明", "outcome": {"unlock_chain_step": 3}},
+          {"id": "stall", "label": "拖延答复", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "red_hand_chain",
+      "chain_step": 2,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_red_hand_proof_3",
+      "encounter_type": "mystery_seed",
+      "display_name": "第三份证明",
+      "districts": ["steelworks"],
+      "time_of_day": ["night"],
+      "weight": 4,
+      "preconditions": ["cycle >= 1"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "第三份证明更轻：只要你让一个守夜人忘记自己看见过红色。",
+        "choices": [
+          {"id": "accept", "label": "完成遗忘证明", "outcome": {"unlock_chain_step": 4, "pollution_delta": 1}},
+          {"id": "refuse", "label": "拒绝第三份证明", "outcome": {"unlock_chain_step": 4, "church_awareness_delta": 2}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "red_hand_chain",
+      "chain_step": 3,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_red_hand_join",
+      "encounter_type": "mystery_seed",
+      "display_name": "红手会的门",
+      "districts": ["steelworks"],
+      "time_of_day": ["night"],
+      "weight": 2,
+      "preconditions": ["cycle >= 1"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "卡尔把一枚红手印按在门上，问你是要成为门内的人，还是把门交给教会。",
+        "choices": [
+          {"id": "join", "label": "加入红手会", "outcome": {"unlock_chain_step": 5, "story_flags": {"redhand_ending": "joined"}, "church_awareness_delta": -3}},
+          {"id": "refuse", "label": "拒绝入会", "outcome": {"unlock_chain_step": 5, "story_flags": {"redhand_ending": "refused"}}},
+          {"id": "expose", "label": "暴露这扇门", "outcome": {"unlock_chain_step": 5, "story_flags": {"redhand_ending": "exposed"}, "church_awareness_delta": 12}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "red_hand_chain",
+      "chain_step": 4,
+      "resolutions": []
+    }
+  ]
+}

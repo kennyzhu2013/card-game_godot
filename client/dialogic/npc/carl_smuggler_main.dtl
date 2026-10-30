@@ -1,0 +1,24 @@
+# Dialogic timeline: npc/carl_smuggler_main
+# Slice 3 T4: Smuggler Carl main dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+走私者卡尔: 雾港不问名字，只问你有没有湿过鞋。
+走私者卡尔: 哈维，你这双鞋太干了，像刚从别人的梦里出来。
+
+# branch:small_talk
+走私者卡尔: 船舱、酒桶、祷告箱，三样东西最适合藏人。
+
+# branch:ask_intel
+# grant_intel:intel_carl_smuggler_auction_001
+走私者卡尔: 拍卖会只认周六夜里的第三声雾号。
+# grant_intel:intel_carl_smuggler_port_gate_001
+走私者卡尔: 封仓门后有教会的空箱，空箱比满箱麻烦。
+
+# branch:auction_lead
+# commission_pool:misty_port_commissions
+# dispatch_placeholder:R25 misty_port_weekly
+走私者卡尔: 想进拍卖会，先学会不问价。第一口价总是给死人听的。
+
+# branch:leave
+走私者卡尔: 雾港会替你保密，前提是你也替它保密。

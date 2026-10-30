@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_swift_cast",
+  "display_name": "捷法之手",
+  "description": "念咒太慢，灵性灌注太累，一个响指就够了。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "灵",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "next_fool_skill_cost_delta", "magnitude": -1}, {"id": "avoid_counter_intent", "duration": 1}]},
+  "tags": ["skill", "cost_mod"]
+}

@@ -1,0 +1,26 @@
+# Dialogic timeline: npc/reflection_main
+# Slice 3 T4: Reflection dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+倒影: 我见过你从水里抬头，也见过水替你低头。
+
+# branch:halfmoon_vow
+倒影: 半月之约不是同盟名。它是你在最不像自己时，还有人认得你。
+
+# branch:pseudo_god_contract
+倒影: 伪神契约不是给神看的，是给会看穿你的人看的。
+
+# branch:ask_intel
+# grant_intel:intel_reflection_halfmoon_001
+倒影: 半月之约是一种互相见证的契约。
+# grant_intel:intel_reflection_river_001
+倒影: 雾港夜里出现的第二个倒影，会比本人先说真话。
+
+# branch:romance_line
+# commission_pool:ascetic_mountain_reflection
+# dispatch_placeholder:R17 commission_reflection_halfmoon_001
+倒影: 如果哪天你必须说谎，至少先看着我。
+
+# branch:leave
+倒影: 走吧。水面会把你离开时的样子留下。

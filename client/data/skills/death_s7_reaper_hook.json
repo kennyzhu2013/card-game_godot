@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "death_s7_reaper_hook",
+  "display_name": "收魂钩",
+  "description": "钩影越过铠甲，直接拽住目标的最后一口气。",
+  "pathway": "death",
+  "card_pool": "enemy_spell",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "死",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 15, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "execute_bonus_below_hp_pct", "threshold": 0.3, "bonus_damage": 8}]}
+}

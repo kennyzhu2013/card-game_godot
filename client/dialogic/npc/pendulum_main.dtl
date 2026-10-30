@@ -1,0 +1,26 @@
+# Dialogic timeline: npc/pendulum_main
+# Slice 3 T4: Pendulum dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+钟摆: 你来早了，也来晚了。半月之约常常这样开始。
+
+# branch:halfmoon_vow
+钟摆: 守则不是绳索。绳索绑手，守则绑你承认过的自己。
+
+# branch:pseudo_god_contract
+钟摆: 五条守则会把你的迟疑量出来。违反时，第十二日会替我们回答。
+
+# branch:ask_intel
+# grant_intel:intel_pendulum_true_name_001
+钟摆: 真名仪式不能从名字开始，要从沉默开始。
+# grant_intel:intel_pendulum_halfmoon_rule_001
+钟摆: 半月之约先惩罚犹豫，而不是惩罚失败。
+
+# branch:true_name_rite
+# commission_pool:ascetic_mountain_contracts
+# dispatch_placeholder:R17 commission_halfmoon_message_001
+钟摆: 若你要问我的真名，先证明你能保住自己的名字。
+
+# branch:leave
+钟摆: 山风会替你回答一半，另一半要等你下次回来。

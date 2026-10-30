@@ -1,0 +1,1 @@
+{"id":"saints_candle_queue","district":"seven_saints","title":"自动排队的蜡烛","narrative_template":"蜡烛一根根挪到祭坛前，火焰齐齐朝你低头。","choices":[{"id":"light_one","text":"点燃最后一根","outcome":{"heal":10,"church_awareness":1}},{"id":"snuff","text":"掐灭第一根","outcome":{"pollution":4,"lingstones":35}}]}

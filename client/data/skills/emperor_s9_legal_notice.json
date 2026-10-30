@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "emperor_s9_legal_notice",
+  "display_name": "律令告示",
+  "description": "告示贴上墙面，所有人都慢了一步才想起反抗。",
+  "pathway": "emperor",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "律",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "all_enemies", "range": 5, "status_effects": [{"id": "weak", "duration": 1}]}
+}

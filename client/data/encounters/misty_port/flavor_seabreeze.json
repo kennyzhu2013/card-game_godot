@@ -1,0 +1,37 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_seabreeze",
+  "encounter_type": "flavor",
+  "display_name": "码头海风",
+  "districts": ["misty_port"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "码头海风从雾里吹来，潮湿的盐味盖过了街边的煤烟。",
+    "choices": [
+      {
+        "id": "pause",
+        "label": "停一停",
+        "outcome": {}
+      },
+      {
+        "id": "move_on",
+        "label": "继续走",
+        "outcome": {}
+      }
+    ]
+  },
+  "pollution_variant": {
+    "0": {"text": "A salt wind rolls over the pier and cools the coal smoke."},
+    "1": {"text": "The salt wind carries a second set of footsteps just behind yours."},
+    "2": {"text": "The pier wind smells of tidewater and a sealed confession."},
+    "3": {"text": "The fog breathes your name across the water before anyone speaks."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

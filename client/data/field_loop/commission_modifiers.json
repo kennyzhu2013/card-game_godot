@@ -1,0 +1,41 @@
+{
+  "$schema": "slice35_commission_modifiers_v1",
+  "modifiers": [
+    {
+      "id": "urgent",
+      "display_name": "加急",
+      "effects": {"time_limit_delta": -1, "reward_multiplier": 1.15},
+      "risk": {"issuer_trust_delta_on_expire": -8}
+    },
+    {
+      "id": "discreet",
+      "display_name": "避人耳目",
+      "effects": {"witness_required_zero": true, "reward_multiplier": 1.10},
+      "risk": {"church_awareness_delta_on_fail": 3}
+    },
+    {
+      "id": "dangerous",
+      "display_name": "危险",
+      "effects": {"risk_level_delta": 1, "reward_multiplier": 1.20},
+      "risk": {"suspicion_delta_on_fail": 5}
+    },
+    {
+      "id": "familiar_issuer",
+      "display_name": "熟人委托",
+      "effects": {"trust_bonus_min": 30, "reward_multiplier": 1.05},
+      "risk": {"issuer_trust_delta_on_expire": -3}
+    },
+    {
+      "id": "extra_evidence",
+      "display_name": "额外证据",
+      "effects": {"reward_multiplier": 1.25, "granted_intel_on_claim": true},
+      "risk": {}
+    },
+    {
+      "id": "trust_bonus",
+      "display_name": "信任加成",
+      "effects": {"trust_bonus_min": 60, "reward_multiplier": 1.20},
+      "risk": {}
+    }
+  ]
+}

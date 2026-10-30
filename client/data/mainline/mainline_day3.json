@@ -1,0 +1,7 @@
+{
+  "day": 3,
+  "node_id": "node_2_black_market",
+  "title": "黑市初遇",
+  "popup_text": "黑市占位：老李的灯牌第一次在夜里亮起。",
+  "flags": {"black_market_unlocked": true}
+}

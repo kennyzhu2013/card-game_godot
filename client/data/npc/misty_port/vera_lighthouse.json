@@ -1,0 +1,46 @@
+{
+  "id": "vera_lighthouse",
+  "display_name": "灯塔守人·薇拉",
+  "default_district": "misty_port",
+  "placeholder": false,
+  "public": {"role": "灯塔守人", "appearance": "肩头总落着盐，腰间挂着旧灯钥匙"},
+  "hidden": {"actual_age": "31", "past_secrets": ["夜航记录保管人", "月光草采集委托发布人"]},
+  "truth": {"true_name": "薇拉·兰恩", "true_origin": "港口旧灯塔系谱"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "misty_port", "time_of_day": "night", "label_suffix": "（在灯塔下巡检）", "icon": "V", "interactable": true}
+  ],
+  "dialogue_tree": "vera_lighthouse_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_vera_lighthouse_tide_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "tide_route",
+      "summary": "薇拉说雾港夜潮退到第三声钟时会露出灯塔下的礁路。"
+    },
+    {
+      "intel_id": "intel_vera_lighthouse_moonlight_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "moonlight_grass",
+      "summary": "月光草只在灯塔影子最短的那段夜潮边发光。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": ["fishing_shift"],
+  "commission_pool": "misty_port_lighthouse",
+  "commission_templates": ["commission_moonlight_grass_001"],
+  "field_opportunities": ["vera_tide_note", "vera_moonlight_watch"],
+  "pollution_stage_lines": [
+    {"min_stage": 2, "text": "你脸色不对。雾港的灯照不出这种暗影。"}
+  ],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

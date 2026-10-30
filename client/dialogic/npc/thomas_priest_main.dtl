@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/thomas_priest_main
+# Slice 3 T4: Thomas Priest dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+托马斯: 告解不一定要说真话，但必须知道自己在撒哪一句谎。
+
+# branch:confession
+托马斯: 你可以在这里练习被注视。教会最常看的不是眼睛，是停顿。
+
+# branch:ask_intel
+# grant_intel:intel_thomas_confession_001
+托马斯: 告解室演练能训练你在注视下保持口径。
+# grant_intel:intel_thomas_worship_route_001
+托马斯: 周日晨礼坐西侧长椅，能避开第一轮点名。
+
+# branch:drill
+# commission_pool:sacred_seven_priestly
+# dispatch_placeholder:R25 confession_room
+托马斯: 若你愿意，我可以做你的演练对手。
+
+# branch:leave
+托马斯: 出门前先吸气。许多人出门时忘了自己还在扮演。

@@ -1,0 +1,16 @@
+{
+  "day": 7,
+  "node_id": "node_3_halfmoon_contact",
+  "title": "半月之约接触",
+  "popup_text": "Day 7 占位：半月之约留下中塔邀约。",
+  "flags": {"mainline_medium_tower": true},
+  "forced_tower": {
+    "id": "mainline_day7_halfmoon_medium_tower",
+    "node_id": "node_3_halfmoon_contact",
+    "label": "半月之约中塔",
+    "district_ids": ["steelworks", "misty_port"],
+    "tower_size": "medium",
+    "tower_template": "halfmoon_contact_medium",
+    "required": true
+  }
+}

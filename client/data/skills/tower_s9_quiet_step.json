@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "tower_s9_quiet_step",
+  "display_name": "静步",
+  "description": "脚步消失，下一次攻击从没有声音的地方落下。",
+  "pathway": "tower",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "暗",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "stealth", "duration": 1}, {"id": "next_attack_damage_delta", "magnitude": 3}]}
+}

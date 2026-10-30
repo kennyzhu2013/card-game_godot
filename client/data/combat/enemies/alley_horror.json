@@ -1,0 +1,84 @@
+{
+  "$schema": "enemy_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §G.5",
+  "id": "alley_horror",
+  "display_name": "影巷怪",
+  "actor_id": "xiao_ran",
+  "description": "长年累月的污染汇集成形的怪物，曾经是一位失败的修者",
+  "intent_text": "污染雾团压向场地",
+  "sprite": "alley_horror.png",
+  "tier": 3,
+  "is_miniboss": true,
+  "stats": {
+    "hp": 80,
+    "max_hp": 80,
+    "atk": 12,
+    "def": 8,
+    "spd": 6,
+    "crit_rate": 0.05
+  },
+  "element": "影",
+  "weakness": ["名", "明"],
+  "resistance": ["影", "物理"],
+  "special_effects": [
+    {"id": "periodic_transformation", "description": "周期性变身（hp 50% 触发）", "trigger": "hp_threshold_50"}
+  ],
+  "skills": [
+    {
+      "id": "dread_aura",
+      "name": "恐惧光环",
+      "damage": 0,
+      "element": "影",
+      "cooldown": 1,
+      "target": "enemy",
+      "description": "弥漫的恐惧让仪式更难发动",
+      "status_effects": [
+        {"id": "mp_cost_up", "chance": 1.0, "duration": 1, "magnitude": 0.5, "notes": "玩家技能 MP 消耗 +50%"}
+      ]
+    },
+    {
+      "id": "phantom_swipe",
+      "name": "幻爪",
+      "damage": 18,
+      "element": "影",
+      "cooldown": 2,
+      "target": "single",
+      "description": "影爪从虚空伸出"
+    },
+    {
+      "id": "shadow_transformation",
+      "name": "影变",
+      "damage": 0,
+      "element": "影",
+      "cooldown": 5,
+      "target": "self",
+      "description": "彻底融入污染，形态扭曲",
+      "trigger_condition": "hp_below_50_percent",
+      "one_time_only": true,
+      "status_effects": [
+        {"id": "hp_boost", "chance": 1.0, "duration": 999, "magnitude": 20},
+        {"id": "atk_boost", "chance": 1.0, "duration": 999, "magnitude": 8},
+        {"id": "resistance_lost", "chance": 1.0, "duration": 1, "notes": "失去抗性 1 回合"}
+      ]
+    }
+  ],
+  "ai_pattern": [
+    {"condition": "turn % 3 == 0", "action": "use_skill", "skill": "dread_aura"},
+    {"condition": "hp_below_50_percent and not transformed", "action": "use_skill", "skill": "shadow_transformation"},
+    {"condition": "default", "action": "use_skill", "skill": "phantom_swipe"}
+  ],
+  "drops": [
+    {"item": "face_glyph_pure", "chance": 0.50},
+    {"item": "mirror_glyph_pure", "chance": 0.30},
+    {"item": "codex_full_fragment", "chance": 1.00},
+    {"item": "alley_horror_soul", "chance": 1.00, "notes": "稀有材料：影巷怪魂"}
+  ],
+  "spawn_locations": ["shadow_alley_night"],
+  "spawn_weight": 5,
+  "trigger_condition": {
+    "min_cycle": 3,
+    "location_period": "shadow_alley_night",
+    "tier2_kills_min": 5
+  }
+}

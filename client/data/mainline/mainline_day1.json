@@ -1,0 +1,7 @@
+{
+  "day": 1,
+  "node_id": "node_1_tutorial_tower",
+  "title": "小塔教程",
+  "popup_text": "教程占位：影巷尽头的小塔在清晨亮起。",
+  "flags": {"tutorial_tower": true}
+}

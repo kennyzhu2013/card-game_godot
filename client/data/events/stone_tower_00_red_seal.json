@@ -1,0 +1,1 @@
+{"id":"stone_red_seal","district":"stone_tower","title":"贵族红封","narrative_template":"红蜡封着一份空白判词，只缺你的签名。","choices":[{"id":"sign_false","text":"签假名","outcome":{"lingstones":60,"pollution":5}},{"id":"burn","text":"烧掉判词","outcome":{"pollution":-3}}]}

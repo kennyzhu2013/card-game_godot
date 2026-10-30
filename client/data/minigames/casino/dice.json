@@ -1,0 +1,27 @@
+{
+  "$schema": "minigame_v1",
+  "id": "dice_cup",
+  "type": "casino",
+  "display_name": "骰盅",
+  "city": "misty_port",
+  "entry_npc": "eel_fan",
+  "ap_cost": 1,
+  "time_advance": 0,
+  "daily_limit": 5,
+  "weekly_limit": null,
+  "preconditions": ["time_of_day == 'night'"],
+  "mechanic": "dice",
+  "mechanic_params": {
+    "dice_count": 3,
+    "bet_min": 3,
+    "bet_max": 30,
+    "choices": ["big", "small", "triple"],
+    "animation_state": "shake_reveal"
+  },
+  "outcome_table": [
+    {"grade": "big_win", "payout_multiplier": 2},
+    {"grade": "small_win", "payout_multiplier": 2},
+    {"grade": "triple_win", "payout_multiplier": 30},
+    {"grade": "loss", "payout_multiplier": 0}
+  ]
+}

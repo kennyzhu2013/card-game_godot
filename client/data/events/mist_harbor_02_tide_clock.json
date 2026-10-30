@@ -1,0 +1,1 @@
+{"id":"mist_tide_clock","district":"mist_harbor","title":"逆潮钟","narrative_template":"钟面倒着走，潮声却越来越近。","choices":[{"id":"turn_back","text":"拨回一格","outcome":{"ap":1}},{"id":"break_glass","text":"砸碎钟面","outcome":{"pollution":6,"lingstones":50}}]}

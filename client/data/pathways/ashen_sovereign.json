@@ -1,0 +1,125 @@
+{
+  "id": "ashen_sovereign",
+  "name": "灰烬君主",
+  "name_en": "Ashen Sovereign",
+  "description": "近战爆发/元素法师/自毁流",
+  "god_name": "不灭炉心 Ignis Aeterna",
+  "sequences": {
+    "9": {
+      "title": "掌火童", "title_en": "Ember Squire",
+      "tier": "apprentice",
+      "potion_name": "初焰之种",
+      "materials": [
+        {"id": "fire_stone", "name": "火石", "count": 10},
+        {"id": "sulfur", "name": "硫磺粉", "count": 5},
+        {"id": "red_iron", "name": "赤铁矿", "count": 3},
+        {"id": "copper_pot", "name": "铜壶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "火球术", "type": "attack", "power": 25, "cost_mp": 10, "element": "fire"},
+        {"name": "点燃", "type": "dot", "power": 4, "duration": 3, "cost_mp": 5, "element": "fire"}
+      ],
+      "stats_bonus": {"hp": 15, "atk": 10, "spd": 8},
+      "acting_task": "为3个受寒的旅人点燃篝火",
+      "loss_of_control_form": {"name": "失控火苗", "hp": 25},
+      "ritual_types": ["enhance", "divine"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "灰渡祈祷者", "title_en": "Ash Pilgrim",
+      "tier": "apprentice",
+      "potion_name": "灰渡之祷",
+      "abilities": [
+        {"name": "范围灼烧", "type": "attack_aoe", "power": 18, "cost_mp": 15, "radius": 3, "element": "fire"},
+        {"name": "火焰护甲", "type": "shield", "power": 40, "cost_mp": 12, "reflect": 10}
+      ],
+      "stats_bonus": {"hp": 25, "atk": 18, "fire_bonus": 0.1},
+      "acting_task": "在矿洞中引燃瘴气清除3处毒雾区域",
+      "loss_of_control_form": {"name": "灰渡亡灵", "hp": 120},
+      "ritual_types": ["enhance", "divine", "curse"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "焚骨誓士", "title_en": "Pyre Oathsworn",
+      "tier": "apprentice",
+      "potion_name": "焚骨之誓",
+      "abilities": [
+        {"name": "献祭打击", "type": "attack", "power_mult": 2.0, "hp_cost_percent": 0.15, "element": "fire"},
+        {"name": "火焰冲锋", "type": "dash_attack", "range": 3, "cost_mp": 18, "element": "fire"}
+      ],
+      "stats_bonus": {"hp": 35, "atk": 28, "crit_rate": 0.08},
+      "acting_task": "在燃烧的建筑中救出被困居民并扑灭火源",
+      "loss_of_control_form": {"name": "焚誓者", "hp": 140},
+      "ritual_types": ["enhance", "divine", "curse", "summon"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "熔岩行者", "title_en": "Molten Strider",
+      "tier": "walker",
+      "potion_name": "熔岩之步",
+      "abilities": [
+        {"name": "地形改写", "type": "terrain", "terrain_type": "fire", "duration": 3},
+        {"name": "连续燃烧", "type": "dot_aoe", "power": 8, "duration": 5, "element": "fire"}
+      ],
+      "stats_bonus": {"hp": 50, "atk": 35, "fire_bonus": 0.2},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径"
+    },
+    "5": {
+      "title": "灰烬编织者", "title_en": "Cinder Weaver",
+      "tier": "walker",
+      "potion_name": "灰烬之织",
+      "abilities": [
+        {"name": "自燃爆发", "type": "self_burn_aoe", "hp_cost_percent": 0.3, "power": 80},
+        {"name": "余烬回生", "type": "regen", "power_percent": 0.1, "duration": 3}
+      ],
+      "stats_bonus": {"hp": 80, "atk": 50, "fire_bonus": 0.3},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "劫火先知", "title_en": "Inferno Seer",
+      "tier": "walker",
+      "abilities": [
+        {"name": "预判引爆", "type": "delayed_bomb", "delay_turns": 3, "power": 60},
+        {"name": "灰烬领域", "type": "aura", "power": 10, "radius": 3, "duration": 5}
+      ],
+      "stats_bonus": {"hp": 100, "atk": 60, "all_resist": 0.1},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "灭世焰裁", "title_en": "Flame Arbiter",
+      "tier": "saint",
+      "abilities": [
+        {"name": "核爆", "type": "true_damage_aoe", "hp_percent": 0.6},
+        {"name": "凤凰重生", "type": "revive_self", "uses_per_battle": 1}
+      ],
+      "stats_bonus": {"hp": 150, "atk": 80, "all_resist": 0.2},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起"
+    },
+    "2": {
+      "title": "灰烬王座", "title_en": "Ashen Throne",
+      "tier": "saint",
+      "abilities": [
+        {"name": "召唤火山", "type": "summon_terrain", "duration": 5},
+        {"name": "永燃领域", "type": "persistent_aoe", "power": 15, "duration": 5}
+      ],
+      "stats_bonus": {"hp": 200, "atk": 100, "all_resist": 0.3},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "焚世重燃", "title_en": "World-Burner Reborn",
+      "tier": "saint",
+      "abilities": [
+        {"name": "自毁重生", "type": "self_destruct_revive", "uses_per_battle": 1}
+      ],
+      "stats_bonus": {"hp": 350, "atk": 150, "all_resist": 0.5},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

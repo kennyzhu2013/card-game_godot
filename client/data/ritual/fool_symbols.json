@@ -1,0 +1,17 @@
+{
+  "pathway": "fool",
+  "symbols": [
+    {"id": "shadow", "display_name": "影", "aspects": ["影", "恐", "失"], "pathway": "fool"},
+    {"id": "thread", "display_name": "线", "aspects": ["牵", "缘", "誓"], "pathway": "fool"},
+    {"id": "jester", "display_name": "愚", "aspects": ["失", "转", "笑"], "pathway": "fool"},
+    {"id": "mirror", "display_name": "镜", "aspects": ["像", "伪", "碎"], "pathway": "fool"},
+    {"id": "inquiry", "display_name": "问", "aspects": ["知", "惑", "启"], "pathway": "fool"},
+    {"id": "name", "display_name": "名", "aspects": ["称", "属", "夺"], "pathway": "fool"},
+    {"id": "fortune", "display_name": "运", "aspects": ["福", "祸", "转"], "pathway": "fool"},
+    {"id": "face", "display_name": "面", "aspects": ["现", "隐", "换"], "pathway": "fool"},
+    {"id": "arrow", "display_name": "箭", "aspects": ["形","直","远"], "pathway": "fool"},
+    {"id": "touch", "display_name": "触", "aspects": ["形","近","直"], "pathway": "fool"},
+    {"id": "flame", "display_name": "离", "aspects": ["火","灼","毁"], "pathway": "fool"},
+    {"id": "water", "display_name": "坎", "aspects": ["水","柔","治"], "pathway": "fool"}
+  ]
+}

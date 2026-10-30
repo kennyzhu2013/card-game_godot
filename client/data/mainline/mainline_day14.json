@@ -1,0 +1,17 @@
+{
+  "day": 14,
+  "node_id": "node_6_final_tower",
+  "title": "周目终战",
+  "popup_text": "Day 14 占位：维克托的终战塔在城外合拢。",
+  "flags": {"cycle_final_tower": true, "cycle_end_ready": true},
+  "forced_tower": {
+    "id": "mainline_day14_cycle_final_tower",
+    "node_id": "node_6_final_tower",
+    "label": "维克托·凯尔西终战大塔",
+    "district_ids": ["ascetic_mountain", "stone_tower"],
+    "tower_size": "large",
+    "tower_template": "cycle_final_large",
+    "required": true,
+    "cycle_end_on_complete": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "underground_signal",
+  "type": "drill",
+  "display_name": "地下暗号",
+  "city": "shadow_alley",
+  "ap_cost": 1,
+  "witness_npc_id": "old_li",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "use_correct_knock", "label": "敲出正确暗号"},
+    {"id": "avoid_real_name", "label": "不要暴露真名"},
+    {"id": "answer_with_debt_phrase", "label": "用债务暗语回答"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "debt_phrase"}, {"type": "shop_discount", "shop_id": "donen_blackmarket", "pct": 10}],
+  "rewards_partial": [{"type": "shop_discount", "shop_id": "donen_blackmarket", "pct": 5}],
+  "punishment_fail": [{"type": "npc_trust_delta", "npc_id": "old_li", "amount": -10}]
+}

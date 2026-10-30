@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_steelworks_iron_shard",
+  "encounter_type": "resource",
+  "display_name": "Iron Shard",
+  "districts": ["steelworks"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 18,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "A chipped iron shard cools beside the tram rail.", "choices": [{"id": "take", "label": "Pocket it", "outcome": {"lingstones_delta": 1}}, {"id": "ignore", "label": "Ignore it", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

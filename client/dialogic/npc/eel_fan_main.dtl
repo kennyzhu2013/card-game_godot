@@ -1,0 +1,24 @@
+# Dialogic timeline: npc/eel_fan_main
+# Slice 3 T4: Eel Fan main dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+鳗鱼·凡: 哈维，来得正好。今晚水滑，牌也滑。
+鳗鱼·凡: 别怕输，怕输的人才会输得像样。
+
+# branch:small_talk
+鳗鱼·凡: 赌桌上最诚实的是手，最会骗人的也是手。
+
+# branch:ask_intel
+# grant_intel:intel_eel_fan_casino_001
+鳗鱼·凡: 我的赌窟夜里开门，骰盅、塔罗、命运牌局各有暗号。
+# grant_intel:intel_eel_fan_lucky_day_001
+鳗鱼·凡: 命运牌局里的灯牌，会比街上的人先知道下一座塔。
+
+# branch:casino_entry
+# commission_pool:misty_port_fish_jobs
+# dispatch_placeholder:R25 dice_cup tarot_divination fate_cards
+鳗鱼·凡: 选一种玩法。赢了拿情报，输了也拿情报，只是情报会先拿你一块皮。
+
+# branch:leave
+鳗鱼·凡: 走吧，别把运气带回家，它会跟你睡一张床。

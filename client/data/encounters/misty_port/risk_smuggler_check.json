@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_smuggler_check",
+  "encounter_type": "risk",
+  "display_name": "走私者盘问",
+  "districts": ["misty_port"],
+  "time_of_day": ["night"],
+  "weight": 8,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "两名码头走私者挡住雾里的路，询问你替谁跑腿。",
+    "choices": [
+      {"id": "pay_small_tip", "label": "付一小笔封口费", "outcome": {"lingstones_delta": -10}},
+      {"id": "refuse", "label": "拒绝回答", "outcome": {"suspicion_delta": 4, "church_awareness_delta": 1}}
+    ]
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

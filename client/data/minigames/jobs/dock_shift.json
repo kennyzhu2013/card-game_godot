@@ -1,0 +1,26 @@
+{
+  "$schema": "minigame_v1",
+  "id": "dock_shift",
+  "type": "job",
+  "display_name": "码头打工",
+  "city": "misty_port",
+  "entry_npc": "vera_lighthouse",
+  "ap_cost": 2,
+  "time_advance": 1,
+  "daily_limit": 1,
+  "weekly_limit": null,
+  "preconditions": ["always"],
+  "mechanic": "dock_work",
+  "mechanic_params": {
+    "modes": ["cargo", "fishing"],
+    "cargo_duration_ms": 30000,
+    "fishing_page_chance": 0.05,
+    "fishing_encounter_chance": 0.02
+  },
+  "outcome_table": [
+    {"grade": "cargo_success", "rewards": [{"type": "lingstones", "amount": 50}, {"type": "material", "id": "mist_salt", "amount": 1}]},
+    {"grade": "fish_lingstones", "rewards": [{"type": "lingstones", "amount": 30}]},
+    {"grade": "fish_material", "rewards": [{"type": "material", "id": "tidal_shell", "amount": 1}]},
+    {"grade": "fish_page", "rewards": [{"type": "dao_pages", "amount": 1}]}
+  ]
+}

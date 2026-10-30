@@ -1,0 +1,91 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "shadow_alley",
+  "display_name": "影巷区",
+  "ap_to_enter": 0,
+  "unlock_condition": null,
+  "tower_theme": "missing_souls",
+  "hotspots": [
+    {
+      "id": "tower_entry_shadow_alley",
+      "label": "失踪者灵异塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 2,
+      "payload": {
+        "tower_size": "small",
+        "tower_template": "shadow_alley_small"
+      },
+      "visible_when": "always",
+      "position_norm": [0.30, 0.45]
+    },
+    {
+      "id": "npc_old_li",
+      "label": "老李",
+      "icon": "L",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "old_li"
+      },
+      "visible_when": "always",
+      "time_modifier": {
+        "morning": {"label_suffix": "（早点摊）"},
+        "night": {"label_suffix": "（巷尾低声）"}
+      },
+      "position_norm": [0.70, 0.60]
+    },
+    {
+      "id": "npc_xiao_ran",
+      "label": "小染",
+      "icon": "X",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "xiao_ran"
+      },
+      "visible_when": "always",
+      "position_norm": [0.60, 0.65]
+    },
+    {
+      "id": "shop_blackmarket",
+      "label": "唐恩黑市",
+      "icon": "S",
+      "type": "shop",
+      "ap_cost": 0,
+      "payload": {
+        "shop_id": "donen_blackmarket"
+      },
+      "visible_when": "time_of_day == 'night' AND day >= 3",
+      "position_norm": [0.50, 0.30]
+    },
+    {
+      "id": "rumor_streettalker",
+      "label": "街角说书人",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "shadow_alley_rumors"
+      },
+      "visible_when": "church_awareness < 75",
+      "position_norm": [0.20, 0.70]
+    },
+    {
+      "id": "job_errand_board",
+      "label": "跑腿告示板",
+      "icon": "J",
+      "type": "minigame_job",
+      "ap_cost": 1,
+      "payload": {
+        "job_id": "errand_runner"
+      },
+      "visible_when": "always",
+      "position_norm": [0.60, 0.20]
+    }
+  ],
+  "encounter_pool": "shadow_alley_encounters",
+  "constant_npcs": ["old_li", "xiao_ran"],
+  "main_story_hooks": ["node_1", "node_6"],
+  "ambient_music": "shadow_alley_dusk"
+}

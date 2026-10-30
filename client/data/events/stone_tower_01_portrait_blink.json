@@ -1,0 +1,1 @@
+{"id":"stone_portrait_blink","district":"stone_tower","title":"眨眼的祖像","narrative_template":"画像里的祖先比你先眨眼，像在等你认错人。","choices":[{"id":"bow","text":"鞠躬","outcome":{"event_flag":"portrait_respected"}},{"id":"question","text":"问他是谁","outcome":{"card_drop":"fool_s9_pendulum_query","pollution":4}}]}

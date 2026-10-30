@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "hermit_s8_rune_cage",
+  "display_name": "符笼",
+  "description": "符号围成窄笼，困住目标一回合的选择。",
+  "pathway": "hermit",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "符",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 5, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "root", "duration": 1}]}
+}

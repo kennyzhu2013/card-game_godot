@@ -1,0 +1,42 @@
+{
+  "id": "eel_fan",
+  "display_name": "鳗鱼·凡",
+  "default_district": "misty_port",
+  "placeholder": false,
+  "public": {"role": "赌窟老板", "appearance": "总带着湿网，笑声像水面打滑"},
+  "hidden": {"actual_age": "不详", "past_secrets": ["赌场入口", "知道命运牌局暗号"]},
+  "truth": {"true_name": "凡恩", "true_origin": "雾港旧赌窟"},
+  "default_trust": 6,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "misty_port", "time_of_day": "night", "label_suffix": "（在赌窟门边招呼）", "icon": "E", "interactable": true}
+  ],
+  "dialogue_tree": "eel_fan_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_eel_fan_casino_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "casino_entry",
+      "summary": "鳗鱼·凡的赌窟夜里开放，三种局都有各自暗号。"
+    },
+    {
+      "intel_id": "intel_eel_fan_lucky_day_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "fate_cards",
+      "summary": "命运牌局里被称作灯牌的花色会提示下一座塔的岔路。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "misty_port_fish_jobs",
+  "commission_templates": ["commission_misty_port_casino_intro_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "shop_discount", "payload": {"shop_id": "donen_blackmarket", "pct": 5}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

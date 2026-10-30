@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "tavern_brag",
+  "type": "drill",
+  "display_name": "酒馆吹牛",
+  "city": "misty_port",
+  "ap_cost": 1,
+  "witness_npc_id": "tavern_sailor",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "name_ports", "label": "说出远港名字"},
+    {"id": "tell_one_loss", "label": "吹胜利前先讲一次亏损"},
+    {"id": "avoid_church_boast", "label": "别拿教会吹嘘"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "tavern_loss_before_boast"}, {"type": "intel_stub", "amount": 2}],
+  "rewards_partial": [{"type": "intel_stub", "amount": 1}],
+  "punishment_fail": [{"type": "church_awareness", "amount": 3}]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "marquis_eng",
+  "display_name": "侯爵·恩格",
+  "default_district": "stone_tower",
+  "placeholder": false,
+  "public": {"role": "贵族操盘者", "appearance": "总有精致袖扣，讲话前会先看你的鞋"},
+  "hidden": {"actual_age": "52", "past_secrets": ["序列 8 试探链", "贵族阴谋线牵头人"]},
+  "truth": {"true_name": "恩格·阿瑟蒙", "true_origin": "石塔贵族线"},
+  "default_trust": 0,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "stone_tower", "time_of_day": "noon", "label_suffix": "（在高台边俯视）", "icon": "M", "interactable": true}
+  ],
+  "dialogue_tree": "marquis_eng_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_marquis_noble_plot_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "noble_plot",
+      "summary": "侯爵暗示石塔贵族正在借序列 8 晋升仪式筛选可利用的人。"
+    },
+    {
+      "intel_id": "intel_marquis_sequence8_hint_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "sequence_8_unlock",
+      "summary": "石塔区有一座塔会在序列 8 后把贵族阴谋线推到前台。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "stone_tower_commissions",
+  "commission_templates": ["commission_stone_tower_salon_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

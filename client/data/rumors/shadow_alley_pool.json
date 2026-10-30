@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "shadow_alley_rumors",
+  "district": "shadow_alley",
+  "entries": [
+    {"id":"intel_shadow_alley_enemy_001","category":"tower_hint","display_text":"shadow_alley_small floor 1 enemy intent preview","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"shadow_alley_small","floor_index_min":0,"floor_index_max":0}},"truth_value":100,"weight":30,"filters":{"day_min":1}},
+    {"id":"intel_blackmarket_discount_001","category":"shop_offer","display_text":"Donen black market one-time 15 percent discount","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"permanent","apply_target":{"kind":"shop_discount.one_time","payload":{"shop_id":"donen_blackmarket","pct":15,"sku_filter":"any"}},"truth_value":100,"weight":15},
+    {"id":"intel_errand_shadow_001","category":"tower_hint","display_text":"Errand route points to the shadow event safe choice","source_type":"errand_runner","source_district":"shadow_alley","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"shadow_alley_small","event_id":"shadow_event_01","correct_choice_id":"follow_cat"}},"truth_value":100,"weight":12},
+    {"id":"intel_shadow_shrine_001","category":"tower_hint","display_text":"The missing-souls tower has a known shrine on floor 2","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"shadow_alley_small","floor_index":1}},"truth_value":90,"weight":10},
+    {"id":"intel_shadow_boss_001","category":"tower_hint","display_text":"The alley horror fears paper signs","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"shadow_alley_small","boss_id":"alley_horror","weakness_tag":"paper"}},"truth_value":80,"weight":8},
+    {"id":"intel_shadow_story_001","category":"main_story","display_text":"Old alley debt talk unlocks a Halfmoon warning branch","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"permanent","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_3_halfmoon_contact","branch_id":"alley_debt_warning"}},"truth_value":80,"weight":8},
+    {"id":"intel_shadow_false_001","category":"false","display_text":"A false lead asks for payment near the wrong stair","source_type":"rumor_streettalker","source_district":"shadow_alley","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":50,"ap":1,"suspicion_delta":3}},"false_lead":{"cost":{"lingstone":50,"ap":1,"suspicion":3}},"truth_value":20,"weight":4}
+  ]
+}

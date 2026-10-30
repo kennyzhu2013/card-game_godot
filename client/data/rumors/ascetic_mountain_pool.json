@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "ascetic_mountain_rumors",
+  "district": "ascetic_mountain",
+  "entries": [
+    {"id":"intel_ascetic_enemy_001","category":"tower_hint","display_text":"ascetic_medium first floor enemy intent is known","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"ascetic_medium","floor_index_min":0,"floor_index_max":0}},"truth_value":100,"weight":20},
+    {"id":"intel_ascetic_shrine_001","category":"tower_hint","display_text":"The mountain shrine appears on floor 2","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"ascetic_medium","floor_index":1}},"truth_value":90,"weight":12},
+    {"id":"intel_ascetic_event_001","category":"tower_hint","display_text":"The pendulum event answer is stop_counting","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"ascetic_medium","event_id":"pendulum_event","correct_choice_id":"stop_counting"}},"truth_value":80,"weight":10},
+    {"id":"intel_ascetic_boss_001","category":"tower_hint","display_text":"The ascetic final shade is weak to stillness","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"ascetic_medium","boss_id":"ascetic_shade","weakness_tag":"stillness"}},"truth_value":80,"weight":8},
+    {"id":"intel_ascetic_story_001","category":"main_story","display_text":"The mountain tea names node 6's alternate branch","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"permanent","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_6_final_tower","branch_id":"mountain_silence"}},"truth_value":100,"weight":8},
+    {"id":"intel_ascetic_weather_001","category":"weather","display_text":"Tomorrow's mountain wind predicts storm","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"next_morning","apply_target":{"kind":"weather_forecast.next_day","payload":{"predicted_weather_id":"storm"}},"truth_value":70,"weight":6},
+    {"id":"intel_ascetic_false_001","category":"false","display_text":"A false meditation route wastes stones","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":100,"ap":1,"suspicion_delta":2}},"false_lead":{"cost":{"lingstone":100,"ap":1,"suspicion":2}},"truth_value":20,"weight":4}
+  ]
+}

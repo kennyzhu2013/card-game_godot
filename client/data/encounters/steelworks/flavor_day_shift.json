@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_steelworks_day_shift",
+  "encounter_type": "flavor",
+  "display_name": "Day Shift Bell",
+  "districts": ["steelworks"],
+  "time_of_day": ["noon"],
+  "weight": 30,
+  "preconditions": ["trigger_source == 'time_segment'"],
+  "step_count": 1,
+  "scene_payload": {"text": "The day-shift bell rings and every hammer stops together.", "choices": [{"id": "wait", "label": "Wait", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The day-shift bell rings and every hammer stops together."},
+    "1": {"text": "The bell rings twice, but only the second ring casts a shadow."},
+    "2": {"text": "Every hammer stops; something under the floor keeps striking."},
+    "3": {"text": "The bell rings from inside your ribs and the factory answers."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

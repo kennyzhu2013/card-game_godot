@@ -1,0 +1,210 @@
+{
+  "id": "star_abyss_walker",
+  "name": "星渊行者",
+  "name_en": "Star-Abyss Walker",
+  "description": "位移/单体刺杀/空间操控",
+  "god_name": "星渊引路人 The Guide Between Stars",
+  "sequences": {
+    "9": {
+      "title": "闪渡学徒", "title_en": "Blink Novice",
+      "tier": "apprentice",
+      "potion_name": "星之初闪",
+      "materials": [
+        {"id": "starlight_stone", "name": "星辉石", "count": 10},
+        {"id": "void_dust", "name": "虚空尘", "count": 5},
+        {"id": "silver_powder", "name": "银粉", "count": 3},
+        {"id": "glass_bottle", "name": "玻璃瓶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "短距瞬移", "type": "movement", "power": 0, "cost_mp": 8, "range": 2},
+        {"name": "星光匕首", "type": "attack", "power": 20, "cost_mp": 10, "crit_bonus": 0.1}
+      ],
+      "stats_bonus": {"hp": 15, "atk": 12, "spd": 10},
+      "acting_task": "在不被守卫发现的情况下穿越3道封锁线",
+      "loss_of_control_form": {"name": "空间碎片", "hp": 20},
+      "ritual_types": ["enhance", "divine"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "裂隙哨兵", "title_en": "Rift Sentinel",
+      "tier": "apprentice",
+      "potion_name": "裂隙之眼",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "void_dust", "name": "虚空尘", "count": 8},
+        {"id": "starlight_stone", "name": "星辉石", "count": 6},
+        {"id": "space_crystal", "name": "空间水晶", "count": 2},
+        {"id": "night_hawk_eye", "name": "夜鹰眼", "count": 3}
+      ],
+      "abilities": [
+        {"name": "空间感知", "type": "detect", "power": 0, "cost_mp": 10, "range": 5, "effect": "detect_stealth"},
+        {"name": "裂隙陷阱", "type": "trap", "power": 0, "cost_mp": 12, "effect": "teleport_random"}
+      ],
+      "stats_bonus": {"hp": 22, "atk": 20, "spd": 12},
+      "acting_task": "发现并标记5处隐藏的空间裂缝",
+      "loss_of_control_form": {"name": "裂隙虫", "hp": 100},
+      "ritual_types": ["enhance", "divine", "curse"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "星痕猎手", "title_en": "Starmark Hunter",
+      "tier": "apprentice",
+      "potion_name": "星痕之印",
+      "materials": [
+        {"id": "seq8_potion", "name": "序列8灵药", "count": 1},
+        {"id": "space_crystal", "name": "空间水晶", "count": 4},
+        {"id": "void_dust", "name": "虚空尘", "count": 10},
+        {"id": "dark_silver_dagger", "name": "暗银匕首", "count": 1},
+        {"id": "meteorite_shard", "name": "陨石碎片", "count": 2}
+      ],
+      "abilities": [
+        {"name": "标记瞬杀", "type": "attack", "power_mult": 2.5, "cost_mp": 20, "effect": "mark_then_blink_backstab"},
+        {"name": "虚空步", "type": "passive", "power": 0, "cost_mp": 0, "effect": "move_no_counterattack"}
+      ],
+      "stats_bonus": {"hp": 32, "atk": 30, "spd": 15, "crit_rate": 0.1},
+      "acting_task": "以标记瞬杀干净利落地完成一次刺杀任务",
+      "loss_of_control_form": {"name": "星痕幽灵", "hp": 120},
+      "ritual_types": ["enhance", "divine", "curse", "summon"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "空间折叠者", "title_en": "Space Folder",
+      "tier": "walker",
+      "potion_name": "空间折页",
+      "materials": [
+        {"id": "seq7_potion", "name": "序列7灵药", "count": 1},
+        {"id": "space_crystal", "name": "空间水晶", "count": 8},
+        {"id": "boss_heart", "name": "Boss之心", "count": 1},
+        {"id": "meteorite_shard", "name": "陨石碎片", "count": 5},
+        {"id": "dark_silver_dagger", "name": "暗银匕首", "count": 3}
+      ],
+      "abilities": [
+        {"name": "空间折叠", "type": "special", "power": 0, "cost_mp": 20, "effect": "pull_enemy_or_push_self", "range": 5},
+        {"name": "裂隙逃遁", "type": "passive", "power": 0, "cost_mp": 0, "effect": "auto_blink_on_lethal", "uses_per_battle": 1}
+      ],
+      "stats_bonus": {"hp": 48, "atk": 45, "spd": 18, "crit_rate": 0.12},
+      "acting_task": "利用空间折叠穿越一座充满陷阱的遗迹",
+      "loss_of_control_form": {"name": "空间扭曲体", "hp": 320},
+      "ritual_types": ["enhance", "divine", "curse", "summon", "commune"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "星渊斩影", "title_en": "Star-Abyss Slasher",
+      "tier": "walker",
+      "potion_name": "星渊之刃",
+      "materials": [
+        {"id": "seq6_potion", "name": "序列6灵药", "count": 1},
+        {"id": "dark_iron_ingot", "name": "玄铁锭", "count": 3},
+        {"id": "ancient_rune", "name": "古代符文", "count": 2},
+        {"id": "space_crystal", "name": "空间水晶", "count": 6},
+        {"id": "void_heart", "name": "虚空之心", "count": 1}
+      ],
+      "abilities": [
+        {"name": "虚空斩击", "type": "attack", "power_mult": 1.8, "cost_mp": 25, "effect": "ignore_50_percent_armor"},
+        {"name": "空间锚点", "type": "special", "power": 0, "cost_mp": 15, "effect": "place_beacon_teleport_back"}
+      ],
+      "stats_bonus": {"hp": 70, "atk": 65, "spd": 22, "crit_rate": 0.15},
+      "acting_task": "利用空间锚点完成一次快进快出的敌后突袭",
+      "loss_of_control_form": {"name": "虚空猎手", "hp": 480},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "维度行者", "title_en": "Dimension Walker",
+      "tier": "walker",
+      "potion_name": "维度之匙",
+      "materials": [
+        {"id": "seq5_potion", "name": "序列5灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 1},
+        {"id": "dragon_blood", "name": "龙血", "count": 1},
+        {"id": "space_crystal", "name": "空间水晶", "count": 10},
+        {"id": "outer_god_whisper_scroll", "name": "外神低语录残卷", "count": 1}
+      ],
+      "abilities": [
+        {"name": "维度潜行", "type": "stealth", "power_mult": 3.0, "cost_mp": 30, "effect": "full_stealth_2_turns_break_stealth_3x_damage", "duration": 2},
+        {"name": "空间流放", "type": "cc", "power": 0, "cost_mp": 35, "effect": "exile_target_2_turns_minus_20_hp", "duration": 2}
+      ],
+      "stats_bonus": {"hp": 95, "atk": 90, "spd": 25, "all_resist": 0.1},
+      "acting_task": "以维度潜行潜入敌方核心区域并带回关键情报",
+      "loss_of_control_form": {"name": "维度裂隙体", "hp": 850},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "星渊裂断", "title_en": "Rift Arbiter",
+      "tier": "saint",
+      "potion_name": "星渊裁决",
+      "materials": [
+        {"id": "seq4_potion", "name": "序列4灵药", "count": 1},
+        {"id": "saint_fragment", "name": "封圣残片", "count": 1},
+        {"id": "divine_rune", "name": "神铸符文", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 2},
+        {"id": "star_abyss_key", "name": "星渊之匙", "count": 1}
+      ],
+      "abilities": [
+        {"name": "空间撕裂", "type": "true_damage", "power_mult": 2.0, "cost_mp": 50, "range": 7, "effect": "line_all_enemies_true_damage"},
+        {"name": "星门", "type": "special", "power": 0, "cost_mp": 40, "effect": "place_portal_allies_can_use", "duration": 3}
+      ],
+      "stats_bonus": {"hp": 140, "atk": 135, "spd": 28, "all_resist": 0.18},
+      "acting_task": "在两座城市之间开辟一条稳定的星门通道（剧情任务）",
+      "loss_of_control_form": {"name": "空间撕裂者", "hp": 1600},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 28},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "虚空领主", "title_en": "Void Sovereign",
+      "tier": "saint",
+      "potion_name": "虚空加冕",
+      "materials": [
+        {"id": "seq3_potion", "name": "序列3灵药", "count": 1},
+        {"id": "world_tree_bark", "name": "世界树皮", "count": 3},
+        {"id": "dragon_blood", "name": "龙血", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 3},
+        {"id": "void_walker_reflection", "name": "虚空行者倒影", "count": 1}
+      ],
+      "abilities": [
+        {"name": "虚空领域", "type": "terrain", "power": 0, "cost_mp": 60, "effect": "5x5_only_self_can_move", "duration": 3},
+        {"name": "维度斩", "type": "attack", "power": 0, "cost_mp": 50, "effect": "remove_40_percent_current_hp"}
+      ],
+      "stats_bonus": {"hp": 200, "atk": 200, "spd": 30, "all_resist": 0.25},
+      "acting_task": "封印一条正在扩大的虚空裂缝，阻止虚空生物大规模入侵",
+      "loss_of_control_form": {"name": "虚空领主残影", "hp": 3200},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 30},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "星渊之眼", "title_en": "Eye of the Star-Abyss",
+      "tier": "saint",
+      "potion_name": "星渊之约",
+      "materials": [
+        {"id": "seq2_potion", "name": "序列2灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 5},
+        {"id": "outer_god_eye", "name": "外神之眼", "count": 1},
+        {"id": "void_walker_reflection", "name": "虚空行者倒影", "count": 3},
+        {"id": "star_abyss_crown", "name": "星渊之冠", "count": 1}
+      ],
+      "abilities": [
+        {"name": "空间坍缩", "type": "ultimate", "power": 0, "cost_mp": 100, "uses_per_week": 1, "effect": "pull_all_enemies_to_one_tile_explode_20_percent_total_hp"},
+        {"name": "绝对瞬移", "type": "movement", "power": 0, "cost_mp": 0, "effect": "unlimited_range_no_cooldown"}
+      ],
+      "stats_bonus": {"hp": 340, "atk": 350, "spd": 35, "all_resist": 0.42},
+      "acting_task": "以星渊之眼之名完成星空巡礼剧情链",
+      "loss_of_control_form": {"name": "不可控——世界Boss虚空之眼", "hp": 0},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": -1, "sanity_cost": -1},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

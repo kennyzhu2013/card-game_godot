@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_flame_command",
+  "display_name": "操焰之令",
+  "description": "他不是召唤火焰，是说服它换一个站位。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "火",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "field", "range": 5, "status_effects": [{"id": "create_or_move_flame_markers", "magnitude": 2}, {"id": "adjacent_burn", "magnitude": 3}]},
+  "tags": ["skill", "field_marker"]
+}

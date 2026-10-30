@@ -1,0 +1,22 @@
+# Dialogic timeline: npc/victor_kelsey_main
+# Slice 3 T4: Victor Kelsey remote-pressure dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+维克托: 哈维·摩斯。周日礼拜的名单里没有你，却总有人替你留座。
+
+# branch:public_sermon
+维克托: 七圣不惩罚迷路的人。七圣惩罚明知道路却偏要称之为梦的人。
+
+# branch:distant_pressure
+维克托: 你昨夜没有去过的地方，也留下了你的名字。你该解释给谁听？
+
+# branch:ask_intel
+# grant_intel:intel_victor_pressure_001
+维克托: 每个缺席的人都会留下形状。你的形状，比你的影子清楚。
+# grant_intel:intel_victor_investigation_001
+维克托: 侦缉者来访之前，主教总会先知道谁值得直接调查。
+
+# branch:leave
+# commission_pool:sacred_seven_commissions
+维克托: 回去吧。礼拜尚未结束，注视也尚未结束。

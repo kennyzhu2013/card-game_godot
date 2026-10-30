@@ -1,0 +1,39 @@
+{
+  "$schema": "auction_v1",
+  "id": "misty_port_weekly",
+  "type": "auction",
+  "display_name": "雾港周末拍卖会",
+  "city": "misty_port",
+  "entry_npc": "carl_smuggler",
+  "ap_cost": 1,
+  "time_advance": 0,
+  "weekly_limit": 1,
+  "mechanic": "auction",
+  "visible_when": "day % 7 == 6 AND time_of_day == 'night'",
+  "lots": [
+    {
+      "id": "low_brand_lot",
+      "display_name": "低阶烙印",
+      "currency": "lingstones",
+      "start_price": 200,
+      "appraised_value": 240,
+      "item": {"type": "brand", "id": "auction_low_brand", "display_name": "拍卖低阶烙印", "amount": 1}
+    },
+    {
+      "id": "dao_pages_lot",
+      "display_name": "残页三枚",
+      "currency": "lingstones",
+      "start_price": 200,
+      "appraised_value": 260,
+      "item": {"type": "dao_pages", "amount": 3}
+    },
+    {
+      "id": "rare_temp_card_lot",
+      "display_name": "稀有临时卡",
+      "currency": "lingstones",
+      "start_price": 200,
+      "appraised_value": 300,
+      "item": {"type": "temp_card", "id": "auction_rare_temp_fool", "display_name": "雾港借来的牌", "rarity": "rare", "amount": 1}
+    }
+  ]
+}

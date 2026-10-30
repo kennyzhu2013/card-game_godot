@@ -1,0 +1,24 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_carl_manifest",
+  "encounter_type": "npc_lead",
+  "display_name": "卡尔的湿货单",
+  "districts": ["misty_port"],
+  "time_of_day": ["night"],
+  "weight": 10,
+  "preconditions": [],
+  "step_count": 1,
+  "dialogue_tree": "npc/carl_smuggler_main",
+  "scene_payload": {
+    "text": "卡尔把一张被海雾打湿的货单塞进灯影边缘。",
+    "npc_id": "carl_smuggler",
+    "choices": [
+      {"id": "copy_manifest", "label": "抄下货单", "outcome": {"intel_id": "intel_carl_smuggler_port_gate_001"}}
+    ]
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

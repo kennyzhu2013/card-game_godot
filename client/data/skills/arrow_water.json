@@ -1,0 +1,21 @@
+{
+  "id": "arrow_water",
+  "display_name": "水箭",
+  "description": "高压水箭穿透防御",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "水",
+  "required_symbols": ["arrow", "water"],
+  "tier": 1,
+  "mp_cost": 8,
+  "cooldown": 1,
+  "pollution_per_use": 1,
+  "combat_effect": {
+    "damage": 10,
+    "heal": 0,
+    "target": "single",
+    "range": 5,
+    "status_effects": [{"id": "pierce_block", "magnitude": 2}]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "id": "commission_misty_port_smuggle_001",
+  "commission_type": "investigate",
+  "difficulty": "medium",
+  "display_name": "雾港货单",
+  "description": "Carl wants one manifest copied from a harbor tower event.",
+  "issuer_npc": "carl_smuggler",
+  "district": "misty_port",
+  "min_day": 2,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 40,
+  "dispatch_target": {"district": "misty_port", "tower_size": "medium", "required_event_id": "smuggler_manifest", "accepted_choices": ["copy_manifest"]},
+  "time_limit_days": 3,
+  "allowed_modifiers": ["discreet", "dangerous", "extra_evidence"],
+  "rewards": [{"type": "dao_pages", "amount": 2}, {"type": "lingstones", "amount": 120}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

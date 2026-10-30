@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_shadow_alley_morning_whistle",
+  "encounter_type": "flavor",
+  "display_name": "Morning Whistle",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["morning"],
+  "weight": 30,
+  "preconditions": ["trigger_source == 'time_segment'"],
+  "step_count": 1,
+  "scene_payload": {"text": "The morning watch whistle blows from an empty roof.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The morning watch whistle blows from an empty roof."},
+    "1": {"text": "The whistle is empty, but the echo counts your steps."},
+    "2": {"text": "The empty roof exhales a whistle through broken teeth."},
+    "3": {"text": "Every roof answers the whistle with your own breath."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

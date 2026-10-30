@@ -1,0 +1,62 @@
+{
+  "monsterId": "coal_fire_lizard",
+  "templateHash": "coal_fire_lizard-v1",
+  "displayName": "煤火蜥蜴",
+  "speciesId": "lizard",
+  "spriteSheet": "res://assets/sprites/characters/enemy_coal_fire_lizard_sheet.png",
+  "stats": {
+    "maxHp": 76,
+    "atk": 24,
+    "def": 5,
+    "spd": 12,
+    "shieldPoints": 3,
+    "weaknesses": ["ice", "water"],
+    "skills": [
+      { "id": "ember_bite", "name": "余烬撕咬", "type": "attack", "power": 1.1, "costAp": 1, "element": "fire" },
+      { "id": "coal_breath", "name": "煤火吐息", "type": "attack", "power": 1.6, "costAp": 2, "element": "fire" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 5,
+    "visionConeDeg": 260,
+    "blockingTileTags": ["wall", "fence", "stone"],
+    "alertCooldownMs": 1200
+  },
+  "aggro": {
+    "initial": "hostile",
+    "decayPerSec": 0.35,
+    "maxThreat": 100,
+    "alertThreshold": 20,
+    "huntThreshold": 50,
+    "huntPlayerSpeciesPenalty": 0,
+    "transformedPlayerImmunity": false
+  },
+  "patrol": {
+    "type": "circular",
+    "radiusCells": 4,
+    "speedCellsPerSec": 0.75,
+    "idleMsRange": [400, 1600],
+    "anchorOverride": null
+  },
+  "respawn": {
+    "timerMs": 75000,
+    "scatterRadiusCells": 2,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "forge_lizard_den",
+    "role": "brute",
+    "callAlliesRadiusCells": 4,
+    "maxConcurrentMembers": 2
+  },
+  "loot": {
+    "table": "coal_fire_lizard_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "prelude",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:leashed_back"]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "smuggle_role",
+  "type": "drill",
+  "display_name": "走私扮演",
+  "city": "misty_port",
+  "ap_cost": 2,
+  "witness_npc_id": "carl_smuggler",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "official_tone", "label": "保持公文口吻"},
+    {"id": "ask_manifest_first", "label": "先问货单"},
+    {"id": "avoid_smuggler_jargon", "label": "避开走私黑话"}
+  ],
+  "rewards_perfect": [{"type": "dao_pages", "amount": 1}, {"type": "rule_unlock", "id": "smuggler_cover"}],
+  "rewards_partial": [{"type": "dao_pages", "amount": 1}],
+  "punishment_fail": [{"type": "npc_trust_delta", "npc_id": "carl_smuggler", "amount": -20}, {"type": "church_awareness", "amount": 5}]
+}

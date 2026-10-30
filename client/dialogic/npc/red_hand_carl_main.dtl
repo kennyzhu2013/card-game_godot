@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/red_hand_carl_main
+# Slice 3 T4: Red Hand Carl simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+红手会·卡尔: 哈维·摩斯？有人说你不像教会的人，也有人说不像活人。
+
+# branch:red_hand_trial
+红手会·卡尔: 红手会不收誓言，只收证明。你能让圣审庭少一个耳朵，我们才会听你说话。
+
+# branch:ask_intel
+# grant_intel:intel_red_hand_trial_001
+红手会·卡尔: 周二夜晚来铁桥下，别带白色纸条，别穿新鞋。
+# grant_intel:intel_red_hand_frontline_001
+红手会·卡尔: 铸钢区有条货道，圣审庭的人不敢从那里过。
+
+# branch:prove_not_church
+# commission_pool:steelworks_rumors
+# dispatch_placeholder:R17 steelworks_rumors
+红手会·卡尔: 想证明你不是教会的人，就把他们的消息带到我们这里。
+
+# branch:leave
+红手会·卡尔: 走慢点。走太快像逃，走太直像巡逻。

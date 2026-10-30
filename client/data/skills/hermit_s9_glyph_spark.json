@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "hermit_s9_glyph_spark",
+  "display_name": "符光火花",
+  "description": "纸符边缘亮起火星，沿着咒线跳进伤口。",
+  "pathway": "hermit",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "符",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 7, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "burn", "duration": 1, "magnitude": 2}]}
+}

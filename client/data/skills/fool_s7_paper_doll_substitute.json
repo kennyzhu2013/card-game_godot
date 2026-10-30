@@ -1,0 +1,39 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_paper_doll_substitute",
+  "display_name": "纸人替身",
+  "description": "让纸张做你的影子，让影子替你死。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "纸",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "paper_doll_marker", "max_stacks": 3}, {"id": "absorb_fatal_or_curse"}]},
+  "social_effect": {
+    "type": "identity_mask",
+    "duration_days": 1,
+    "npc_perception": "shadow_double",
+    "suspicion_delta": -10,
+    "parameters": {
+      "npc_perception": "shadow_double",
+      "notes": "让别人把你认成影子替身"
+    },
+    "church_awareness_delta": 2
+  },
+  "world_effect": {
+    "type": "create_residual_identity",
+    "identity_id": "borrowed_face_paper_doll_substitute",
+    "duration_days": 1,
+    "allowed_locations": ["shadow_alley"],
+    "uses_remaining": 3,
+    "parameters": {
+      "identity_id": "borrowed_face_paper_doll_substitute",
+      "allowed_locations": ["shadow_alley"]
+    }
+  },
+  "tags": ["status", "summon_marker"]
+}

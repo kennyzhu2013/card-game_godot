@@ -1,0 +1,74 @@
+{
+  "$schema": "encounter_pack_v1",
+  "encounters": [
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_pendulum_dialog_2",
+      "encounter_type": "mystery_seed",
+      "display_name": "钟摆第三问",
+      "districts": ["stone_tower", "ascetic_mountain"],
+      "time_of_day": ["evening", "night"],
+      "weight": 5,
+      "preconditions": [],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "钟摆问：若一个名字被所有人忘记，最先听见它的人是否要替它受审。",
+        "choices": [
+          {"id": "answer", "label": "回答钟摆", "outcome": {"unlock_chain_step": 3}},
+          {"id": "silence", "label": "让摆锤自己停下", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "pendulum_chain",
+      "chain_step": 2,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_pendulum_name_judgment",
+      "encounter_type": "mystery_seed",
+      "display_name": "审名仪式",
+      "districts": ["stone_tower", "ascetic_mountain"],
+      "time_of_day": ["evening", "night"],
+      "weight": 3,
+      "preconditions": [],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "钟摆把你的名字分成三段悬在空中，等待你说出真正应该受审的那一段。",
+        "choices": [
+          {"id": "speak_true_name", "label": "说出真名", "outcome": {"unlock_chain_step": 4}},
+          {"id": "hide_name", "label": "藏起名字", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "pendulum_chain",
+      "chain_step": 3,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_pendulum_recluse_lesson",
+      "encounter_type": "mystery_seed",
+      "display_name": "隐者之道",
+      "districts": ["ascetic_mountain"],
+      "time_of_day": ["evening", "night"],
+      "weight": 2,
+      "preconditions": [],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "隐者让你把审过的名字埋进山路，告诉你升阶前必须学会让名字先走。",
+        "choices": [
+          {"id": "remember", "label": "记下隐者之道", "outcome": {"unlock_chain_step": 5}},
+          {"id": "forget", "label": "忘掉这句教导", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "pendulum_chain",
+      "chain_step": 4,
+      "resolutions": []
+    }
+  ]
+}

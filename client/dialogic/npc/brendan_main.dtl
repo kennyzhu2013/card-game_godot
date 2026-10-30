@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/brendan_main
+# Slice 3 T4: Brendan church-awareness interrogation tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+布兰登: 哈维·摩斯。你最近出现的地方，比你本人说过的话多。
+
+# branch:small_talk
+布兰登: 我不讨厌沉默。沉默会留下空白，空白最容易编号。
+
+# branch:ask_intel
+# grant_intel:intel_brendan_watch_001
+布兰登: 圣审庭盘问簿不是按姓名排的，是按被看见的次数排的。
+# grant_intel:intel_brendan_investigation_001
+布兰登: 查觉度到十，侦缉者就会先敲门，不等主教开口。
+
+# branch:church_awareness_10
+# hook:church_awareness_10
+布兰登: 你被记录十次了。现在回答：昨晚谁能证明你不是你？
+
+# branch:leave
+# commission_pool:sacred_seven_watch
+布兰登: 你可以走。走过门槛前，把你刚才的停顿也留下。

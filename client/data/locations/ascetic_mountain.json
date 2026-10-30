@@ -1,0 +1,75 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "ascetic_mountain",
+  "display_name": "苦修山",
+  "ap_to_enter": 2,
+  "unlock_condition": "mainline.node_4.completed == true",
+  "tower_theme": "pendulum_ascetic",
+  "hotspots": [
+    {
+      "id": "npc_pendulum",
+      "label": "钟摆",
+      "icon": "P",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "pendulum"
+      },
+      "visible_when": "mainline.node_4.completed == true",
+      "position_norm": [0.38, 0.40]
+    },
+    {
+      "id": "npc_xuming_recluse",
+      "label": "山中独修者",
+      "icon": "A",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "xuming_recluse"
+      },
+      "visible_when": "mainline.node_4.completed == true",
+      "position_norm": [0.58, 0.62]
+    },
+    {
+      "id": "job_mountain_solitary_walk",
+      "label": "山中独行",
+      "icon": "J",
+      "type": "minigame_job",
+      "ap_cost": 3,
+      "payload": {
+        "job_id": "mountain_solitary_walk"
+      },
+      "visible_when": "mainline.node_4.completed == true",
+      "position_norm": [0.28, 0.68]
+    },
+    {
+      "id": "tower_entry_ascetic_mountain",
+      "label": "主线大塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 4,
+      "payload": {
+        "tower_size": "medium",
+        "tower_template": "ascetic_medium"
+      },
+      "visible_when": "mainline.node_4.completed == true",
+      "position_norm": [0.72, 0.38]
+    },
+    {
+      "id": "rumor_ascetic_teahouse",
+      "label": "山中茶棚",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "ascetic_mountain_rumors"
+      },
+      "visible_when": "mainline.node_4.completed == true AND church_awareness < 75",
+      "position_norm": [0.48, 0.76]
+    }
+  ],
+  "encounter_pool": "ascetic_mountain_encounters",
+  "constant_npcs": ["pendulum", "xuming_recluse"],
+  "main_story_hooks": ["node_4_pendulum", "node_6_final_tower"],
+  "ambient_music": "ascetic_mountain_wind"
+}

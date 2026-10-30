@@ -1,0 +1,28 @@
+# Dialogic timeline: npc/xiao_ran_main
+# Slice 2.5 T6: Xiao Ran main dialogue tree.
+# Variables supplied by NpcInteractionService:
+# {npc_trust} {npc_suspicion} {npc_layer} {npc_perception} {npc_dialog_count}
+# {player_sequence} {player_pollution} {current_day} {current_weather} {time_of_day}
+
+# branch:first_meet
+# hook:npc_first_meet
+小染: 你今天像你，又不像你。
+小染: 影子边上有一点雾，我以前只在井里见过。
+# outcome: trust_delta=2, unlocked_dialogue_branches=["xiao_ran.small_talk","xiao_ran.ask_well"]
+
+# branch:small_talk
+小染: 老李说大人说话要绕弯，我不绕。我看见你身后有人。
+# outcome: trust_delta=1
+
+# branch:ask_well
+小染: 井里的脸不是影子。影子不会比人先眨眼。
+# intel:intel_xiao_ran_well_node4_001 trust>=20
+# outcome: trust_delta=1
+
+# branch:node_4_anchor
+# mainline.node_4
+小染: 如果你梦见第四个门牌，就别敲。门里面的人会先叫你的名字。
+# placeholder: Slice 3 mainline node_4 handoff
+
+# branch:leave
+小染: 你走吧。你站太久，墙会开始听你。

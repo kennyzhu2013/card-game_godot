@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "tower_s8_shadow_claw",
+  "display_name": "影爪",
+  "description": "一只没有主人的爪子从地面抓住脚踝。",
+  "pathway": "tower",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "影",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 10, "heal": 0, "target": "single", "range": 3, "status_effects": [{"id": "root", "duration": 1}]}
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "shop_pool_v1",
+  "shop_id": "tower_merchant",
+  "slot_count": 3,
+  "items": [
+    {"id": "card_shadow_arrow_t2", "item_type": "card", "display_name": "影箭·临时 ★★", "template_id": "shadow_arrow", "skill_path": "res://data/skills/shadow_arrow.json", "price_currency": "lingstones", "price_amount": 60, "weight": 15, "rarity": "common", "stock": 1},
+    {"id": "card_flame_arrow_t2", "item_type": "card", "display_name": "火箭·临时 ★★", "template_id": "flame_arrow", "skill_path": "res://data/skills/flame_arrow.json", "price_currency": "lingstones", "price_amount": 60, "weight": 15, "rarity": "common", "stock": 1},
+    {"id": "card_water_touch_t2", "item_type": "card", "display_name": "水抚·临时 ★★", "template_id": "water_touch", "skill_path": "res://data/skills/water_touch.json", "price_currency": "lingstones", "price_amount": 70, "weight": 12, "rarity": "common", "stock": 1},
+    {"id": "mat_shadow_dust_x2", "item_type": "material", "display_name": "影尘 ×2", "material_id": "影尘", "amount": 2, "price_currency": "lingstones", "price_amount": 25, "weight": 10, "rarity": "common", "stock": 1},
+    {"id": "mat_iron_shard_x3", "item_type": "material", "display_name": "铁屑 ×3", "material_id": "铁屑", "amount": 3, "price_currency": "lingstones", "price_amount": 20, "weight": 12, "rarity": "common", "stock": 1},
+    {"id": "potion_red_small", "item_type": "potion", "display_name": "小红药 (+20 HP)", "pollution_delta": 0, "price_currency": "lingstones", "price_amount": 30, "weight": 15, "rarity": "common", "stock": 1},
+    {"id": "potion_purify_5", "item_type": "potion", "display_name": "净化药剂 (-5 污染)", "pollution_delta": -5, "price_currency": "lingstones", "price_amount": 130, "weight": 6, "rarity": "common", "stock": 1},
+    {"id": "brand_damage_low", "item_type": "brand", "display_name": "锐利之纹", "brand_id": "damage_plus_low", "price_currency": "lingstones", "price_amount": 500, "weight": 5, "rarity": "rare", "stock": 1},
+    {"id": "brand_silence_low", "item_type": "brand", "display_name": "死寂烙印", "brand_id": "silence_brand", "price_currency": "lingstones", "price_amount": 550, "weight": 4, "rarity": "rare", "stock": 1},
+    {"id": "brand_chain_low", "item_type": "brand", "display_name": "锁链烙印", "brand_id": "chain_brand", "price_currency": "lingstones", "price_amount": 700, "weight": 3, "rarity": "rare", "stock": 1},
+    {"id": "card_random_t3", "item_type": "card", "display_name": "随机临时卡 ★★★", "template_id": "shadow_jester", "skill_path": "res://data/skills/shadow_jester.json", "price_currency": "lingstones", "price_amount": 220, "weight": 3, "rarity": "rare", "stock": 1},
+    {"id": "card_random_pathway", "item_type": "card", "display_name": "随机跨途径敌方法术卡", "template_id": "shadow_water", "skill_path": "res://data/skills/shadow_water.json", "price_currency": "lingstones", "price_amount": 350, "weight": 2, "rarity": "rare", "stock": 1}
+  ]
+}

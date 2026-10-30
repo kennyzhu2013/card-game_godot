@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "hermit_s8_archive_flame",
+  "display_name": "卷宗焰",
+  "description": "旧卷宗烧成蓝火，照亮并灼伤被记录的人。",
+  "pathway": "hermit",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "火",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 10, "heal": 0, "target": "single", "range": 5, "status_effects": [{"id": "revealed", "duration": 2}]}
+}

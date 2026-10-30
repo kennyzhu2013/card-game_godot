@@ -1,0 +1,30 @@
+{
+  "$schema": "skill_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §C.1",
+  "notes": "纯战斗反应（离 + 箭）。火元素对水系敌人高效。",
+  "id": "flame_arrow",
+  "display_name": "火箭",
+  "description": "灼热火球向前飞",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "离",
+  "required_symbols": ["flame", "arrow"],
+  "tier": 1,
+  "mp_cost": 12,
+  "cooldown": 2,
+  "pollution_per_use": 1,
+
+  "combat_effect": {
+    "damage": 16,
+    "heal": 0,
+    "target": "single",
+    "range": 5,
+    "status_effects": [
+      {"id": "burning", "chance": 0.3, "duration": 3, "magnitude": 5, "notes": "每回合 -5 HP"}
+    ]
+  },
+  "social_effect": null,
+  "world_effect": null
+}

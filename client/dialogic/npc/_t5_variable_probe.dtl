@@ -1,0 +1,4 @@
+# Slice 2.5 T5 probe timeline.
+# Dialogic variables expected to be readable here:
+# {npc_trust} {npc_suspicion} {npc_layer} {npc_perception} {npc_dialog_count}
+# {player_sequence} {player_pollution} {current_day} {current_weather} {time_of_day}

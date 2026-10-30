@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "emperor_s8_debt_mark",
+  "display_name": "债痕",
+  "description": "欠下的代价浮到皮肤表面，下一次伤害加倍清算。",
+  "pathway": "emperor",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "契约",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 8, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "vulnerable", "duration": 1}]}
+}

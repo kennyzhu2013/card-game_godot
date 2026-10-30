@@ -1,0 +1,75 @@
+{
+  "$schema": "city_hotspot_v1",
+  "district_id": "stone_tower",
+  "display_name": "石塔区",
+  "ap_to_enter": 2,
+  "unlock_condition": "sequence <= 8",
+  "tower_theme": "noble_conspiracy",
+  "hotspots": [
+    {
+      "id": "tower_entry_stone_tower",
+      "label": "贵族阴谋塔",
+      "icon": "T",
+      "type": "tower",
+      "ap_cost": 2,
+      "payload": {
+        "tower_size": "small",
+        "tower_template": "stone_medium"
+      },
+      "visible_when": "sequence <= 8",
+      "position_norm": [0.36, 0.50]
+    },
+    {
+      "id": "npc_marquis_eng",
+      "label": "侯爵·恩格",
+      "icon": "C",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "marquis_eng"
+      },
+      "visible_when": "sequence <= 8",
+      "position_norm": [0.55, 0.58]
+    },
+    {
+      "id": "npc_hanna_gardener",
+      "label": "园丁·汉娜",
+      "icon": "H",
+      "type": "npc",
+      "ap_cost": 0,
+      "payload": {
+        "npc_id": "hanna_gardener"
+      },
+      "visible_when": "sequence <= 8",
+      "position_norm": [0.62, 0.42]
+    },
+    {
+      "id": "drill_noble_salon",
+      "label": "贵族沙龙演练",
+      "icon": "D",
+      "type": "minigame_drill",
+      "ap_cost": 2,
+      "payload": {
+        "drill_id": "noble_salon"
+      },
+      "visible_when": "sequence <= 8",
+      "position_norm": [0.22, 0.72]
+    },
+    {
+      "id": "rumor_stone_street",
+      "label": "石塔街道",
+      "icon": "R",
+      "type": "rumor",
+      "ap_cost": 1,
+      "payload": {
+        "rumor_pool": "stone_tower_streets"
+      },
+      "visible_when": "sequence <= 8 AND church_awareness < 75",
+      "position_norm": [0.76, 0.35]
+    }
+  ],
+  "encounter_pool": "stone_tower_encounters",
+  "constant_npcs": ["marquis_eng", "hanna_gardener"],
+  "main_story_hooks": ["node_6_alt"],
+  "ambient_music": "stone_tower_day"
+}

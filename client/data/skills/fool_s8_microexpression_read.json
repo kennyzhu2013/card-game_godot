@@ -1,0 +1,33 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列8",
+  "id": "fool_s8_microexpression_read",
+  "display_name": "微表情读心",
+  "description": "嘴角 0.3 秒的抽搐，在他眼里就是赤裸裸的预告片。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "rare",
+  "element": "灵",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "all_enemies", "range": 5, "status_effects": []},
+  "social_effect": {
+    "type": "read_truth",
+    "duration_days": 0,
+    "parameters": {
+      "extracts": "敌方动作前的真实意图"
+    },
+    "church_awareness_delta": 1
+  },
+  "world_effect": {
+    "type": "reveal_hidden_lore",
+    "lore_entry": "fool_s8_microexpression_read_revealed_intent",
+    "reveal_layer": 1,
+    "parameters": {
+      "lore_entry": "fool_s8_microexpression_read_revealed_intent"
+    }
+  },
+  "tags": ["skill", "mind_read", "intent_reveal"]
+}

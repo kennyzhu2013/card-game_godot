@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_shadow_alley_church_tail",
+  "encounter_type": "risk",
+  "display_name": "圣审庭的尾随者",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["evening", "night"],
+  "weight": 8,
+  "preconditions": ["church_awareness >= 10"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "巷口有一名圣审庭记录员停下脚步，像是在确认你的影子。",
+    "choices": [
+      {"id": "blend_in", "label": "混进人群", "outcome": {"church_awareness_delta": 1}},
+      {"id": "stare_back", "label": "回望对方", "outcome": {"church_awareness_delta": 3, "suspicion_delta": 2}}
+    ]
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

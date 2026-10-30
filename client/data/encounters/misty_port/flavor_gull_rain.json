@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_gull_rain",
+  "encounter_type": "flavor",
+  "display_name": "Gull Rain",
+  "districts": ["misty_port"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Gulls beat the rain into silver threads above the dock.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "Gulls beat the rain into silver threads above the dock."},
+    "1": {"text": "The gulls fly backward for one breath before the rain corrects them."},
+    "2": {"text": "The gulls drop black rain onto a dock no one else sees."},
+    "3": {"text": "The gulls hang motionless while the rain climbs back into the sky."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

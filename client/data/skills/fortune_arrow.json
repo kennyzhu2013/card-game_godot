@@ -1,0 +1,21 @@
+{
+  "id": "fortune_arrow",
+  "display_name": "运箭",
+  "description": "必中之箭，但代价是消耗好运",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["fortune", "arrow"],
+  "tier": 2,
+  "mp_cost": 10,
+  "cooldown": 2,
+  "pollution_per_use": 3,
+  "combat_effect": {
+    "damage": 22,
+    "heal": 0,
+    "target": "single",
+    "range": 5,
+    "status_effects": [{"id": "crit_up"}]
+  }
+}

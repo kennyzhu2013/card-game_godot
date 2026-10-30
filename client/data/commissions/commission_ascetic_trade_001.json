@@ -1,0 +1,20 @@
+{
+  "id": "commission_ascetic_trade_001",
+  "commission_type": "gather",
+  "difficulty": "small",
+  "display_name": "苦修山换货",
+  "description": "Xuming asks for a quiet trade token from the mountain walk.",
+  "issuer_npc": "xuming_recluse",
+  "district": "ascetic_mountain",
+  "min_day": 7,
+  "max_day": 14,
+  "min_sequence": 8,
+  "refresh_priority": 90,
+  "dispatch_target": {"kind": "job", "job_id": "mountain_solitary_walk", "district": "ascetic_mountain", "item_id": "ascetic_trade_token", "count": 1},
+  "time_limit_days": 4,
+  "rewards": [{"type": "lingstones", "amount": 120}, {"type": "dao_pages", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

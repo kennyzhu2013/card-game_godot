@@ -1,0 +1,34 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列9",
+  "id": "fool_s9_pendulum_query",
+  "display_name": "灵摆问询",
+  "description": "摆锤左右摇摆，答案藏在不再摇摆的那一刻。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "灵",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "single", "range": 5, "status_effects": []},
+  "social_effect": {
+    "type": "read_truth",
+    "duration_days": 0,
+    "parameters": {
+      "extracts": "敌方下一句真话",
+      "rebound_chance_high_sequence": 0.30
+    },
+    "church_awareness_delta": 1
+  },
+  "world_effect": {
+    "type": "reveal_hidden_lore",
+    "lore_entry": "fool_s9_pendulum_query_next_action",
+    "reveal_layer": 1,
+    "parameters": {
+      "lore_entry": "fool_s9_pendulum_query_next_action"
+    }
+  },
+  "tags": ["skill", "intent_reveal"]
+}

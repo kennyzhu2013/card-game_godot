@@ -1,0 +1,35 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列9",
+  "id": "fool_s9_star_chart_divination",
+  "display_name": "星图问签",
+  "description": "星辰排列从不撒谎，撒谎的只有读它的人。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "星",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "draw_filter", "peek": 3, "choose": 1, "rest_policy": "return_top"}]},
+  "social_effect": {
+    "type": "extract_memory",
+    "duration_days": 0,
+    "accuracy": 0.6,
+    "parameters": {
+      "extracts": "未来感的一角",
+      "accuracy": 0.6
+    },
+    "church_awareness_delta": 1
+  },
+  "world_effect": {
+    "type": "spawn_event",
+    "event": "future_glimpse",
+    "parameters": {
+      "event": "future_glimpse",
+      "unlocks": ["future_glimpse"]
+    }
+  },
+  "tags": ["skill", "draw_filter"]
+}

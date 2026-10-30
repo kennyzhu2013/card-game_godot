@@ -1,0 +1,340 @@
+{
+  "version": 1,
+  "brands": [
+    {
+      "id": "fool_shadow_seal",
+      "display_name": "影之印记",
+      "category": "fool",
+      "pathway_affinity": "fool",
+      "sequence_min": 7,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "multiply", "value": 1.2, "scope": "element_match", "element": "影"},
+      "description": "影系卡牌伤害提升20%。"
+    },
+    {
+      "id": "fool_jester_mark",
+      "display_name": "愚者印",
+      "category": "fool",
+      "pathway_affinity": "fool",
+      "sequence_min": 7,
+      "effect_type": "transform",
+      "effect_payload": {"play_count_threshold": 5, "damage_multiplier": 1.3, "bonus_brand_slots": 1},
+      "description": "用过5次后永久变为愚者专属版，伤害提升并增加1个烙印槽。"
+    },
+    {
+      "id": "fool_substitute_mark",
+      "display_name": "影替印",
+      "category": "fool",
+      "pathway_affinity": "fool",
+      "sequence_min": 8,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "fatal_damage", "chance": 0.3, "effect": "substitute_death"},
+      "description": "受到致命伤害时，30%概率由纸人替你承受。"
+    },
+    {
+      "id": "fool_face_mask_mark",
+      "display_name": "假面印",
+      "category": "fool",
+      "pathway_affinity": "fool",
+      "sequence_min": 7,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_play", "redirect_chance": 0.5, "duration_turns": 1},
+      "description": "出此卡后，敌方下回合有50%概率改指向其他敌人。"
+    },
+    {
+      "id": "damage_plus_low",
+      "display_name": "锐利之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "add", "value": 3},
+      "description": "该卡伤害增加3。"
+    },
+    {
+      "id": "damage_plus_mid",
+      "display_name": "利刃之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "add", "value": 6},
+      "description": "该卡伤害增加6。"
+    },
+    {
+      "id": "cost_minus",
+      "display_name": "轻吟之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "energy_cost", "operation": "add", "value": -1, "min": 0},
+      "description": "该卡费用减少1，最低为0。"
+    },
+    {
+      "id": "heal_plus",
+      "display_name": "慈悲之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "heal", "operation": "add", "value": 5},
+      "description": "该卡治疗量增加5。"
+    },
+    {
+      "id": "pierce",
+      "display_name": "破甲之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "pierce", "operation": "add", "value": 3},
+      "description": "该卡忽视3点防御。"
+    },
+    {
+      "id": "multi_target",
+      "display_name": "涟漪之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 8,
+      "effect_type": "stat",
+      "effect_payload": {"target_mode": "two_targets", "damage_multiplier": 0.7},
+      "description": "单体卡变为2目标，各目标承受70%伤害。"
+    },
+    {
+      "id": "fate_thread",
+      "display_name": "命运之纹",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_play", "chance": 0.25, "effect": "refund_energy_cost"},
+      "description": "出此卡时，25%概率不消耗能量。"
+    },
+    {
+      "id": "silence_brand",
+      "display_name": "死寂烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_hit", "enemy_energy_delta_next_turn": -1},
+      "description": "命中时敌人下回合能量减少1。"
+    },
+    {
+      "id": "crit_brand",
+      "display_name": "锋芒烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "before_damage", "crit_chance": 0.2, "crit_multiplier": 1.5},
+      "description": "该卡20%概率暴击，造成1.5倍伤害。"
+    },
+    {
+      "id": "draw_on_play",
+      "display_name": "灵感烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "after_play", "draw_cards": 1},
+      "description": "出此卡后抽1张牌。"
+    },
+    {
+      "id": "vampire",
+      "display_name": "嗜血烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "after_damage", "lifesteal_ratio": 0.3},
+      "description": "该卡造成伤害的30%转化为治疗。"
+    },
+    {
+      "id": "chain_brand",
+      "display_name": "锁链烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 8,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_kill", "chain_damage_ratio": 0.5, "target": "next_enemy"},
+      "description": "击杀目标时弹射50%伤害到下一个敌人。"
+    },
+    {
+      "id": "barrier_brand",
+      "display_name": "屏障烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "after_play", "block": 5},
+      "description": "出此卡后获得5点格挡。"
+    },
+    {
+      "id": "delay_brand",
+      "display_name": "延时烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 8,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_play", "delay_turns": 1, "damage_multiplier": 1.5},
+      "description": "该卡效果延后1回合结算，伤害提升至1.5倍。"
+    },
+    {
+      "id": "mirror_image",
+      "display_name": "镜中倒影",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "transform",
+      "effect_payload": {"trigger": "after_play", "create_card": "same_cost_random", "destination": "hand"},
+      "description": "出此卡后，将一张同费用随机卡加入手牌。"
+    },
+    {
+      "id": "phoenix",
+      "display_name": "浴火烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "transform",
+      "effect_payload": {"trigger": "on_discard", "chance": 0.3, "destination": "hand"},
+      "description": "该卡进入弃牌堆时，30%概率立即洗回手牌。"
+    },
+    {
+      "id": "bloom",
+      "display_name": "绽放烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "transform",
+      "effect_payload": {"trigger": "after_play", "damage_growth": 2, "damage_growth_max": 10},
+      "description": "该卡每被打出1次，下次伤害增加2，战斗内最多增加10。"
+    },
+    {
+      "id": "echo",
+      "display_name": "余响烙印",
+      "category": "common",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "transform",
+      "effect_payload": {"trigger": "next_turn_start", "replay_last_effect": true, "target_scope": "self_or_area"},
+      "description": "该卡出后，下回合开始时再次触发一次自身或范围效果。"
+    },
+    {
+      "id": "truename_brand",
+      "display_name": "真名烙印",
+      "category": "unique",
+      "pathway_affinity": "any",
+      "sequence_min": 3,
+      "effect_type": "transform",
+      "effect_payload": {"trigger": "on_play", "reveal_true_name": true, "next_cost_delta": -1, "once_per_battle": true},
+      "description": "出此卡时揭示自身真名，本场战斗下次费用减少1，每场限1次。"
+    },
+    {
+      "id": "voidcrown_brand",
+      "display_name": "虚冠烙印",
+      "category": "unique",
+      "pathway_affinity": "any",
+      "sequence_min": 1,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_hit_boss", "cancel_boss_intent": true},
+      "description": "该卡命中Boss时，取消Boss当回合所有意图。"
+    },
+    {
+      "id": "forbidden_word",
+      "display_name": "禁言烙印",
+      "category": "unique",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "on_hit", "forbid_skill_tags": ["spell", "divinity"], "duration": "battle"},
+      "description": "命中后，该敌人本场战斗无法使用咒语或神性标签技能。"
+    },
+    {
+      "id": "pathwise",
+      "display_name": "道印烙印",
+      "category": "unique",
+      "pathway_affinity": "any",
+      "sequence_min": 0,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "multiply", "value": 1.5, "locks_other_brands": true},
+      "description": "该卡伤害提升50%，且不可被其他烙印覆盖。"
+    },
+    {
+      "id": "forge_residue_low",
+      "display_name": "灵锤之纹",
+      "category": "forge",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "add", "value": 2},
+      "description": "普通锻造余辉凝成的浅层烙印，该卡伤害增加2。"
+    },
+    {
+      "id": "forge_residue_mid",
+      "display_name": "灵锤·熔",
+      "category": "forge",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "stat",
+      "effect_payload": {"stat_target": "damage", "operation": "add", "value": 4, "energy_cost_delta": 1},
+      "description": "道心稳定后留下的中层锻造烙印，伤害增加4但费用增加1。"
+    },
+    {
+      "id": "forge_residue_high",
+      "display_name": "灵锤·凝",
+      "category": "forge",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "trigger",
+      "effect_payload": {"trigger": "first_play_each_battle", "cost_override": 0},
+      "description": "近乎无瑕的敲击节奏留下的高层锻造烙印，每场第一次打出费用为0。"
+    },
+    {
+      "id": "forge_residue_unique",
+      "display_name": "灵锤·真",
+      "category": "forge",
+      "pathway_affinity": "any",
+      "sequence_min": 9,
+      "effect_type": "transform",
+      "effect_payload": {"reforge_keep_brands_new_slot_free": true, "once_per_cycle": true},
+      "description": "每周目至多现身一次的真锻余辉，可免材保留烙印并开新槽。"
+    }
+  ],
+  "pools": {
+    "fool_low_tier_brands": [
+      "fool_substitute_mark",
+      "damage_plus_low",
+      "fate_thread",
+      "silence_brand",
+      "crit_brand",
+      "draw_on_play"
+    ],
+    "fool_sequence_7_boss": [
+      "fool_shadow_seal",
+      "fool_jester_mark",
+      "fool_face_mask_mark",
+      "damage_plus_mid"
+    ],
+    "boss_default": [
+      "damage_plus_low",
+      "damage_plus_mid",
+      "cost_minus",
+      "heal_plus",
+      "pierce",
+      "fate_thread",
+      "silence_brand",
+      "crit_brand",
+      "draw_on_play",
+      "vampire",
+      "barrier_brand",
+      "mirror_image"
+    ],
+    "unique_boss_brands": [
+      "truename_brand",
+      "voidcrown_brand",
+      "pathwise"
+    ]
+  }
+}

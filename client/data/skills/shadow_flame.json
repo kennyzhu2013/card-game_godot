@@ -1,0 +1,21 @@
+{
+  "id": "shadow_flame",
+  "display_name": "暗焰",
+  "description": "影子燃起幽蓝冷火，灼烧目标",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "影",
+  "required_symbols": ["shadow", "flame"],
+  "tier": 2,
+  "mp_cost": 15,
+  "cooldown": 3,
+  "pollution_per_use": 3,
+  "combat_effect": {
+    "damage": 18,
+    "heal": 0,
+    "target": "single",
+    "range": 4,
+    "status_effects": [{"id": "burn", "duration": 1, "magnitude": 5}]
+  }
+}

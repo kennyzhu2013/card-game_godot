@@ -1,0 +1,33 @@
+{
+  "id": "widow_isa",
+  "display_name": "寡妇·伊莎",
+  "default_district": "shadow_alley",
+  "placeholder": false,
+  "public": {"role": "污染支线见证者", "appearance": "总披着旧黑纱，怀里抱着一只空木马"},
+  "hidden": {"actual_age": "不详", "past_secrets": ["污染表现支线", "孩子的脸越来越像哈维"]},
+  "truth": {"true_name": "伊莎·格雷", "true_origin": "墓地边缘"},
+  "default_trust": 0,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "shadow_alley", "time_of_day": "night", "label_suffix": "（偶尔在巷口出现）", "icon": "W", "interactable": true}
+  ],
+  "dialogue_tree": "widow_isa_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_widow_isa_child_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "pollution_echo",
+      "summary": "伊莎的孩子会在污染升高时说出哈维没有说过的话。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "shadow_alley_special",
+  "commission_templates": [],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

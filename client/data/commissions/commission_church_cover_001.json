@@ -1,0 +1,20 @@
+{
+  "id": "commission_church_cover_001",
+  "commission_type": "investigate",
+  "difficulty": "medium",
+  "display_name": "教堂掩护",
+  "description": "Brendan needs a report from the sermon-side investigation tower.",
+  "issuer_npc": "brendan",
+  "district": "sacred_seven",
+  "min_day": 12,
+  "max_day": 12,
+  "min_sequence": 9,
+  "refresh_priority": 0,
+  "dispatch_target": {"district": "sacred_seven", "tower_size": "medium", "required_event_id": "church_sermon", "accepted_choices": ["observe_quietly"]},
+  "time_limit_days": 2,
+  "rewards": [{"type": "dao_pages", "amount": 2}, {"type": "mainline_node", "id": "node_5_church_sermon", "amount": 1}],
+  "main_story_hook": "node_5_church_sermon",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

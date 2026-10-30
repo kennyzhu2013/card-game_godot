@@ -1,0 +1,18 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_misty_port_xiao_ran_mist",
+  "encounter_type": "encounter_npc",
+  "display_name": "Xiao Ran In The Mist",
+  "districts": ["misty_port"],
+  "time_of_day": ["evening", "night"],
+  "weight": 12,
+  "preconditions": [],
+  "step_count": 1,
+  "dialogue_tree": "npc/xiao_ran_main",
+  "scene_payload": {"text": "Xiao Ran's silhouette appears between two stacked crates.", "npc_id": "xiao_ran", "choices": [{"id": "greet", "label": "Greet", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

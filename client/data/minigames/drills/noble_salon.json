@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "noble_salon",
+  "type": "drill",
+  "display_name": "贵族沙龙演练",
+  "city": "stone_tower",
+  "ap_cost": 2,
+  "witness_npc_id": "marquis_eng",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "mirror_title", "label": "照着对方头衔称呼"},
+    {"id": "never_ask_price", "label": "不要先问价钱"},
+    {"id": "leave_with_grace", "label": "体面离场"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "noble_grace"}, {"type": "auction_ticket", "id": "stone_salon_ticket"}],
+  "rewards_partial": [{"type": "auction_ticket", "id": "stone_salon_ticket"}],
+  "punishment_fail": [{"type": "npc_trust_delta", "npc_id": "marquis_eng", "amount": -15}, {"type": "church_awareness", "amount": 10}, {"type": "district_block", "district_id": "stone_tower", "days": 7}]
+}

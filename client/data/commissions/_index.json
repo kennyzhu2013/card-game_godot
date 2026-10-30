@@ -1,0 +1,25 @@
+{
+  "$schema": "greycrown_commission_index_v1",
+  "templates": [
+    {"id": "commission_rumor_delivery_001", "path": "res://data/commissions/commission_rumor_delivery_001.json"},
+    {"id": "commission_moonlight_grass_001", "path": "res://data/commissions/commission_moonlight_grass_001.json"},
+    {"id": "commission_factory_shift_001", "path": "res://data/commissions/commission_factory_shift_001.json"},
+    {"id": "commission_steelworks_missing_001", "path": "res://data/commissions/commission_steelworks_missing_001.json"},
+    {"id": "commission_misty_port_smuggle_001", "path": "res://data/commissions/commission_misty_port_smuggle_001.json"},
+    {"id": "commission_misty_port_casino_intro_001", "path": "res://data/commissions/commission_misty_port_casino_intro_001.json"},
+    {"id": "commission_church_cover_001", "path": "res://data/commissions/commission_church_cover_001.json"},
+    {"id": "commission_confession_practice_001", "path": "res://data/commissions/commission_confession_practice_001.json"},
+    {"id": "commission_stone_tower_salon_001", "path": "res://data/commissions/commission_stone_tower_salon_001.json"},
+    {"id": "commission_stone_garden_errand_001", "path": "res://data/commissions/commission_stone_garden_errand_001.json"},
+    {"id": "commission_red_hand_probe_001", "path": "res://data/commissions/commission_red_hand_probe_001.json"},
+    {"id": "commission_ascetic_trade_001", "path": "res://data/commissions/commission_ascetic_trade_001.json"},
+    {"id": "commission_reflection_halfmoon_001", "path": "res://data/commissions/commission_reflection_halfmoon_001.json"},
+    {"id": "commission_halfmoon_message_001", "path": "res://data/commissions/commission_halfmoon_message_001.json"},
+    {"id": "commission_shadow_well_inquiry_001", "path": "res://data/commissions/commission_shadow_well_inquiry_001.json"},
+    {"id": "commission_old_li_letter_001", "path": "res://data/commissions/commission_old_li_letter_001.json"},
+    {"id": "commission_main_black_market_intro_001", "path": "res://data/commissions/commission_main_black_market_intro_001.json"},
+    {"id": "commission_main_halfmoon_contact_001", "path": "res://data/commissions/commission_main_halfmoon_contact_001.json"},
+    {"id": "commission_main_promotion_prepare_001", "path": "res://data/commissions/commission_main_promotion_prepare_001.json"},
+    {"id": "commission_main_final_prepare_001", "path": "res://data/commissions/commission_main_final_prepare_001.json"}
+  ]
+}

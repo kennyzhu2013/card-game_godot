@@ -1,0 +1,23 @@
+{
+  "$schema": "minigame_v1",
+  "id": "fate_cards",
+  "type": "casino",
+  "display_name": "命运牌局",
+  "city": "misty_port",
+  "entry_npc": "eel_fan",
+  "ap_cost": 1,
+  "time_advance": 0,
+  "daily_limit": null,
+  "weekly_limit": null,
+  "cycle_limit": 2,
+  "preconditions": ["day >= 5", "time_of_day == 'night'"],
+  "mechanic": "fate",
+  "mechanic_params": {
+    "fixed_bet": 200,
+    "lineup_count": 3
+  },
+  "outcome_table": [
+    {"grade": "correct", "rewards": [{"type": "mainline_node", "id": "node_fate_cards"}, {"type": "dao_pages", "amount": 1}, {"type": "church_awareness", "amount": 5}]},
+    {"grade": "wrong", "rewards": [{"type": "church_awareness", "amount": 5}, {"type": "suspicion_delta", "npc_id": "eel_fan", "amount": 3}]}
+  ]
+}

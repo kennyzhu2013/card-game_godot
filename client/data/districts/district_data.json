@@ -1,0 +1,154 @@
+{
+  "$schema": "district_data_v2",
+  "districts": [
+    {
+      "id": "shadow_alley",
+      "display_name": "影巷区",
+      "theme": "失踪者灵异塔",
+      "ap_cost": 0,
+      "recommended_sequence": "9-8",
+      "danger": 2,
+      "tower_size": "small",
+      "available_times": ["morning", "noon", "evening", "night"],
+      "unlock": null,
+      "description": "近邻熟人区。轻量战斗与情报。",
+      "events": [
+        {"type": "tower_small", "weight": 35, "tower_template": "shadow_alley_small"},
+        {"type": "tower_medium", "weight": 10, "tower_template": "shadow_alley_medium"},
+        {"type": "loot", "weight": 25, "loot_table": "shadow_alley_loot"},
+        {"type": "npc_encounter", "weight": 15, "npcs": ["xiao_ran", "old_li_evening"]},
+        {"type": "shop_visit", "weight": 10, "shop_id": "donen_blackmarket", "time_required": "night"},
+        {"type": "main_story", "weight": 5, "story_anchors": ["fragment_1", "fragment_6"]}
+      ],
+      "time_modifiers": {
+        "morning": {"npc_encounter": 10, "main_story": 5},
+        "noon": {},
+        "evening": {"shop_visit": 10},
+        "night": {"shop_visit": 20, "tower_small": 10, "loot": -5}
+      }
+    },
+    {
+      "id": "steel_district",
+      "display_name": "铸钢区",
+      "theme": "工业地下机械塔",
+      "ap_cost": 0,
+      "recommended_sequence": "9-8",
+      "danger": 3,
+      "tower_size": "small",
+      "available_times": ["morning", "noon"],
+      "unlock": null,
+      "description": "工厂区。失踪案的源头。",
+      "events": [
+        {"type": "tower_small", "weight": 40, "tower_template": "steel_small"},
+        {"type": "tower_medium", "weight": 20, "tower_template": "steel_medium"},
+        {"type": "loot", "weight": 20, "loot_table": "steel_loot"},
+        {"type": "npc_encounter", "weight": 15},
+        {"type": "main_story", "weight": 5, "story_anchors": ["node_3"]}
+      ],
+      "time_modifiers": {
+        "morning": {"tower_small": 10, "tower_medium": 5},
+        "noon": {"tower_small": 10},
+        "evening": {},
+        "night": {}
+      }
+    },
+    {
+      "id": "mist_harbor",
+      "display_name": "雾港区",
+      "theme": "走私者地下市场塔",
+      "ap_cost": 0,
+      "recommended_sequence": "9-7",
+      "danger": 3,
+      "tower_size": "small",
+      "available_times": ["evening", "night"],
+      "unlock": null,
+      "description": "黑市与水手。夜晚活跃。",
+      "events": [
+        {"type": "tower_small", "weight": 30, "tower_template": "mist_small"},
+        {"type": "tower_medium", "weight": 20, "tower_template": "mist_medium"},
+        {"type": "loot", "weight": 20, "loot_table": "mist_loot"},
+        {"type": "npc_encounter", "weight": 10},
+        {"type": "shop_visit", "weight": 15, "shop_id": "donen_blackmarket"},
+        {"type": "main_story", "weight": 5, "story_anchors": ["node_3"]}
+      ],
+      "time_modifiers": {
+        "morning": {},
+        "noon": {},
+        "evening": {"shop_visit": 5},
+        "night": {"shop_visit": 15, "loot": 5}
+      }
+    },
+    {
+      "id": "seven_saints",
+      "display_name": "七圣广场",
+      "theme": "教会调查塔",
+      "ap_cost": 0,
+      "recommended_sequence": "9-7",
+      "danger": 3,
+      "tower_size": "small",
+      "available_times": ["morning", "noon", "evening"],
+      "unlock": null,
+      "description": "教会大本营。礼拜 / 高怀疑度。",
+      "events": [
+        {"type": "tower_small", "weight": 25, "tower_template": "saints_small"},
+        {"type": "loot", "weight": 15, "loot_table": "saints_loot"},
+        {"type": "npc_encounter", "weight": 25},
+        {"type": "main_story", "weight": 35, "story_anchors": ["node_5"]}
+      ],
+      "time_modifiers": {
+        "morning": {"main_story": 15, "npc_encounter": 10},
+        "noon": {},
+        "evening": {},
+        "night": {}
+      }
+    },
+    {
+      "id": "stone_tower",
+      "display_name": "石塔区",
+      "theme": "贵族阴谋塔",
+      "ap_cost": 2,
+      "recommended_sequence": "8-7",
+      "danger": 4,
+      "tower_size": "small",
+      "available_times": ["morning", "noon", "evening"],
+      "unlock": {"sequence_max": 8},
+      "description": "贵族旧塔与调查事件更常见。",
+      "events": [
+        {"type": "tower_medium", "weight": 30, "tower_template": "stone_medium"},
+        {"type": "npc_encounter", "weight": 25},
+        {"type": "loot", "weight": 20, "loot_table": "stone_loot"},
+        {"type": "main_story", "weight": 25, "story_anchors": ["node_6_alt"]}
+      ],
+      "time_modifiers": {
+        "morning": {"npc_encounter": 5, "main_story": 5},
+        "noon": {},
+        "evening": {"npc_encounter": 5},
+        "night": {}
+      }
+    },
+    {
+      "id": "ascetic_mountain",
+      "display_name": "苦修山",
+      "theme": "钟摆与独行",
+      "ap_cost": 2,
+      "recommended_sequence": "7-6",
+      "danger": 5,
+      "tower_size": "medium",
+      "available_times": ["morning", "noon", "evening", "night"],
+      "unlock": {"main_story_node": "node_4"},
+      "description": "远途城区，钟摆相关委托高频。单日只能往返一次。",
+      "events": [
+        {"type": "tower_medium", "weight": 50, "tower_template": "ascetic_medium"},
+        {"type": "loot", "weight": 25, "loot_table": "ascetic_loot"},
+        {"type": "npc_encounter", "weight": 10},
+        {"type": "main_story", "weight": 15, "story_anchors": ["node_4_pendulum"]}
+      ],
+      "time_modifiers": {
+        "morning": {},
+        "noon": {},
+        "evening": {},
+        "night": {"main_story": 15}
+      }
+    }
+  ]
+}

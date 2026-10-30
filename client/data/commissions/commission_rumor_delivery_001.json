@@ -1,0 +1,20 @@
+{
+  "id": "commission_rumor_delivery_001",
+  "commission_type": "perform",
+  "difficulty": "small",
+  "display_name": "暗号传话",
+  "description": "Ah Du asks you to carry one coded street rumor without drawing witnesses.",
+  "issuer_npc": "ah_du_streettalker",
+  "district": "shadow_alley",
+  "min_day": 1,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 1,
+  "dispatch_target": {"kind": "drill", "drill_id": "street_debate", "district": "shadow_alley", "action_id": "deliver_rumor", "witness_check": true},
+  "time_limit_days": 3,
+  "rewards": [{"type": "lingstones", "amount": 60}, {"type": "dao_pages", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "minigame_v1",
+  "id": "factory_shift",
+  "type": "job",
+  "display_name": "工厂打工",
+  "city": "steelworks",
+  "entry_npc": "peter_furnace",
+  "ap_cost": 3,
+  "time_advance": 1,
+  "daily_limit": 1,
+  "weekly_limit": null,
+  "preconditions": ["time_of_day != 'night'"],
+  "mechanic": "phigros_simple",
+  "mechanic_params": {
+    "chart_template": "T2",
+    "chart_params": {
+      "beat_count": 6,
+      "interval_ms": 500,
+      "lanes": [0, 3],
+      "start_ms": 0,
+      "bpm": 120
+    },
+    "duration_ms": 30000,
+    "perfect_window_ms": 80,
+    "good_window_ms": 150
+  },
+  "outcome_table": [
+    {"grade": "perfect", "rewards": [{"type": "lingstones", "amount": 120}, {"type": "material", "id": "steel_fiber", "amount": 1}]},
+    {"grade": "good", "rewards": [{"type": "lingstones", "amount": 100}, {"type": "material", "id": "steel_slag", "amount": 1}]},
+    {"grade": "fair", "rewards": [{"type": "lingstones", "amount": 80}]},
+    {"grade": "fail", "rewards": [{"type": "lingstones", "amount": 30}, {"type": "pollution", "amount": 1}]}
+  ]
+}

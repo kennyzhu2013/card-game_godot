@@ -1,0 +1,43 @@
+{
+  "id": "thomas_priest",
+  "display_name": "神父·托马斯",
+  "default_district": "sacred_seven",
+  "placeholder": false,
+  "public": {"role": "告解室主持", "appearance": "手上有常年的油灯味，衣袖磨得发亮"},
+  "hidden": {"actual_age": "58", "past_secrets": ["演练对手记录", "知道礼拜旁观的安全位置"]},
+  "truth": {"true_name": "托马斯·格兰", "true_origin": "七圣广场老教团"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "sacred_seven", "time_of_day": "morning", "visible_when": "day % 7 == 0", "label_suffix": "（在告解室等人）", "icon": "P", "interactable": true},
+    {"district": "sacred_seven", "time_of_day": "noon", "label_suffix": "（整理礼拜席）", "icon": "P", "interactable": true}
+  ],
+  "dialogue_tree": "thomas_priest_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_thomas_confession_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "confession_drill",
+      "summary": "托马斯说告解室的演练可以训练你在教会注视下保持口径。"
+    },
+    {
+      "intel_id": "intel_thomas_worship_route_001",
+      "trust": 25,
+      "source_type": "npc_chat",
+      "topic": "worship_observation",
+      "summary": "周日晨礼靠西侧长椅坐下，可以避开侦缉者的第一轮点名。"
+    }
+  ],
+  "available_drills": ["confession_room"],
+  "available_jobs": [],
+  "commission_pool": "sacred_seven_priestly",
+  "commission_templates": ["commission_confession_practice_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "rule_unlock", "payload": {"rule_id": "quiet_confession"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

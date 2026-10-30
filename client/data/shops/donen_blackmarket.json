@@ -1,0 +1,39 @@
+{
+  "$schema": "shop_pool_v1",
+  "shop_id": "donen_blackmarket",
+  "min_day_to_open": 3,
+  "slot_count": 6,
+  "manual_refresh_cost": 50,
+  "manual_refresh_daily_limit": 3,
+  "items": [
+    {"id": "card_shadow_arrow_t2", "category": "temporary_card", "item_type": "card", "display_name": "影箭·临时 ★★", "template_id": "shadow_arrow", "skill_path": "res://data/skills/shadow_arrow.json", "price_currency": "lingstone", "price_amount": 80, "weight": 12, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "card_flame_arrow_t2", "category": "temporary_card", "item_type": "card", "display_name": "火箭·临时 ★★", "template_id": "flame_arrow", "skill_path": "res://data/skills/flame_arrow.json", "price_currency": "lingstone", "price_amount": 80, "weight": 12, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "card_water_touch_t2", "category": "temporary_card", "item_type": "card", "display_name": "水抚·临时 ★★", "template_id": "water_touch", "skill_path": "res://data/skills/water_touch.json", "price_currency": "lingstone", "price_amount": 90, "weight": 10, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "card_double_shadow_t3", "category": "temporary_card", "item_type": "card", "display_name": "双影箭·临时 ★★★", "template_id": "shadow_arrow", "skill_path": "res://data/skills/shadow_arrow.json", "price_currency": "lingstone", "price_amount": 180, "weight": 6, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "card_inquiry_mirror_t2", "category": "temporary_card", "item_type": "card", "display_name": "镜中问·临时 ★★", "template_id": "inquiry_mirror", "skill_path": "res://data/skills/inquiry_mirror.json", "price_currency": "lingstone", "price_amount": 100, "weight": 8, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "card_premonition_t2", "category": "temporary_card", "item_type": "card", "display_name": "第六感·临时 ★★", "template_id": "shadow_jester", "skill_path": "res://data/skills/shadow_jester.json", "price_currency": "lingstone", "price_amount": 70, "weight": 10, "rarity": "common", "stock": 1, "min_day": 3},
+
+    {"id": "mat_shadow_dust_x3", "category": "material", "item_type": "material", "display_name": "影尘 ×3", "material_id": "影尘", "amount": 3, "price_currency": "lingstone", "price_amount": 30, "weight": 15, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "mat_iron_shard_x5", "category": "material", "item_type": "material", "display_name": "铁屑 ×5", "material_id": "铁屑", "amount": 5, "price_currency": "lingstone", "price_amount": 25, "weight": 15, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "mat_glass_lens_x1", "category": "material", "item_type": "material", "display_name": "灵镜片 ×1", "material_id": "灵镜片", "amount": 1, "price_currency": "lingstone", "price_amount": 80, "weight": 8, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "mat_blood_oil_x2", "category": "material", "item_type": "material", "display_name": "血油 ×2", "material_id": "血油", "amount": 2, "price_currency": "lingstone", "price_amount": 60, "weight": 10, "rarity": "common", "stock": 1, "min_day": 3},
+
+    {"id": "potion_purify_5", "category": "potion", "item_type": "potion", "display_name": "净化药剂 (-5 污染)", "pollution_delta": -5, "price_currency": "lingstone", "price_amount": 150, "weight": 8, "rarity": "common", "stock": 1, "min_day": 3},
+    {"id": "potion_purify_15", "category": "potion", "item_type": "potion", "display_name": "净化药剂 (-15 污染)", "pollution_delta": -15, "price_currency": "lingstone", "price_amount": 400, "weight": 4, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "potion_focus", "category": "potion", "item_type": "potion", "display_name": "凝神药剂", "ap_max_delta": 2, "price_currency": "lingstone", "price_amount": 200, "weight": 5, "rarity": "rare", "stock": 1, "min_day": 3},
+
+    {"id": "brand_silence_low", "category": "brand", "item_type": "brand", "display_name": "死寂烙印", "brand_id": "silence_brand", "price_currency": "lingstone", "price_amount": 600, "weight": 4, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "brand_fate_low", "category": "brand", "item_type": "brand", "display_name": "命运之纹", "brand_id": "fate_thread", "price_currency": "lingstone", "price_amount": 700, "weight": 4, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "brand_crit_low", "category": "brand", "item_type": "brand", "display_name": "锋芒烙印", "brand_id": "crit_brand", "price_currency": "lingstone", "price_amount": 550, "weight": 5, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "brand_truename", "category": "brand", "item_type": "brand", "display_name": "真名烙印", "brand_id": "truename_brand", "price_currency": "dao_page", "price_amount": 1, "weight": 2, "rarity": "epic", "stock": 1, "min_day": 3, "conditions": {"sequence_min": 3}},
+    {"id": "brand_forbidden", "category": "brand", "item_type": "brand", "display_name": "禁言烙印", "brand_id": "forbidden_word", "price_currency": "dao_page", "price_amount": 3, "weight": 1, "rarity": "epic", "stock": 1, "min_day": 3},
+
+    {"id": "dao_page_x1", "category": "dao_page_rule", "item_type": "page", "display_name": "残缺道典页 ×1 (买入)", "amount": 1, "price_currency": "lingstone", "price_amount": 500, "weight": 5, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "rule_use_debuff", "category": "dao_page_rule", "item_type": "rule", "display_name": "守则:战斗中至少使用 1 张 debuff 卡", "rule_id": "rule_use_debuff", "price_currency": "dao_page", "price_amount": 1, "weight": 3, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "rule_no_consec_attack", "category": "dao_page_rule", "item_type": "rule", "display_name": "守则:不连续 2 回合主动攻击", "rule_id": "rule_no_consec_attack", "price_currency": "dao_page", "price_amount": 1, "weight": 3, "rarity": "rare", "stock": 1, "min_day": 3},
+    {"id": "rule_first_question", "category": "dao_page_rule", "item_type": "rule", "display_name": "守则:与 NPC 初次对话以问句开始", "rule_id": "rule_first_question", "price_currency": "dao_page", "price_amount": 1, "weight": 2, "rarity": "rare", "stock": 1, "min_day": 3},
+
+    {"id": "variant_shadow_deep", "category": "variant", "item_type": "card", "display_name": "深影 (异符 / R14)", "template_id": "shadow_arrow", "skill_path": "res://data/skills/shadow_arrow.json", "price_currency": "dao_page", "price_amount": 2, "secondary_price_currency": "lingstone", "secondary_price_amount": 300, "weight": 1, "rarity": "epic", "stock": 1, "min_day": 3, "locked_reason": "R14 正式版开放"},
+    {"id": "variant_shadow_lost", "category": "variant", "item_type": "card", "display_name": "失影 (异符 / R14)", "template_id": "shadow_arrow", "skill_path": "res://data/skills/shadow_arrow.json", "price_currency": "dao_page", "price_amount": 3, "secondary_price_currency": "lingstone", "secondary_price_amount": 500, "weight": 1, "rarity": "epic", "stock": 1, "min_day": 3, "locked_reason": "R14 正式版开放"}
+  ]
+}

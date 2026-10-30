@@ -1,0 +1,21 @@
+{
+  "id": "thread_arrow",
+  "display_name": "线箭",
+  "description": "箭尾牵线，射程内的一切都被串联伤害",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["thread", "arrow"],
+  "tier": 1,
+  "mp_cost": 12,
+  "cooldown": 2,
+  "pollution_per_use": 2,
+  "combat_effect": {
+    "damage": 8,
+    "heal": 0,
+    "target": "chain",
+    "range": 4,
+    "status_effects": [{"id": "link"}]
+  }
+}

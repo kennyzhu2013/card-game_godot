@@ -1,0 +1,62 @@
+{
+  "monsterId": "shadow_hound",
+  "templateHash": "shadow_hound-v1",
+  "displayName": "雾影猎犬",
+  "speciesId": "hound",
+  "spriteSheet": "res://assets/sprites/characters/enemy_shadow_wolf_sheet.png",
+  "stats": {
+    "maxHp": 58,
+    "atk": 22,
+    "def": 4,
+    "spd": 18,
+    "shieldPoints": 3,
+    "weaknesses": ["light", "fire"],
+    "skills": [
+      { "id": "shadow_pounce", "name": "影扑", "type": "attack", "power": 1.5, "costAp": 2, "element": "dark" },
+      { "id": "smoke_feint", "name": "烟雾佯攻", "type": "control", "power": 0.6, "costAp": 1, "element": "dark" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 6,
+    "visionConeDeg": 280,
+    "blockingTileTags": ["wall", "fence"],
+    "alertCooldownMs": 900
+  },
+  "aggro": {
+    "initial": "hostile",
+    "decayPerSec": 0.25,
+    "maxThreat": 100,
+    "alertThreshold": 25,
+    "huntThreshold": 45,
+    "huntPlayerSpeciesPenalty": 60,
+    "transformedPlayerImmunity": true
+  },
+  "patrol": {
+    "type": "circular",
+    "radiusCells": 5,
+    "speedCellsPerSec": 0.9,
+    "idleMsRange": [300, 1200],
+    "anchorOverride": null
+  },
+  "respawn": {
+    "timerMs": 120000,
+    "scatterRadiusCells": 3,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "fog_hound_pair",
+    "role": "scout",
+    "callAlliesRadiusCells": 7,
+    "maxConcurrentMembers": 2
+  },
+  "loot": {
+    "table": "shadow_hound_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "prelude",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:leashed_back"]
+  }
+}

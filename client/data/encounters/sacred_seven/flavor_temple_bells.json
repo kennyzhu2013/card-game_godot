@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_sacred_seven_temple_bells",
+  "encounter_type": "flavor",
+  "display_name": "Temple Bells",
+  "districts": ["sacred_seven"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Seven bells answer one another across the church roofs.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "Seven bells answer one another across the church roofs."},
+    "1": {"text": "The seventh bell waits until you breathe before it rings."},
+    "2": {"text": "The bells ring in pairs, leaving one voice missing and hungry."},
+    "3": {"text": "The bells stop, but your shadow keeps kneeling to them."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

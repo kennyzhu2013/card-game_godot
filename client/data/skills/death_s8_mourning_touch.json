@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "death_s8_mourning_touch",
+  "display_name": "哀悼触碰",
+  "description": "一只冰冷的手按在胸口，把活力按成沉默。",
+  "pathway": "death",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "死",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 9, "heal": 0, "target": "single", "range": 1, "status_effects": [{"id": "weak", "duration": 2}]}
+}

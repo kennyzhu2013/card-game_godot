@@ -1,0 +1,17 @@
+# Dialogic timeline: npc/harvey_mors_main
+# portrait:res://assets/textures/portraits/portrait_harvey_mors.png
+# Slice 3 T5: Harvey self-dialogue for the Halfmoon vow and pseudo-god contract.
+
+# branch:first_meet
+# hook:npc_first_meet
+哈维: 你用我的名字醒来，也用我的名字被他们认错。
+
+# branch:halfmoon_vow
+哈维: 半月之约见证的不是你是谁，而是你能把谁扮演到最后。
+
+# branch:pseudo_god_contract
+# grant_intel:intel_harvey_halfmoon_self_001
+哈维: 若你接受伪神契约，五条守则会比任何敌人都先审问你。
+
+# branch:leave
+哈维: 记住，冒充神的人最怕被自己看见。

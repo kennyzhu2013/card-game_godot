@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_water_breath",
+  "display_name": "水下呼吸",
+  "description": "他在湖底也能讲完一整段开场白。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "水",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "immune_debuff", "types": ["suffocate", "poison", "silence"], "duration": 3}, {"id": "cleanse_debuff", "types": ["suffocate", "poison", "silence"]}, {"id": "consume_on_trigger"}]},
+  "tags": ["status", "cleanse"]
+}

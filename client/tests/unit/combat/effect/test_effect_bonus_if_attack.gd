@@ -1,0 +1,41 @@
+extends "res://tests/unit/combat/effect/test_effect_harness.gd"
+
+func run() -> Dictionary:
+	print("\n-- test_effect_bonus_if_attack.gd --")
+	var player = _make_player(30)
+	var enemy = _make_enemy("dummy", 30, 0)
+	var attack_card = _tagged_card("top_attack", ["attack"])
+	var card = _effect_card("paper_arsenal", [
+		{"id": "discard_top_deck"},
+		{"id": "bonus_if_attack", "magnitude": 6},
+	], 5)
+	var battle = _start_battle([card], player, enemy)
+	battle.draw_pile = [attack_card]
+	battle.discard_pile.clear()
+	battle.hand.clear()
+	battle.hand.append(card)
+
+	assert_true(battle.play_card(card, enemy), "bonus_if_attack card can be played")
+	assert_true(battle.field_state.get("last_discarded", null) == attack_card, "discard_top_deck sets last_discarded for attack branch")
+	assert_eq(enemy.hp, 19, "bonus_if_attack adds magnitude to attack damage")
+	return _result()
+
+
+func _tagged_card(id: String, tags: Array) -> Card:
+	return CardScript.from_json({
+		"id": id,
+		"template_id": id,
+		"display_name": id,
+		"pathway": "fool",
+		"sequence": 9,
+		"energy_cost": 0,
+		"element": "normal",
+		"combat_effect": {
+			"damage": 0,
+			"heal": 0,
+			"target": "single",
+			"range": 1,
+			"status_effects": [],
+		},
+		"tags": tags,
+	})

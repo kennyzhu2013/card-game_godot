@@ -1,0 +1,210 @@
+{
+  "id": "dream_weaver",
+  "name": "织梦者",
+  "name_en": "Dream Weaver",
+  "description": "控制/辅助/心智操纵",
+  "god_name": "千面梦主 The Thousand-Faced Dreamer",
+  "sequences": {
+    "9": {
+      "title": "拾梦人", "title_en": "Dream Picker",
+      "tier": "apprentice",
+      "potion_name": "梦之碎片",
+      "materials": [
+        {"id": "rest_flower", "name": "安息花", "count": 10},
+        {"id": "spider_silk", "name": "蛛丝", "count": 5},
+        {"id": "moonlight_grass", "name": "月光草", "count": 3},
+        {"id": "silver_pot", "name": "银壶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "催眠术", "type": "cc", "power": 0, "cost_mp": 10, "effect": "sleep", "duration": 1},
+        {"name": "情绪感知", "type": "detect", "power": 0, "cost_mp": 5, "effect": "read_next_action"}
+      ],
+      "stats_bonus": {"hp": 18, "mp": 15, "spd": 5},
+      "acting_task": "帮助3个失眠者进入安稳的睡眠",
+      "loss_of_control_form": {"name": "梦游者", "hp": 20},
+      "ritual_types": ["divine", "enhance"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "雾纱编者", "title_en": "Mist Veil Spinner",
+      "tier": "apprentice",
+      "potion_name": "雾纱之茧",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "phantom_silk", "name": "幻丝", "count": 5},
+        {"id": "rest_flower", "name": "安息花", "count": 8},
+        {"id": "dream_crystal", "name": "梦境水晶", "count": 2},
+        {"id": "silver_powder", "name": "银粉", "count": 3}
+      ],
+      "abilities": [
+        {"name": "幻象分身", "type": "summon", "power": 0, "cost_mp": 15, "summon_hp": 50},
+        {"name": "精神护盾", "type": "shield", "power": 30, "cost_mp": 12, "duration": 3, "effect": "mental_resist"}
+      ],
+      "stats_bonus": {"hp": 28, "mp": 25, "mental_resist": 0.1},
+      "acting_task": "用幻象迷惑敌方哨兵，帮助友军安全通过封锁线",
+      "loss_of_control_form": {"name": "碎面人", "hp": 100},
+      "ritual_types": ["divine", "enhance", "commune"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "浅梦行者", "title_en": "Shallow Dreamer",
+      "tier": "apprentice",
+      "potion_name": "浅梦之钥",
+      "materials": [
+        {"id": "seq8_potion", "name": "序列8灵药", "count": 1},
+        {"id": "dream_crystal", "name": "梦境水晶", "count": 4},
+        {"id": "phantom_silk", "name": "幻丝", "count": 8},
+        {"id": "white_butterfly_wing", "name": "白蝶翅", "count": 3},
+        {"id": "mist_essence", "name": "薄雾精华", "count": 2}
+      ],
+      "abilities": [
+        {"name": "入梦", "type": "special", "power": 0, "cost_mp": 20, "effect": "enter_dream_read_info"},
+        {"name": "迷惑", "type": "cc", "power": 0, "cost_mp": 15, "effect": "confuse", "duration": 1}
+      ],
+      "stats_bonus": {"hp": 38, "mp": 35, "mental_resist": 0.15},
+      "acting_task": "通过入梦为一位昏迷者找到苏醒的线索",
+      "loss_of_control_form": {"name": "梦境迷途者", "hp": 110},
+      "ritual_types": ["divine", "enhance", "commune", "curse"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "梦境织师", "title_en": "Dreamloom Artisan",
+      "tier": "walker",
+      "potion_name": "梦境织锦",
+      "materials": [
+        {"id": "seq7_potion", "name": "序列7灵药", "count": 1},
+        {"id": "dream_crystal", "name": "梦境水晶", "count": 8},
+        {"id": "boss_heart", "name": "Boss之心", "count": 1},
+        {"id": "phantom_silk", "name": "幻丝", "count": 12},
+        {"id": "white_butterfly_wing", "name": "白蝶翅", "count": 5}
+      ],
+      "abilities": [
+        {"name": "梦境牢笼", "type": "cc", "power": 0, "cost_mp": 25, "effect": "imprison", "duration": 2},
+        {"name": "群体恐惧", "type": "cc_aoe", "power": 0, "cost_mp": 20, "targets": 3, "effect": "fear", "duration": 1}
+      ],
+      "stats_bonus": {"hp": 55, "mp": 50, "mental_resist": 0.2},
+      "acting_task": "用梦境牢笼俘获一名敌方序列者并从其梦中提取情报",
+      "loss_of_control_form": {"name": "梦境茧", "hp": 280},
+      "ritual_types": ["divine", "enhance", "commune", "curse", "summon"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "千面假面", "title_en": "Myriad Mask",
+      "tier": "walker",
+      "potion_name": "千面之仪",
+      "materials": [
+        {"id": "seq6_potion", "name": "序列6灵药", "count": 1},
+        {"id": "dark_iron_ingot", "name": "玄铁锭", "count": 2},
+        {"id": "ancient_rune", "name": "古代符文", "count": 3},
+        {"id": "dream_crystal", "name": "梦境水晶", "count": 6},
+        {"id": "myriad_mask_shard", "name": "千面面具碎片", "count": 1}
+      ],
+      "abilities": [
+        {"name": "面具复制", "type": "special", "power": 0, "cost_mp": 30, "effect": "copy_appearance_and_skill", "duration": 5},
+        {"name": "精神风暴", "type": "cc_aoe", "power": 0, "cost_mp": 25, "effect": "stun", "duration": 1, "radius": 3}
+      ],
+      "stats_bonus": {"hp": 75, "mp": 80, "mental_resist": 0.25, "crit_rate": 0.05},
+      "acting_task": "以面具复制伪装成敌方核心人物，在不被发现的情况下完成一次渗透",
+      "loss_of_control_form": {"name": "千面怪", "hp": 500},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "深梦窃语", "title_en": "Deep Dream Whisperer",
+      "tier": "walker",
+      "potion_name": "深梦回响",
+      "materials": [
+        {"id": "seq5_potion", "name": "序列5灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 1},
+        {"id": "dragon_blood", "name": "龙血", "count": 1},
+        {"id": "dream_crystal", "name": "梦境水晶", "count": 10},
+        {"id": "outer_god_whisper_scroll", "name": "外神低语录残卷", "count": 1}
+      ],
+      "abilities": [
+        {"name": "窃取记忆", "type": "special", "power": 0, "cost_mp": 35, "effect": "read_target_skills"},
+        {"name": "植入幻觉", "type": "cc", "power": 0, "cost_mp": 30, "effect": "friendly_fire", "duration": 1}
+      ],
+      "stats_bonus": {"hp": 100, "mp": 120, "all_resist": 0.12},
+      "acting_task": "从一个被封印的古代序列者的梦境中提取关键历史记忆",
+      "loss_of_control_form": {"name": "记忆吞噬者", "hp": 800},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "梦界裁断", "title_en": "Dream Arbiter",
+      "tier": "saint",
+      "potion_name": "梦界审判",
+      "materials": [
+        {"id": "seq4_potion", "name": "序列4灵药", "count": 1},
+        {"id": "saint_fragment", "name": "封圣残片", "count": 1},
+        {"id": "divine_rune", "name": "神铸符文", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 2},
+        {"id": "myriad_mask", "name": "千面面具", "count": 1}
+      ],
+      "abilities": [
+        {"name": "梦境法庭", "type": "special", "power": 0, "cost_mp": 60, "effect": "drag_3_enemies_to_dream_1v1"},
+        {"name": "精神崩溃", "type": "attack", "power": 0, "cost_mp": 50, "effect": "50_percent_current_hp_mental_damage"}
+      ],
+      "stats_bonus": {"hp": 150, "mp": 200, "all_resist": 0.22},
+      "acting_task": "以梦界裁断者身份审判一个犯下重罪的序列者（剧情任务）",
+      "loss_of_control_form": {"name": "梦境暴君", "hp": 1400},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 28},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "幻界之主", "title_en": "Phantasm Lord",
+      "tier": "saint",
+      "potion_name": "幻界坠落",
+      "materials": [
+        {"id": "seq3_potion", "name": "序列3灵药", "count": 1},
+        {"id": "world_tree_bark", "name": "世界树皮", "count": 3},
+        {"id": "dragon_blood", "name": "龙血", "count": 3},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 3},
+        {"id": "eternal_dreamer_reflection", "name": "永梦之主倒影", "count": 1}
+      ],
+      "abilities": [
+        {"name": "梦境领域", "type": "terrain", "power": 0, "cost_mp": 70, "effect": "physical_atk_minus_30_mental_atk_plus_30", "duration": 5},
+        {"name": "召唤梦魇兽", "type": "summon", "power": 0, "cost_mp": 60, "summon_hp": 800, "duration": 3, "effect": "aoe_fear_per_turn"}
+      ],
+      "stats_bonus": {"hp": 210, "mp": 280, "all_resist": 0.28},
+      "acting_task": "在梦境与现实的裂缝中封印一次大规模梦魇入侵",
+      "loss_of_control_form": {"name": "梦境吞噬者", "hp": 2800},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 6, "sanity_cost": 30},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "永眠织梦", "title_en": "Eternal Dreamer",
+      "tier": "saint",
+      "potion_name": "永眠之约",
+      "materials": [
+        {"id": "seq2_potion", "name": "序列2灵药", "count": 1},
+        {"id": "ancient_god_core", "name": "远古神核", "count": 5},
+        {"id": "outer_god_eye", "name": "外神之眼", "count": 1},
+        {"id": "eternal_dreamer_reflection", "name": "永梦之主倒影", "count": 3},
+        {"id": "eternal_sleep_crown", "name": "永眠之冠", "count": 1}
+      ],
+      "abilities": [
+        {"name": "强制入梦", "type": "ultimate", "power": 0, "cost_mp": 100, "uses_per_week": 1, "effect": "force_all_enemies_sleep_kill_one_per_turn"},
+        {"name": "梦境编织", "type": "terrain", "power": 0, "cost_mp": 80, "effect": "rewrite_all_battlefield_rules", "duration": 5}
+      ],
+      "stats_bonus": {"hp": 360, "mp": 400, "all_resist": 0.48},
+      "acting_task": "以永眠织梦之名完成梦之巡礼剧情链",
+      "loss_of_control_form": {"name": "不可控——世界Boss永眠梦魇", "hp": 0},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": -1, "sanity_cost": -1},
+      "sanity_per_action": 5.0,
+      "max_per_server": 1
+    }
+  }
+}

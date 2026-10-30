@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "priestess_s9_key_turn",
+  "display_name": "钥孔回响",
+  "description": "不存在的钥匙转动一格，敌人的行动迟滞半拍。",
+  "pathway": "priestess",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "门",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 5, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "delay_intent", "duration": 1}]}
+}

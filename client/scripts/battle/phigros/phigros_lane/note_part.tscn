@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://note_part_phigros"]
+
+[ext_resource type="Script" path="res://scripts/battle/phigros/phigros_lane/note_part.gd" id="1"]
+
+[node name="NotePart" type="Node2D"]
+script = ExtResource("1")

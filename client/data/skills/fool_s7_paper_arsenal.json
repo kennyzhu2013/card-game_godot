@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_paper_arsenal",
+  "display_name": "抽纸为兵",
+  "description": "纸是飞刀，纸是棍棒，纸是砖头，纸什么都是，只要他需要。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "纸",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 5, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "discard_top_deck"}, {"id": "bonus_if_attack", "magnitude": 6}, {"id": "vulnerable_if_skill", "duration": 2}, {"id": "weak_if_status", "duration": 2}]},
+  "tags": ["attack", "deck_transform"]
+}

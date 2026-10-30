@@ -1,0 +1,1 @@
+{"id":"shadow_alley_lost_coin","district":"shadow_alley","title":"掉进砖缝的旧币","narrative_template":"一枚旧币卡在砖缝里，背面刻着你不认识的名字。","choices":[{"id":"pry","text":"撬出来","outcome":{"lingstones":30,"pollution":2}},{"id":"mark","text":"记下位置","outcome":{"dao_page_fragment":1}}]}

@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_sacred_seven_evening_choir",
+  "encounter_type": "flavor",
+  "display_name": "Evening Choir",
+  "districts": ["sacred_seven"],
+  "time_of_day": ["evening"],
+  "weight": 30,
+  "preconditions": ["trigger_source == 'time_segment'"],
+  "step_count": 1,
+  "scene_payload": {"text": "The evening choir practices one note too low.", "choices": [{"id": "listen", "label": "Listen", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The evening choir practices one note too low."},
+    "1": {"text": "The choir holds one note until the candles tremble."},
+    "2": {"text": "One singer mouths the note after everyone else has stopped."},
+    "3": {"text": "The choir sings through closed throats and the nave applauds."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

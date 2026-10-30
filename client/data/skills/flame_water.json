@@ -1,0 +1,21 @@
+{
+  "id": "flame_water",
+  "display_name": "水火",
+  "description": "蒸汽爆炸，伤敌亦伤己",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "火",
+  "required_symbols": ["flame", "water"],
+  "tier": 2,
+  "mp_cost": 18,
+  "cooldown": 4,
+  "pollution_per_use": 4,
+  "combat_effect": {
+    "damage": 25,
+    "heal": 0,
+    "target": "aoe",
+    "range": 2,
+    "status_effects": [{"id": "self_damage", "magnitude": 7}]
+  }
+}

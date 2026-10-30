@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "hermit_s9_hidden_eye",
+  "display_name": "隐眼凝视",
+  "description": "书页后的眼睛睁开，下一步意图无处躲藏。",
+  "pathway": "hermit",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "秘",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "single", "range": 5, "status_effects": [{"id": "intent_revealed", "duration": 1}]}
+}

@@ -1,0 +1,75 @@
+{
+  "$schema": "encounter_pack_v1",
+  "encounters": [
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_reflection_drill_mirror_step",
+      "encounter_type": "mystery_seed",
+      "display_name": "镜中影步",
+      "districts": ["misty_port", "sacred_seven"],
+      "time_of_day": ["evening", "night"],
+      "weight": 5,
+      "preconditions": ["halfmoon_trust >= 0"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "倒影让你去人群里练一次影步，必须让旁人只记得水面，不记得你的脸。",
+        "choices": [
+          {"id": "listen", "label": "记下演练要求", "outcome": {}},
+          {"id": "refuse", "label": "拒绝倒影安排", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "reflection_chain",
+      "chain_step": 2,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_reflection_drill_noble_salon",
+      "encounter_type": "mystery_seed",
+      "display_name": "沙龙里的第二张脸",
+      "districts": ["misty_port", "sacred_seven", "stone_tower"],
+      "time_of_day": ["evening", "night"],
+      "weight": 4,
+      "preconditions": ["halfmoon_trust >= 0"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "倒影要求你在贵族沙龙里只说半句真话，让另半句由镜面替你完成。",
+        "choices": [
+          {"id": "listen", "label": "带着镜面入场", "outcome": {}},
+          {"id": "deny", "label": "否认倒影的席位", "outcome": {}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "reflection_chain",
+      "chain_step": 3,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_reflection_confess",
+      "encounter_type": "mystery_seed",
+      "display_name": "倒影告白",
+      "districts": ["misty_port", "sacred_seven"],
+      "time_of_day": ["evening", "night"],
+      "weight": 2,
+      "preconditions": ["halfmoon_trust >= 0"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "倒影说它爱上了你曾经拒绝承认的那一部分，并要求一个不可撤回的回答。",
+        "choices": [
+          {"id": "merge", "label": "与倒影融合", "outcome": {"unlock_chain_step": 5, "story_flags": {"reflection_ending": "merge"}, "pollution_delta": 2}},
+          {"id": "refuse", "label": "拒绝这段恋情", "outcome": {"unlock_chain_step": 5, "story_flags": {"reflection_ending": "refuse"}, "halfmoon_trust_delta": -5}},
+          {"id": "sink", "label": "随倒影沉入镜底", "outcome": {"unlock_chain_step": 5, "story_flags": {"reflection_ending": "sink"}, "pollution_delta": 1}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "reflection_chain",
+      "chain_step": 4,
+      "resolutions": []
+    }
+  ]
+}

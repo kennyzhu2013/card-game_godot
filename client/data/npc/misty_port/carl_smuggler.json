@@ -1,0 +1,43 @@
+{
+  "id": "carl_smuggler",
+  "display_name": "走私者卡尔",
+  "default_district": "misty_port",
+  "placeholder": false,
+  "public": {"role": "港口走私者", "appearance": "总在雨衣里藏货，帽檐低得看不清眼睛"},
+  "hidden": {"actual_age": "38", "past_secrets": ["拍卖会消息来源", "知道雾港封仓钥匙"]},
+  "truth": {"true_name": "卡尔·摩汀", "true_origin": "港口货运线"},
+  "default_trust": 4,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "misty_port", "time_of_day": "night", "label_suffix": "（在码头边接货）", "icon": "C", "interactable": true}
+  ],
+  "dialogue_tree": "carl_smuggler_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_carl_smuggler_auction_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "misty_port_auction",
+      "summary": "卡尔说雾港拍卖会只在周六夜晚开门。"
+    },
+    {
+      "intel_id": "intel_carl_smuggler_port_gate_001",
+      "trust": 20,
+      "source_type": "npc_chat",
+      "topic": "sealed_warehouse",
+      "summary": "封仓门后有人把教会货箱换成了空箱。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "misty_port_commissions",
+  "commission_templates": ["commission_misty_port_smuggle_001"],
+  "field_opportunities": ["carl_manifest_whisper", "carl_sealed_gate"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "shop_discount", "payload": {"shop_id": "donen_blackmarket", "pct": 5}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "$schema": "encounter_pack_v1",
+  "encounters": [
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_widow_child_calls_dad",
+      "encounter_type": "mystery_seed",
+      "display_name": "孩子喊错父亲",
+      "districts": ["shadow_alley", "steelworks"],
+      "time_of_day": ["evening", "night"],
+      "weight": 5,
+      "preconditions": ["day >= 4", "pollution >= 30"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "寡妇的孩子隔着巷口叫你父亲，声音像从很旧的屋子里传来。",
+        "choices": [
+          {"id": "approach", "label": "蹲下问他看见了谁", "outcome": {"unlock_chain_step": 3}},
+          {"id": "leave", "label": "退到灯下", "outcome": {}}
+        ]
+      },
+      "pollution_variant": {
+        "1": {"text": "寡妇的孩子隔着巷口叫你父亲，袖口沾着一点灰白的纸屑。"},
+        "2": {"text": "孩子看着你的影子叫父亲，眼神却越过你去找另一个人的脸。"},
+        "3": {"text": "孩子的脸在雨水里短暂塌陷，重新抬起时像一张学会喊你父亲的旧照片。"}
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "widow_child_chain",
+      "chain_step": 2,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_widow_pollution_50",
+      "encounter_type": "horror",
+      "display_name": "相似度过半",
+      "districts": ["shadow_alley", "steelworks"],
+      "time_of_day": ["evening", "night"],
+      "weight": 4,
+      "preconditions": ["pollution >= 50"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "孩子把一张练字纸递给你，上面反复写着你的姓和另一个男人的名。",
+        "choices": [
+          {"id": "accept", "label": "收下纸页", "outcome": {"unlock_chain_step": 4, "pollution_delta": 1}},
+          {"id": "burn", "label": "当场烧掉", "outcome": {"unlock_chain_step": 4, "church_awareness_delta": 1}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "widow_child_chain",
+      "chain_step": 3,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_widow_pollution_80",
+      "encounter_type": "horror",
+      "display_name": "像到无法否认",
+      "districts": ["shadow_alley", "steelworks"],
+      "time_of_day": ["evening", "night"],
+      "weight": 3,
+      "preconditions": ["pollution >= 80"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "寡妇把孩子推到你面前，说他昨夜终于梦见了真正的父亲，而梦里那人用你的手写字。",
+        "choices": [
+          {"id": "watch", "label": "让孩子说完梦", "outcome": {"unlock_chain_step": 5, "pollution_delta": 2}},
+          {"id": "refuse", "label": "拒绝这个称呼", "outcome": {"unlock_chain_step": 5, "church_awareness_delta": 2}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "widow_child_chain",
+      "chain_step": 4,
+      "resolutions": []
+    },
+    {
+      "$schema": "encounter_v1",
+      "id": "enc_widow_truth_reveal",
+      "encounter_type": "mystery_seed",
+      "display_name": "寡妇的真相",
+      "districts": ["shadow_alley", "steelworks"],
+      "time_of_day": ["evening", "night"],
+      "weight": 2,
+      "preconditions": ["pollution >= 50"],
+      "step_count": 1,
+      "scene_payload": {
+        "text": "寡妇承认孩子从未见过父亲，他只是在污染里学会寻找最像缺口的人。",
+        "choices": [
+          {"id": "accept_shadow", "label": "承认这段影子亲缘", "outcome": {"unlock_chain_step": 6, "story_flags": {"widow_child_ending": "polluted_family"}, "pollution_delta": 2}},
+          {"id": "cut_tie", "label": "切断这个称呼", "outcome": {"unlock_chain_step": 6, "story_flags": {"widow_child_ending": "severed_name"}, "church_awareness_delta": 2}}
+        ]
+      },
+      "max_per_cycle": 1,
+      "cooldown_days": 0,
+      "chain_id": "widow_child_chain",
+      "chain_step": 5,
+      "resolutions": []
+    }
+  ]
+}

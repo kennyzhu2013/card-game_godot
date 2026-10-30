@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "mirror_step",
+  "type": "drill",
+  "display_name": "镜中影步",
+  "city": "shadow_alley",
+  "ap_cost": 1,
+  "witness_npc_id": "drunk_passerby",
+  "success_trust_delta": 0,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "match_stride", "label": "跟上行人的步伐"},
+    {"id": "no_eye_contact", "label": "不要直接对视"},
+    {"id": "leave_no_name", "label": "不要留下名字"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "mirror_step"}, {"type": "temp_card", "id": "temp_mirror_step", "display_name": "镜中影步临时牌"}],
+  "rewards_partial": [{"type": "temp_card", "id": "temp_mirror_step", "display_name": "镜中影步临时牌"}],
+  "punishment_fail": [{"type": "pollution", "amount": 1}]
+}

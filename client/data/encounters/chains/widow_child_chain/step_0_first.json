@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_widow_child_first",
+  "encounter_type": "mystery_seed",
+  "display_name": "Widow And Child",
+  "districts": ["shadow_alley", "steelworks"],
+  "time_of_day": ["evening", "night"],
+  "weight": 5,
+  "preconditions": ["day >= 4", "mainline.node_2.completed == true"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "A widow asks whether you have seen a child who keeps calling the wrong father.",
+    "choices": [
+      {"id": "approach", "label": "Approach", "outcome": {"unlock_chain_step": 1}},
+      {"id": "ignore", "label": "Ignore", "outcome": {"chain_lock": true}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "widow_child_chain",
+  "chain_step": 0,
+  "resolutions": []
+}

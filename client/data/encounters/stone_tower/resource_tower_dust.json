@@ -1,0 +1,17 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_stone_tower_tower_dust",
+  "encounter_type": "resource",
+  "display_name": "Tower Dust",
+  "districts": ["stone_tower"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 18,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Fine tower dust gathers in the seal of a cracked vial.", "choices": [{"id": "take", "label": "Take it", "outcome": {"lingstones_delta": 1}}, {"id": "leave", "label": "Leave it", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

@@ -1,0 +1,25 @@
+# Dialogic timeline: npc/martha_rich_main
+# Slice 3 T4: Martha Rich main dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+玛莎: 你就是哈维？我不管你以前欠谁的人情，我只问你能不能进第七炼钢厂。
+玛莎: 那里少了太多人，连名字都从名册上被撕走了。
+
+# branch:small_talk
+玛莎: 炉火一天不灭，家里就还有人愿意等。
+玛莎: 可现在等的人比回来的人多。
+
+# branch:ask_intel
+# grant_intel:intel_martha_missing_case_001
+玛莎: 第七炼钢厂的失踪名单被人从厂部档案里撕走。
+# grant_intel:intel_martha_worker_route_001
+玛莎: 旧工会还留着一条巡检小路，能绕开正门。
+
+# branch:commission
+# commission_pool:steelworks_commissions
+# dispatch_placeholder:R17 steelworks_commissions
+玛莎: 你要接这个活，就别只带回消息。我要人，或者至少要一个能下葬的答案。
+
+# branch:leave
+玛莎: 别让我等太久。等久了，人会先学会不信。

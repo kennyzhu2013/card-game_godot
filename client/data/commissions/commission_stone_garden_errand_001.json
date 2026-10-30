@@ -1,0 +1,20 @@
+{
+  "id": "commission_stone_garden_errand_001",
+  "commission_type": "gather",
+  "difficulty": "small",
+  "display_name": "花园跑腿",
+  "description": "Hanna needs a sealed packet carried through the old garden route.",
+  "issuer_npc": "hanna_gardener",
+  "district": "stone_tower",
+  "min_day": 4,
+  "max_day": 14,
+  "min_sequence": 8,
+  "refresh_priority": 75,
+  "dispatch_target": {"kind": "job", "job_id": "errand_runner", "district": "stone_tower", "item_id": "garden_packet", "count": 1},
+  "time_limit_days": 3,
+  "rewards": [{"type": "lingstones", "amount": 100}, {"type": "material", "id": "garden_thread", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

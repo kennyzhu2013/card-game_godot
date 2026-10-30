@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_steelworks_slag_buzz",
+  "encounter_type": "flavor",
+  "display_name": "Slag Buzz",
+  "districts": ["steelworks"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "Hot slag ticks in the gutter like trapped insects.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "Hot slag ticks in the gutter like trapped insects."},
+    "1": {"text": "The slag ticks once for each lie you told today."},
+    "2": {"text": "The slag pulses under its ash skin, almost breathing."},
+    "3": {"text": "The gutter ticks back with a heartbeat that is not yours."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

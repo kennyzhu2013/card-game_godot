@@ -1,0 +1,2030 @@
+{
+  "$schema": "pixel_asset_manifest_v1",
+  "placeholder_fallbacks": {
+    "p0_portrait_expression_path": "res://assets/textures/portraits/portrait_{linked_data_id}.png",
+    "onboarding_scene_placeholder_strategy": "scene_06-scene_25 reuse first five integrated onboarding scene textures by mood: indoor_dialogue -> onboarding_wake_up/onboarding_knocking_old_li; street_exploration -> onboarding_find_press_id; object_closeup -> onboarding_newspaper_and_notes.",
+    "onboarding_scene_placeholder_paths": {
+      "onboarding_first_acting_check": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_task_arrow_to_seven_holy": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "onboarding_leaving_home": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "onboarding_drunkard_encounter": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "onboarding_tutorial_battle": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "onboarding_first_card_drop": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_drunkard_foreshadow": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "onboarding_bell_tower_arrival": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "onboarding_brandon_encounter": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "onboarding_second_acting_check": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_victor_rumor": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "onboarding_return_home": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "onboarding_forge_tutorial_intro": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_forge_phigros_tutorial": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_first_forge_result": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_weird_chanting": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "onboarding_basement_discovery": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "onboarding_true_notebook": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "onboarding_ai_gm_revelation": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "onboarding_dream_pendulum": "res://assets/textures/onboarding/onboarding_wake_up.png"
+    }
+  },
+  "assets": {
+    "player": {
+      "kind": "actor_variant",
+      "display_name": "Player",
+      "runtime_status": "placeholder",
+      "source": "server_default_aoi_actor",
+      "notes": "Default AOI actor variant id used by M3 progression state. Runtime art replacement is tracked separately."
+    },
+    "card_fool_s9_shadow_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_shadow_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/014-card-common-s9-shadow_arrow.png",
+      "linked_data_id": "shadow_arrow"
+    },
+    "card_fool_s9_spirit_vision": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_spirit_vision.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/060-card-fool-s9-fool_s9_spirit_vision.png",
+      "linked_data_id": "fool_s9_spirit_vision"
+    },
+    "card_fool_s9_star_chart_divination": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_star_chart_divination.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/061-card-fool-s9-fool_s9_star_chart_divination.png",
+      "linked_data_id": "fool_s9_star_chart_divination"
+    },
+    "card_fool_s9_pendulum_query": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_pendulum_query.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/057-card-fool-s9-fool_s9_pendulum_query.png",
+      "linked_data_id": "fool_s9_pendulum_query"
+    },
+    "card_fool_s9_ritual_chant": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_ritual_chant.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/059-card-fool-s9-fool_s9_ritual_chant.png",
+      "linked_data_id": "fool_s9_ritual_chant"
+    },
+    "brand_fool_shadow_seal": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_fool_shadow_seal.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/001-brand-fool_shadow_seal.png",
+      "linked_data_id": "fool_shadow_seal"
+    },
+    "brand_fate_thread": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_fate_thread.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/011-brand-fate_thread.png",
+      "linked_data_id": "fate_thread"
+    },
+    "brand_mirror_image": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_mirror_image.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/019-brand-mirror_image.png",
+      "linked_data_id": "mirror_image"
+    },
+    "brand_fool_jester_mark": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_fool_jester_mark.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/002-brand-fool_jester_mark.png",
+      "linked_data_id": "fool_jester_mark"
+    },
+    "brand_silence_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_silence_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/012-brand-silence_brand.png",
+      "linked_data_id": "silence_brand"
+    },
+    "portrait_harvey_mors": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_harvey_mors.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/007-portrait-harvey_mors-default.png",
+      "linked_data_id": "harvey_mors"
+    },
+    "portrait_reflection": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_reflection.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/014-portrait-reflection-default.png",
+      "linked_data_id": "reflection"
+    },
+    "portrait_pendulum": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_pendulum.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/011-portrait-pendulum-default.png",
+      "linked_data_id": "pendulum"
+    },
+    "event_shadow_alley_anchor": {
+      "kind": "texture",
+      "category": "event",
+      "path": "res://assets/textures/events/event_shadow_alley_anchor.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_baseline/06-shadow-alley-event-anchor.png",
+      "linked_data_id": "shadow_alley_well_face"
+    },
+    "event_misty_port_night_market": {
+      "kind": "texture",
+      "category": "event",
+      "path": "res://assets/textures/events/event_misty_port_night_market.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_mvp_expansion/11-event-mist-harbor-night-market.png",
+      "linked_data_id": "mist_black_sail"
+    },
+    "event_sacred_seven_investigation": {
+      "kind": "texture",
+      "category": "event",
+      "path": "res://assets/textures/events/event_sacred_seven_investigation.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_mvp_expansion/12-event-seven-saints-investigation.png",
+      "linked_data_id": "saints_silent_confession"
+    },
+    "hub_anchor": {
+      "kind": "texture",
+      "category": "hub",
+      "path": "res://assets/textures/hub/hub_anchor.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_baseline/01-hub-mufang-style-anchor.png",
+      "linked_data_id": "hub_anchor"
+    },
+    "hub_shadow_symbol_anchor": {
+      "kind": "texture",
+      "category": "hub",
+      "path": "res://assets/textures/hub/hub_shadow_symbol_anchor.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_baseline/02-symbol-shadow-lingwu-anchor.png",
+      "linked_data_id": "shadow"
+    },
+    "card_chariot_s7_thunder_boarding": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_chariot_s7_thunder_boarding.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/001-card-chariot-s7-chariot_s7_thunder_boarding.png",
+      "linked_data_id": "chariot_s7_thunder_boarding"
+    },
+    "card_chariot_s8_reef_breaker": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_chariot_s8_reef_breaker.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/002-card-chariot-s8-chariot_s8_reef_breaker.png",
+      "linked_data_id": "chariot_s8_reef_breaker"
+    },
+    "card_chariot_s8_storm_pulse": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_chariot_s8_storm_pulse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/003-card-chariot-s8-chariot_s8_storm_pulse.png",
+      "linked_data_id": "chariot_s8_storm_pulse"
+    },
+    "card_chariot_s9_sailor_shout": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_chariot_s9_sailor_shout.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/004-card-chariot-s9-chariot_s9_sailor_shout.png",
+      "linked_data_id": "chariot_s9_sailor_shout"
+    },
+    "card_chariot_s9_tide_cut": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_chariot_s9_tide_cut.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/005-card-chariot-s9-chariot_s9_tide_cut.png",
+      "linked_data_id": "chariot_s9_tide_cut"
+    },
+    "card_arrow_water": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_arrow_water.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/006-card-common-s9-arrow_water.png",
+      "linked_data_id": "arrow_water"
+    },
+    "card_flame_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_flame_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/007-card-common-s9-flame_arrow.png",
+      "linked_data_id": "flame_arrow"
+    },
+    "card_flame_water": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_flame_water.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/008-card-common-s9-flame_water.png",
+      "linked_data_id": "flame_water"
+    },
+    "card_fortune_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fortune_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/009-card-common-s9-fortune_arrow.png",
+      "linked_data_id": "fortune_arrow"
+    },
+    "card_inquiry_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_inquiry_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/010-card-common-s9-inquiry_arrow.png",
+      "linked_data_id": "inquiry_arrow"
+    },
+    "card_jester_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_jester_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/011-card-common-s9-jester_arrow.png",
+      "linked_data_id": "jester_arrow"
+    },
+    "card_mirror_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_mirror_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/012-card-common-s9-mirror_arrow.png",
+      "linked_data_id": "mirror_arrow"
+    },
+    "card_name_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_name_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/013-card-common-s9-name_arrow.png",
+      "linked_data_id": "name_arrow"
+    },
+    "card_shadow_flame": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_shadow_flame.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/015-card-common-s9-shadow_flame.png",
+      "linked_data_id": "shadow_flame"
+    },
+    "card_thread_arrow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_thread_arrow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/016-card-common-s9-thread_arrow.png",
+      "linked_data_id": "thread_arrow"
+    },
+    "card_water_touch": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_water_touch.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/017-card-common-s9-water_touch.png",
+      "linked_data_id": "water_touch"
+    },
+    "card_death_s7_reaper_hook": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_death_s7_reaper_hook.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/018-card-death-s7-death_s7_reaper_hook.png",
+      "linked_data_id": "death_s7_reaper_hook"
+    },
+    "card_death_s8_mourning_touch": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_death_s8_mourning_touch.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/019-card-death-s8-death_s8_mourning_touch.png",
+      "linked_data_id": "death_s8_mourning_touch"
+    },
+    "card_death_s8_wither_breath": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_death_s8_wither_breath.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/020-card-death-s8-death_s8_wither_breath.png",
+      "linked_data_id": "death_s8_wither_breath"
+    },
+    "card_death_s9_bone_splinter": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_death_s9_bone_splinter.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/021-card-death-s9-death_s9_bone_splinter.png",
+      "linked_data_id": "death_s9_bone_splinter"
+    },
+    "card_death_s9_grave_chill": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_death_s9_grave_chill.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/022-card-death-s9-death_s9_grave_chill.png",
+      "linked_data_id": "death_s9_grave_chill"
+    },
+    "card_emperor_s7_verdict_crush": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_emperor_s7_verdict_crush.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/023-card-emperor-s7-emperor_s7_verdict_crush.png",
+      "linked_data_id": "emperor_s7_verdict_crush"
+    },
+    "card_emperor_s8_debt_mark": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_emperor_s8_debt_mark.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/024-card-emperor-s8-emperor_s8_debt_mark.png",
+      "linked_data_id": "emperor_s8_debt_mark"
+    },
+    "card_emperor_s8_tax_blood": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_emperor_s8_tax_blood.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/025-card-emperor-s8-emperor_s8_tax_blood.png",
+      "linked_data_id": "emperor_s8_tax_blood"
+    },
+    "card_emperor_s9_contract_bind": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_emperor_s9_contract_bind.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/026-card-emperor-s9-emperor_s9_contract_bind.png",
+      "linked_data_id": "emperor_s9_contract_bind"
+    },
+    "card_emperor_s9_legal_notice": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_emperor_s9_legal_notice.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/027-card-emperor-s9-emperor_s9_legal_notice.png",
+      "linked_data_id": "emperor_s9_legal_notice"
+    },
+    "card_fool_s7_air_bullet": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_air_bullet.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/028-card-fool-s7-fool_s7_air_bullet.png",
+      "linked_data_id": "fool_s7_air_bullet"
+    },
+    "card_fool_s7_bone_softening": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_bone_softening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/029-card-fool-s7-fool_s7_bone_softening.png",
+      "linked_data_id": "fool_s7_bone_softening"
+    },
+    "card_fool_s7_flame_command": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_flame_command.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/030-card-fool-s7-fool_s7_flame_command.png",
+      "linked_data_id": "fool_s7_flame_command"
+    },
+    "card_fool_s7_flame_jump": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_flame_jump.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/031-card-fool-s7-fool_s7_flame_jump.png",
+      "linked_data_id": "fool_s7_flame_jump"
+    },
+    "card_fool_s7_illusion_weave": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_illusion_weave.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/032-card-fool-s7-fool_s7_illusion_weave.png",
+      "linked_data_id": "fool_s7_illusion_weave"
+    },
+    "card_fool_s7_minor_trick": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_minor_trick.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/033-card-fool-s7-fool_s7_minor_trick.png",
+      "linked_data_id": "fool_s7_minor_trick"
+    },
+    "card_fool_s7_paper_arsenal": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_paper_arsenal.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/034-card-fool-s7-fool_s7_paper_arsenal.png",
+      "linked_data_id": "fool_s7_paper_arsenal"
+    },
+    "card_fool_s7_paper_doll_substitute": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_paper_doll_substitute.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/035-card-fool-s7-fool_s7_paper_doll_substitute.png",
+      "linked_data_id": "fool_s7_paper_doll_substitute"
+    },
+    "card_fool_s7_swift_cast": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_swift_cast.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/036-card-fool-s7-fool_s7_swift_cast.png",
+      "linked_data_id": "fool_s7_swift_cast"
+    },
+    "card_fool_s7_water_breath": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_water_breath.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/037-card-fool-s7-fool_s7_water_breath.png",
+      "linked_data_id": "fool_s7_water_breath"
+    },
+    "card_fool_s7_wound_displacement": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s7_wound_displacement.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/038-card-fool-s7-fool_s7_wound_displacement.png",
+      "linked_data_id": "fool_s7_wound_displacement"
+    },
+    "card_fool_s8_acrobat_strike": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s8_acrobat_strike.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/039-card-fool-s8-fool_s8_acrobat_strike.png",
+      "linked_data_id": "fool_s8_acrobat_strike"
+    },
+    "card_fool_s8_microexpression_read": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s8_microexpression_read.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/040-card-fool-s8-fool_s8_microexpression_read.png",
+      "linked_data_id": "fool_s8_microexpression_read"
+    },
+    "card_fool_s8_paper_blade_volley": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s8_paper_blade_volley.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/041-card-fool-s8-fool_s8_paper_blade_volley.png",
+      "linked_data_id": "fool_s8_paper_blade_volley"
+    },
+    "card_fool_s8_predator_instinct": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s8_predator_instinct.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/042-card-fool-s8-fool_s8_predator_instinct.png",
+      "linked_data_id": "fool_s8_predator_instinct"
+    },
+    "card_fool_s8_strongman_burst": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s8_strongman_burst.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/043-card-fool-s8-fool_s8_strongman_burst.png",
+      "linked_data_id": "fool_s8_strongman_burst"
+    },
+    "card_fortune_thread": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fortune_thread.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/044-card-fool-s8-fortune_thread.png",
+      "linked_data_id": "fortune_thread"
+    },
+    "card_inquiry_fortune": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_inquiry_fortune.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/045-card-fool-s8-inquiry_fortune.png",
+      "linked_data_id": "inquiry_fortune"
+    },
+    "card_inquiry_mirror": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_inquiry_mirror.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/046-card-fool-s8-inquiry_mirror.png",
+      "linked_data_id": "inquiry_mirror"
+    },
+    "card_inquiry_name": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_inquiry_name.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/047-card-fool-s8-inquiry_name.png",
+      "linked_data_id": "inquiry_name"
+    },
+    "card_jester_face": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_jester_face.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/048-card-fool-s8-jester_face.png",
+      "linked_data_id": "jester_face"
+    },
+    "card_jester_fortune": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_jester_fortune.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/049-card-fool-s8-jester_fortune.png",
+      "linked_data_id": "jester_fortune"
+    },
+    "card_jester_name": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_jester_name.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/050-card-fool-s8-jester_name.png",
+      "linked_data_id": "jester_name"
+    },
+    "card_mirror_face": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_mirror_face.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/051-card-fool-s8-mirror_face.png",
+      "linked_data_id": "mirror_face"
+    },
+    "card_mirror_shadow": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_mirror_shadow.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/052-card-fool-s8-mirror_shadow.png",
+      "linked_data_id": "mirror_shadow"
+    },
+    "card_shadow_jester": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_shadow_jester.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/053-card-fool-s8-shadow_jester.png",
+      "linked_data_id": "shadow_jester"
+    },
+    "card_shadow_name": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_shadow_name.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/054-card-fool-s8-shadow_name.png",
+      "linked_data_id": "shadow_name"
+    },
+    "card_shadow_thread": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_shadow_thread.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/055-card-fool-s8-shadow_thread.png",
+      "linked_data_id": "shadow_thread"
+    },
+    "card_fool_s9_arcane_lore": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_arcane_lore.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/056-card-fool-s9-fool_s9_arcane_lore.png",
+      "linked_data_id": "fool_s9_arcane_lore"
+    },
+    "card_fool_s9_premonition": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_fool_s9_premonition.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/058-card-fool-s9-fool_s9_premonition.png",
+      "linked_data_id": "fool_s9_premonition"
+    },
+    "card_hermit_s7_spell_backlash": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_hermit_s7_spell_backlash.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/062-card-hermit-s7-hermit_s7_spell_backlash.png",
+      "linked_data_id": "hermit_s7_spell_backlash"
+    },
+    "card_hermit_s8_archive_flame": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_hermit_s8_archive_flame.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/063-card-hermit-s8-hermit_s8_archive_flame.png",
+      "linked_data_id": "hermit_s8_archive_flame"
+    },
+    "card_hermit_s8_rune_cage": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_hermit_s8_rune_cage.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/064-card-hermit-s8-hermit_s8_rune_cage.png",
+      "linked_data_id": "hermit_s8_rune_cage"
+    },
+    "card_hermit_s9_glyph_spark": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_hermit_s9_glyph_spark.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/065-card-hermit-s9-hermit_s9_glyph_spark.png",
+      "linked_data_id": "hermit_s9_glyph_spark"
+    },
+    "card_hermit_s9_hidden_eye": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_hermit_s9_hidden_eye.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/066-card-hermit-s9-hermit_s9_hidden_eye.png",
+      "linked_data_id": "hermit_s9_hidden_eye"
+    },
+    "card_priestess_s7_space_fold": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_priestess_s7_space_fold.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/067-card-priestess-s7-priestess_s7_space_fold.png",
+      "linked_data_id": "priestess_s7_space_fold"
+    },
+    "card_priestess_s8_door_step": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_priestess_s8_door_step.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/068-card-priestess-s8-priestess_s8_door_step.png",
+      "linked_data_id": "priestess_s8_door_step"
+    },
+    "card_priestess_s9_key_turn": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_priestess_s9_key_turn.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/069-card-priestess-s9-priestess_s9_key_turn.png",
+      "linked_data_id": "priestess_s9_key_turn"
+    },
+    "card_priestess_s9_mist_bolt": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_priestess_s9_mist_bolt.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/070-card-priestess-s9-priestess_s9_mist_bolt.png",
+      "linked_data_id": "priestess_s9_mist_bolt"
+    },
+    "card_shadow_water": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_shadow_water.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/071-card-priestess-s9-shadow_water.png",
+      "linked_data_id": "shadow_water"
+    },
+    "card_tower_s7_dream_eclipse": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_tower_s7_dream_eclipse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/072-card-tower-s7-tower_s7_dream_eclipse.png",
+      "linked_data_id": "tower_s7_dream_eclipse"
+    },
+    "card_tower_s8_moonless_field": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_tower_s8_moonless_field.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/073-card-tower-s8-tower_s8_moonless_field.png",
+      "linked_data_id": "tower_s8_moonless_field"
+    },
+    "card_tower_s8_shadow_claw": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_tower_s8_shadow_claw.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/074-card-tower-s8-tower_s8_shadow_claw.png",
+      "linked_data_id": "tower_s8_shadow_claw"
+    },
+    "card_tower_s9_night_pebble": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_tower_s9_night_pebble.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/075-card-tower-s9-tower_s9_night_pebble.png",
+      "linked_data_id": "tower_s9_night_pebble"
+    },
+    "card_tower_s9_quiet_step": {
+      "kind": "texture",
+      "category": "card",
+      "path": "res://assets/textures/cards/card_tower_s9_quiet_step.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_cards_full_76/076-card-tower-s9-tower_s9_quiet_step.png",
+      "linked_data_id": "tower_s9_quiet_step"
+    },
+    "brand_fool_substitute_mark": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_fool_substitute_mark.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/003-brand-fool_substitute_mark.png",
+      "linked_data_id": "fool_substitute_mark"
+    },
+    "brand_fool_face_mask_mark": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_fool_face_mask_mark.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/004-brand-fool_face_mask_mark.png",
+      "linked_data_id": "fool_face_mask_mark"
+    },
+    "brand_damage_plus_low": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_damage_plus_low.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/005-brand-damage_plus_low.png",
+      "linked_data_id": "damage_plus_low"
+    },
+    "brand_damage_plus_mid": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_damage_plus_mid.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/006-brand-damage_plus_mid.png",
+      "linked_data_id": "damage_plus_mid"
+    },
+    "brand_cost_minus": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_cost_minus.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/007-brand-cost_minus.png",
+      "linked_data_id": "cost_minus"
+    },
+    "brand_heal_plus": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_heal_plus.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/008-brand-heal_plus.png",
+      "linked_data_id": "heal_plus"
+    },
+    "brand_pierce": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_pierce.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/009-brand-pierce.png",
+      "linked_data_id": "pierce"
+    },
+    "brand_multi_target": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_multi_target.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/010-brand-multi_target.png",
+      "linked_data_id": "multi_target"
+    },
+    "brand_crit_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_crit_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/013-brand-crit_brand.png",
+      "linked_data_id": "crit_brand"
+    },
+    "brand_draw_on_play": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_draw_on_play.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/014-brand-draw_on_play.png",
+      "linked_data_id": "draw_on_play"
+    },
+    "brand_vampire": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_vampire.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/015-brand-vampire.png",
+      "linked_data_id": "vampire"
+    },
+    "brand_chain_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_chain_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/016-brand-chain_brand.png",
+      "linked_data_id": "chain_brand"
+    },
+    "brand_barrier_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_barrier_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/017-brand-barrier_brand.png",
+      "linked_data_id": "barrier_brand"
+    },
+    "brand_delay_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_delay_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/018-brand-delay_brand.png",
+      "linked_data_id": "delay_brand"
+    },
+    "brand_phoenix": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_phoenix.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/020-brand-phoenix.png",
+      "linked_data_id": "phoenix"
+    },
+    "brand_bloom": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_bloom.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/021-brand-bloom.png",
+      "linked_data_id": "bloom"
+    },
+    "brand_echo": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_echo.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/022-brand-echo.png",
+      "linked_data_id": "echo"
+    },
+    "brand_truename_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_truename_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/023-brand-truename_brand.png",
+      "linked_data_id": "truename_brand"
+    },
+    "brand_voidcrown_brand": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_voidcrown_brand.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/024-brand-voidcrown_brand.png",
+      "linked_data_id": "voidcrown_brand"
+    },
+    "brand_forbidden_word": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_forbidden_word.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/025-brand-forbidden_word.png",
+      "linked_data_id": "forbidden_word"
+    },
+    "brand_pathwise": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_pathwise.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/026-brand-pathwise.png",
+      "linked_data_id": "pathwise"
+    },
+    "brand_forge_residue_low": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_forge_residue_low.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/027-brand-forge_residue_low.png",
+      "linked_data_id": "forge_residue_low"
+    },
+    "brand_forge_residue_mid": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_forge_residue_mid.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/028-brand-forge_residue_mid.png",
+      "linked_data_id": "forge_residue_mid"
+    },
+    "brand_forge_residue_high": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_forge_residue_high.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/029-brand-forge_residue_high.png",
+      "linked_data_id": "forge_residue_high"
+    },
+    "brand_forge_residue_unique": {
+      "kind": "texture",
+      "category": "brand",
+      "path": "res://assets/textures/brands/brand_forge_residue_unique.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_brands_full_30/030-brand-forge_residue_unique.png",
+      "linked_data_id": "forge_residue_unique"
+    },
+    "portrait_ah_du_streettalker": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_ah_du_streettalker.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/001-portrait-ah_du_streettalker-default.png",
+      "linked_data_id": "ah_du_streettalker"
+    },
+    "portrait_brendan": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_brendan.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/002-portrait-brendan-default.png",
+      "linked_data_id": "brendan"
+    },
+    "portrait_carl_smuggler": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_carl_smuggler.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/003-portrait-carl_smuggler-default.png",
+      "linked_data_id": "carl_smuggler"
+    },
+    "portrait_drunkard": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_drunkard.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/004-portrait-drunkard-default.png",
+      "linked_data_id": "drunkard"
+    },
+    "portrait_eel_fan": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_eel_fan.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/005-portrait-eel_fan-default.png",
+      "linked_data_id": "eel_fan"
+    },
+    "portrait_hanna_gardener": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_hanna_gardener.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/006-portrait-hanna_gardener-default.png",
+      "linked_data_id": "hanna_gardener"
+    },
+    "portrait_marquis_eng": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_marquis_eng.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/008-portrait-marquis_eng-default.png",
+      "linked_data_id": "marquis_eng"
+    },
+    "portrait_martha_rich": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_martha_rich.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/009-portrait-martha_rich-default.png",
+      "linked_data_id": "martha_rich"
+    },
+    "portrait_old_li": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_old_li.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/010-portrait-old_li-default.png",
+      "linked_data_id": "old_li"
+    },
+    "portrait_peter_furnace": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_peter_furnace.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/012-portrait-peter_furnace-default.png",
+      "linked_data_id": "peter_furnace"
+    },
+    "portrait_red_hand_carl": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_red_hand_carl.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/013-portrait-red_hand_carl-default.png",
+      "linked_data_id": "red_hand_carl"
+    },
+    "portrait_thomas_priest": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_thomas_priest.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/015-portrait-thomas_priest-default.png",
+      "linked_data_id": "thomas_priest"
+    },
+    "portrait_vera_lighthouse": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_vera_lighthouse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/016-portrait-vera_lighthouse-default.png",
+      "linked_data_id": "vera_lighthouse"
+    },
+    "portrait_victor_kelsey": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_victor_kelsey.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/017-portrait-victor_kelsey-default.png",
+      "linked_data_id": "victor_kelsey"
+    },
+    "portrait_widow_isa": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_widow_isa.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/018-portrait-widow_isa-default.png",
+      "linked_data_id": "widow_isa"
+    },
+    "portrait_xiao_ran": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_xiao_ran.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/019-portrait-xiao_ran-default.png",
+      "linked_data_id": "xiao_ran"
+    },
+    "portrait_xuming_recluse": {
+      "kind": "texture",
+      "category": "portrait",
+      "path": "res://assets/textures/portraits/portrait_xuming_recluse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_portraits_runtime_default/020-portrait-xuming_recluse-default.png",
+      "linked_data_id": "xuming_recluse"
+    },
+    "hotspot_hub_desk_cluster": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hub/hotspot_hub_desk_cluster.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/001-hotspot-hub_desk_cluster.png",
+      "linked_data_id": "hub_desk_cluster"
+    },
+    "hotspot_hub_desk_forge_table": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hub/hotspot_hub_desk_forge_table.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/002-hotspot-hub_desk_forge_table.png",
+      "linked_data_id": "hub_desk_forge_table"
+    },
+    "hotspot_hub_desk_tarot_cards": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hub/hotspot_hub_desk_tarot_cards.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/003-hotspot-hub_desk_tarot_cards.png",
+      "linked_data_id": "hub_desk_tarot_cards"
+    },
+    "hotspot_hub_desk_brand_workshop": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hub/hotspot_hub_desk_brand_workshop.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/004-hotspot-hub_desk_brand_workshop.png",
+      "linked_data_id": "hub_desk_brand_workshop"
+    },
+    "hotspot_hub_desk_deck_builder": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hub/hotspot_hub_desk_deck_builder.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/005-hotspot-hub_desk_deck_builder.png",
+      "linked_data_id": "hub_desk_deck_builder"
+    },
+    "hotspot_hub_notice_board": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_notice_board.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/006-hotspot-hub_notice_board.png",
+      "linked_data_id": "hub_notice_board"
+    },
+    "hotspot_hub_cushion": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_cushion.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/007-hotspot-hub_cushion.png",
+      "linked_data_id": "hub_cushion"
+    },
+    "hotspot_hub_bookshelf": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_bookshelf.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/008-hotspot-hub_bookshelf.png",
+      "linked_data_id": "hub_bookshelf"
+    },
+    "hotspot_hub_bed": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_bed.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/009-hotspot-hub_bed.png",
+      "linked_data_id": "hub_bed"
+    },
+    "hotspot_hub_front_door": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_front_door.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/010-hotspot-hub_front_door.png",
+      "linked_data_id": "hub_front_door"
+    },
+    "hotspot_hub_clock": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_clock.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/011-hotspot-hub_clock.png",
+      "linked_data_id": "hub_clock"
+    },
+    "hotspot_hub_front_door_city_map": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_front_door_city_map.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/012-hotspot-hub_front_door_city_map.png",
+      "linked_data_id": "hub_front_door_city_map"
+    },
+    "hotspot_hub_front_door_black_market": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_front_door_black_market.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/013-hotspot-hub_front_door_black_market.png",
+      "linked_data_id": "hub_front_door_black_market"
+    },
+    "hotspot_hub_intel_files": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_intel_files.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/014-hotspot-hub_intel_files.png",
+      "linked_data_id": "hub_intel_files"
+    },
+    "hotspot_hub_gray_crown_daily": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_gray_crown_daily.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/015-hotspot-hub_gray_crown_daily.png",
+      "linked_data_id": "hub_gray_crown_daily"
+    },
+    "hotspot_hub_promotion_ritual": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_hub_promotion_ritual.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/016-hotspot-hub_promotion_ritual.png",
+      "linked_data_id": "hub_promotion_ritual"
+    },
+    "hotspot_ascetic_mountain_npc_pendulum": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_ascetic_mountain_npc_pendulum.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/017-hotspot-ascetic_mountain_npc_pendulum.png",
+      "linked_data_id": "ascetic_mountain_npc_pendulum"
+    },
+    "hotspot_ascetic_mountain_npc_xuming_recluse": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_ascetic_mountain_npc_xuming_recluse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/018-hotspot-ascetic_mountain_npc_xuming_recluse.png",
+      "linked_data_id": "ascetic_mountain_npc_xuming_recluse"
+    },
+    "hotspot_ascetic_mountain_job_mountain_solitary_walk": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_ascetic_mountain_job_mountain_solitary_walk.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/019-hotspot-ascetic_mountain_job_mountain_solitary_walk.png",
+      "linked_data_id": "ascetic_mountain_job_mountain_solitary_walk"
+    },
+    "hotspot_ascetic_mountain_tower_entry_ascetic_mountain": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_ascetic_mountain_tower_entry_ascetic_mountain.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/020-hotspot-ascetic_mountain_tower_entry_ascetic_mountain.png",
+      "linked_data_id": "ascetic_mountain_tower_entry_ascetic_mountain"
+    },
+    "hotspot_ascetic_mountain_rumor_ascetic_teahouse": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_ascetic_mountain_rumor_ascetic_teahouse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/021-hotspot-ascetic_mountain_rumor_ascetic_teahouse.png",
+      "linked_data_id": "ascetic_mountain_rumor_ascetic_teahouse"
+    },
+    "hotspot_misty_port_tower_entry_misty_port": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_tower_entry_misty_port.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/022-hotspot-misty_port_tower_entry_misty_port.png",
+      "linked_data_id": "misty_port_tower_entry_misty_port"
+    },
+    "hotspot_misty_port_npc_carl_smuggler": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_npc_carl_smuggler.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/023-hotspot-misty_port_npc_carl_smuggler.png",
+      "linked_data_id": "misty_port_npc_carl_smuggler"
+    },
+    "hotspot_misty_port_npc_eel_fan": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_npc_eel_fan.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/024-hotspot-misty_port_npc_eel_fan.png",
+      "linked_data_id": "misty_port_npc_eel_fan"
+    },
+    "hotspot_misty_port_npc_vera_lighthouse": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_npc_vera_lighthouse.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/025-hotspot-misty_port_npc_vera_lighthouse.png",
+      "linked_data_id": "misty_port_npc_vera_lighthouse"
+    },
+    "hotspot_misty_port_casino_eel_fan": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_casino_eel_fan.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/026-hotspot-misty_port_casino_eel_fan.png",
+      "linked_data_id": "misty_port_casino_eel_fan"
+    },
+    "hotspot_misty_port_auction_smuggler": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_auction_smuggler.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/027-hotspot-misty_port_auction_smuggler.png",
+      "linked_data_id": "misty_port_auction_smuggler"
+    },
+    "hotspot_misty_port_job_dock_shift": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_job_dock_shift.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/028-hotspot-misty_port_job_dock_shift.png",
+      "linked_data_id": "misty_port_job_dock_shift"
+    },
+    "hotspot_misty_port_rumor_misty_port_tavern": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_misty_port_rumor_misty_port_tavern.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/029-hotspot-misty_port_rumor_misty_port_tavern.png",
+      "linked_data_id": "misty_port_rumor_misty_port_tavern"
+    },
+    "hotspot_sacred_seven_tower_entry_sacred_seven": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_tower_entry_sacred_seven.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/030-hotspot-sacred_seven_tower_entry_sacred_seven.png",
+      "linked_data_id": "sacred_seven_tower_entry_sacred_seven"
+    },
+    "hotspot_sacred_seven_npc_brendan": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_npc_brendan.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/031-hotspot-sacred_seven_npc_brendan.png",
+      "linked_data_id": "sacred_seven_npc_brendan"
+    },
+    "hotspot_sacred_seven_npc_thomas_priest": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_npc_thomas_priest.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/032-hotspot-sacred_seven_npc_thomas_priest.png",
+      "linked_data_id": "sacred_seven_npc_thomas_priest"
+    },
+    "hotspot_sacred_seven_drill_confess_innocent": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_drill_confess_innocent.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/033-hotspot-sacred_seven_drill_confess_innocent.png",
+      "linked_data_id": "sacred_seven_drill_confess_innocent"
+    },
+    "hotspot_sacred_seven_job_worship_observation": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_job_worship_observation.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/034-hotspot-sacred_seven_job_worship_observation.png",
+      "linked_data_id": "sacred_seven_job_worship_observation"
+    },
+    "hotspot_sacred_seven_rumor_sacred_notice": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_sacred_seven_rumor_sacred_notice.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/035-hotspot-sacred_seven_rumor_sacred_notice.png",
+      "linked_data_id": "sacred_seven_rumor_sacred_notice"
+    },
+    "hotspot_shadow_alley_tower_entry_shadow_alley": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_tower_entry_shadow_alley.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/036-hotspot-shadow_alley_tower_entry_shadow_alley.png",
+      "linked_data_id": "shadow_alley_tower_entry_shadow_alley"
+    },
+    "hotspot_shadow_alley_npc_old_li": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_npc_old_li.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/037-hotspot-shadow_alley_npc_old_li.png",
+      "linked_data_id": "shadow_alley_npc_old_li"
+    },
+    "hotspot_shadow_alley_npc_xiao_ran": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_npc_xiao_ran.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/038-hotspot-shadow_alley_npc_xiao_ran.png",
+      "linked_data_id": "shadow_alley_npc_xiao_ran"
+    },
+    "hotspot_shadow_alley_shop_blackmarket": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_shop_blackmarket.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/039-hotspot-shadow_alley_shop_blackmarket.png",
+      "linked_data_id": "shadow_alley_shop_blackmarket"
+    },
+    "hotspot_shadow_alley_rumor_streettalker": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_rumor_streettalker.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/040-hotspot-shadow_alley_rumor_streettalker.png",
+      "linked_data_id": "shadow_alley_rumor_streettalker"
+    },
+    "hotspot_shadow_alley_job_errand_board": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_shadow_alley_job_errand_board.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/041-hotspot-shadow_alley_job_errand_board.png",
+      "linked_data_id": "shadow_alley_job_errand_board"
+    },
+    "hotspot_steelworks_tower_entry_steelworks": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_steelworks_tower_entry_steelworks.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/042-hotspot-steelworks_tower_entry_steelworks.png",
+      "linked_data_id": "steelworks_tower_entry_steelworks"
+    },
+    "hotspot_steelworks_npc_martha": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_steelworks_npc_martha.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/043-hotspot-steelworks_npc_martha.png",
+      "linked_data_id": "steelworks_npc_martha"
+    },
+    "hotspot_steelworks_npc_peter_furnace": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_steelworks_npc_peter_furnace.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/044-hotspot-steelworks_npc_peter_furnace.png",
+      "linked_data_id": "steelworks_npc_peter_furnace"
+    },
+    "hotspot_steelworks_job_factory_shift": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_steelworks_job_factory_shift.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/045-hotspot-steelworks_job_factory_shift.png",
+      "linked_data_id": "steelworks_job_factory_shift"
+    },
+    "hotspot_steelworks_rumor_factory_tabloid": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_steelworks_rumor_factory_tabloid.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/046-hotspot-steelworks_rumor_factory_tabloid.png",
+      "linked_data_id": "steelworks_rumor_factory_tabloid"
+    },
+    "hotspot_stone_tower_tower_entry_stone_tower": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_stone_tower_tower_entry_stone_tower.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/047-hotspot-stone_tower_tower_entry_stone_tower.png",
+      "linked_data_id": "stone_tower_tower_entry_stone_tower"
+    },
+    "hotspot_stone_tower_npc_marquis_eng": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_stone_tower_npc_marquis_eng.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/048-hotspot-stone_tower_npc_marquis_eng.png",
+      "linked_data_id": "stone_tower_npc_marquis_eng"
+    },
+    "hotspot_stone_tower_npc_hanna_gardener": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_stone_tower_npc_hanna_gardener.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/049-hotspot-stone_tower_npc_hanna_gardener.png",
+      "linked_data_id": "stone_tower_npc_hanna_gardener"
+    },
+    "hotspot_stone_tower_drill_noble_salon": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_stone_tower_drill_noble_salon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/050-hotspot-stone_tower_drill_noble_salon.png",
+      "linked_data_id": "stone_tower_drill_noble_salon"
+    },
+    "hotspot_stone_tower_rumor_stone_street": {
+      "kind": "texture",
+      "category": "hotspot",
+      "path": "res://assets/textures/hotspots/hotspot_stone_tower_rumor_stone_street.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_hotspots_full/scene_aligned_full/051-hotspot-stone_tower_rumor_stone_street.png",
+      "linked_data_id": "stone_tower_rumor_stone_street"
+    },
+    "tower_shadow_alley_morning": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_shadow_alley_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/001-env-tower-shadow_alley-morning.png",
+      "linked_data_id": "tower_shadow_alley"
+    },
+    "tower_shadow_alley_noon": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_shadow_alley_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/002-env-tower-shadow_alley-noon.png",
+      "linked_data_id": "tower_shadow_alley"
+    },
+    "tower_shadow_alley_evening": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_shadow_alley_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/003-env-tower-shadow_alley-evening.png",
+      "linked_data_id": "tower_shadow_alley"
+    },
+    "tower_shadow_alley_night": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_shadow_alley_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/004-env-tower-shadow_alley-night.png",
+      "linked_data_id": "tower_shadow_alley"
+    },
+    "tower_steelworks_morning": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_steelworks_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/005-env-tower-steelworks-morning.png",
+      "linked_data_id": "tower_steelworks"
+    },
+    "tower_steelworks_noon": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_steelworks_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/006-env-tower-steelworks-noon.png",
+      "linked_data_id": "tower_steelworks"
+    },
+    "tower_steelworks_evening": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_steelworks_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/007-env-tower-steelworks-evening.png",
+      "linked_data_id": "tower_steelworks"
+    },
+    "tower_steelworks_night": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_steelworks_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/008-env-tower-steelworks-night.png",
+      "linked_data_id": "tower_steelworks"
+    },
+    "tower_misty_port_morning": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_misty_port_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/009-env-tower-misty_port-morning.png",
+      "linked_data_id": "tower_misty_port"
+    },
+    "tower_misty_port_noon": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_misty_port_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/010-env-tower-misty_port-noon.png",
+      "linked_data_id": "tower_misty_port"
+    },
+    "tower_misty_port_evening": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_misty_port_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/011-env-tower-misty_port-evening.png",
+      "linked_data_id": "tower_misty_port"
+    },
+    "tower_misty_port_night": {
+      "kind": "texture",
+      "category": "tower",
+      "path": "res://assets/textures/towers/tower_misty_port_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/012-env-tower-misty_port-night.png",
+      "linked_data_id": "tower_misty_port"
+    },
+    "district_shadow_alley": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_shadow_alley.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/013-district-shadow_alley-base.png",
+      "linked_data_id": "shadow_alley"
+    },
+    "district_steelworks": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_steelworks.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/014-district-steelworks-base.png",
+      "linked_data_id": "steelworks"
+    },
+    "district_misty_port": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_misty_port.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/015-district-misty_port-base.png",
+      "linked_data_id": "misty_port"
+    },
+    "district_sacred_seven": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_sacred_seven.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/016-district-sacred_seven-base.png",
+      "linked_data_id": "sacred_seven"
+    },
+    "district_stone_tower": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_stone_tower.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/017-district-stone_tower-base.png",
+      "linked_data_id": "stone_tower"
+    },
+    "district_ascetic_mountain": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_ascetic_mountain.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/018-district-ascetic_mountain-base.png",
+      "linked_data_id": "ascetic_mountain"
+    },
+    "district_shadow_alley_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_shadow_alley_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/019-district-shadow_alley-morning.png",
+      "linked_data_id": "shadow_alley"
+    },
+    "district_shadow_alley_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_shadow_alley_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/020-district-shadow_alley-noon.png",
+      "linked_data_id": "shadow_alley"
+    },
+    "district_shadow_alley_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_shadow_alley_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/021-district-shadow_alley-evening.png",
+      "linked_data_id": "shadow_alley"
+    },
+    "district_shadow_alley_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_shadow_alley_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/022-district-shadow_alley-night.png",
+      "linked_data_id": "shadow_alley"
+    },
+    "district_steelworks_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_steelworks_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/023-district-steelworks-morning.png",
+      "linked_data_id": "steelworks"
+    },
+    "district_steelworks_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_steelworks_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/024-district-steelworks-noon.png",
+      "linked_data_id": "steelworks"
+    },
+    "district_steelworks_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_steelworks_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/025-district-steelworks-evening.png",
+      "linked_data_id": "steelworks"
+    },
+    "district_steelworks_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_steelworks_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/026-district-steelworks-night.png",
+      "linked_data_id": "steelworks"
+    },
+    "district_misty_port_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_misty_port_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/027-district-misty_port-morning.png",
+      "linked_data_id": "misty_port"
+    },
+    "district_misty_port_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_misty_port_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/028-district-misty_port-noon.png",
+      "linked_data_id": "misty_port"
+    },
+    "district_misty_port_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_misty_port_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/029-district-misty_port-evening.png",
+      "linked_data_id": "misty_port"
+    },
+    "district_misty_port_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_misty_port_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/030-district-misty_port-night.png",
+      "linked_data_id": "misty_port"
+    },
+    "district_sacred_seven_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_sacred_seven_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/031-district-sacred_seven-morning.png",
+      "linked_data_id": "sacred_seven"
+    },
+    "district_sacred_seven_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_sacred_seven_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/032-district-sacred_seven-noon.png",
+      "linked_data_id": "sacred_seven"
+    },
+    "district_sacred_seven_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_sacred_seven_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/033-district-sacred_seven-evening.png",
+      "linked_data_id": "sacred_seven"
+    },
+    "district_sacred_seven_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_sacred_seven_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/034-district-sacred_seven-night.png",
+      "linked_data_id": "sacred_seven"
+    },
+    "district_stone_tower_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_stone_tower_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/035-district-stone_tower-morning.png",
+      "linked_data_id": "stone_tower"
+    },
+    "district_stone_tower_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_stone_tower_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/036-district-stone_tower-noon.png",
+      "linked_data_id": "stone_tower"
+    },
+    "district_stone_tower_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_stone_tower_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/037-district-stone_tower-evening.png",
+      "linked_data_id": "stone_tower"
+    },
+    "district_stone_tower_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_stone_tower_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/038-district-stone_tower-night.png",
+      "linked_data_id": "stone_tower"
+    },
+    "district_ascetic_mountain_morning": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_ascetic_mountain_morning.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/039-district-ascetic_mountain-morning.png",
+      "linked_data_id": "ascetic_mountain"
+    },
+    "district_ascetic_mountain_noon": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_ascetic_mountain_noon.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/040-district-ascetic_mountain-noon.png",
+      "linked_data_id": "ascetic_mountain"
+    },
+    "district_ascetic_mountain_evening": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_ascetic_mountain_evening.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/041-district-ascetic_mountain-evening.png",
+      "linked_data_id": "ascetic_mountain"
+    },
+    "district_ascetic_mountain_night": {
+      "kind": "texture",
+      "category": "district",
+      "path": "res://assets/textures/districts/district_ascetic_mountain_night.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_environments_full/042-district-ascetic_mountain-night.png",
+      "linked_data_id": "ascetic_mountain"
+    },
+    "onboarding_wake_up": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_onboarding_scenes_full_25/001-onboarding-wake_up.png",
+      "linked_data_id": "wake_up"
+    },
+    "onboarding_mirror_reflection": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_mirror_reflection.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_onboarding_scenes_full_25/002-onboarding-mirror_reflection.png",
+      "linked_data_id": "mirror_reflection"
+    },
+    "onboarding_find_press_id": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_onboarding_scenes_full_25/003-onboarding-find_press_id.png",
+      "linked_data_id": "find_press_id"
+    },
+    "onboarding_newspaper_and_notes": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_onboarding_scenes_full_25/004-onboarding-newspaper_and_notes.png",
+      "linked_data_id": "newspaper_and_notes"
+    },
+    "onboarding_knocking_old_li": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "runtime_status": "integrated",
+      "source": "output/imagegen/greycrown_onboarding_scenes_full_25/005-onboarding-knocking_old_li.png",
+      "linked_data_id": "knocking_old_li"
+    },
+    "onboarding_first_acting_check": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "first_acting_check"
+    },
+    "onboarding_task_arrow_to_seven_holy": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_find_press_id.png",
+      "linked_data_id": "task_arrow_to_seven_holy"
+    },
+    "onboarding_leaving_home": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_find_press_id.png",
+      "linked_data_id": "leaving_home"
+    },
+    "onboarding_drunkard_encounter": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_knocking_old_li.png",
+      "linked_data_id": "drunkard_encounter"
+    },
+    "onboarding_tutorial_battle": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_find_press_id.png",
+      "linked_data_id": "tutorial_battle"
+    },
+    "onboarding_first_card_drop": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "first_card_drop"
+    },
+    "onboarding_drunkard_foreshadow": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_knocking_old_li.png",
+      "linked_data_id": "drunkard_foreshadow"
+    },
+    "onboarding_bell_tower_arrival": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_find_press_id.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_find_press_id.png",
+      "linked_data_id": "bell_tower_arrival"
+    },
+    "onboarding_brandon_encounter": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_knocking_old_li.png",
+      "linked_data_id": "brandon_encounter"
+    },
+    "onboarding_second_acting_check": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "second_acting_check"
+    },
+    "onboarding_victor_rumor": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_knocking_old_li.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_knocking_old_li.png",
+      "linked_data_id": "victor_rumor"
+    },
+    "onboarding_return_home": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_wake_up.png",
+      "linked_data_id": "return_home"
+    },
+    "onboarding_forge_tutorial_intro": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "forge_tutorial_intro"
+    },
+    "onboarding_forge_phigros_tutorial": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "forge_phigros_tutorial"
+    },
+    "onboarding_first_forge_result": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "first_forge_result"
+    },
+    "onboarding_weird_chanting": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_wake_up.png",
+      "linked_data_id": "weird_chanting"
+    },
+    "onboarding_basement_discovery": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_wake_up.png",
+      "linked_data_id": "basement_discovery"
+    },
+    "onboarding_true_notebook": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_newspaper_and_notes.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_newspaper_and_notes.png",
+      "linked_data_id": "true_notebook"
+    },
+    "onboarding_ai_gm_revelation": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_wake_up.png",
+      "linked_data_id": "ai_gm_revelation"
+    },
+    "onboarding_dream_pendulum": {
+      "kind": "texture",
+      "category": "onboarding",
+      "path": "res://assets/textures/onboarding/onboarding_wake_up.png",
+      "runtime_status": "placeholder",
+      "source": "placeholder_fallback:onboarding_scene_6_25/onboarding_wake_up.png",
+      "linked_data_id": "dream_pendulum"
+    }
+  }
+}

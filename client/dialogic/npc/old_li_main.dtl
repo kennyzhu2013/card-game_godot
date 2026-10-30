@@ -1,0 +1,30 @@
+# Dialogic timeline: npc/old_li_main
+# Slice 2.5 T6: Old Li main dialogue tree.
+# Variables supplied by NpcInteractionService:
+# {npc_trust} {npc_suspicion} {npc_layer} {npc_perception} {npc_dialog_count}
+# {player_sequence} {player_pollution} {current_day} {current_weather} {time_of_day}
+
+# branch:first_meet
+# hook:npc_first_meet
+老李: 哈维，今天你看我的眼神像是第一次认识我。
+老李: 影巷记人不靠名字，靠脚步。你的脚步还没乱。
+# outcome: trust_delta=1, unlocked_dialogue_branches=["old_li.small_talk","old_li.ask_intel"]
+
+# branch:small_talk
+老李: 巷口的灯晚上会短一下，别在那时候回头。
+老李: 你要是真困，就回洞府睡，别拿自己的影子练胆。
+# outcome: trust_delta=1
+
+# branch:ask_intel
+# intel:intel_shadow_alley_church_patrol_001 trust>=0
+老李: 圣审庭的人今天在影巷来回走，靴底沾着七圣广场的白灰。
+# intel:intel_xiao_ran_gift_001 trust>=20
+老李: 小染不收钱，她收甜饼。油纸包得紧一点，她会记你一天好。
+# outcome: trust_delta=1
+
+# branch:commission_placeholder
+老李: 跑腿的活先记在我这。等委托板那边接好，我再把暗号交给你。
+# dispatch_placeholder:R17 old_li_commissions
+
+# branch:leave
+老李: 走吧。巷子不留闲人，留太久会被巷子记住。

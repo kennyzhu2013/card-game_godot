@@ -1,0 +1,39 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_bone_softening",
+  "display_name": "骨骼软化",
+  "description": "手铐在他腕上是首饰，绳索是他的装饰带。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "common",
+  "element": "身法",
+  "energy_cost": 0,
+  "mp_cost": 0,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "self", "range": 0, "status_effects": [{"id": "cleanse_debuff", "types": ["bind", "root", "paralyze"]}, {"id": "draw_if_no_cleanse", "magnitude": 1}]},
+  "social_effect": {
+    "type": "identity_mask",
+    "duration_days": 1,
+    "npc_perception": "soft_boned_scholar",
+    "suspicion_delta": -5,
+    "parameters": {
+      "npc_perception": "soft_boned_scholar",
+      "notes": "借一层更轻的身体轮廓"
+    },
+    "church_awareness_delta": 1
+  },
+  "world_effect": {
+    "type": "create_residual_identity",
+    "identity_id": "borrowed_face_bone_softening",
+    "duration_days": 1,
+    "allowed_locations": ["shadow_alley", "stone_tower"],
+    "uses_remaining": 2,
+    "parameters": {
+      "identity_id": "borrowed_face_bone_softening",
+      "allowed_locations": ["shadow_alley", "stone_tower"]
+    }
+  },
+  "tags": ["skill", "cleanse", "draw_filter"]
+}

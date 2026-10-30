@@ -1,0 +1,9 @@
+{
+  "$schema": "auction_ai_v1",
+  "id": "misty_port_ai_bidders",
+  "bidders": [
+    {"id": "salt_broker", "display_name": "盐商", "valuation_min": 0.7, "valuation_max": 1.3},
+    {"id": "red_hand_proxy", "display_name": "红手会代理人", "valuation_min": 0.7, "valuation_max": 1.3},
+    {"id": "church_scribe", "display_name": "教会书记员", "valuation_min": 0.7, "valuation_max": 1.3}
+  ]
+}

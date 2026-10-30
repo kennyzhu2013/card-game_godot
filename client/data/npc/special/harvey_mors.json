@@ -1,0 +1,30 @@
+{
+  "id": "harvey_mors",
+  "display_name": "哈维·摩斯",
+  "default_district": "special",
+  "placeholder": false,
+  "public": {"role": "愚者之道修者", "appearance": "半月之约误认的隐神化身"},
+  "hidden": {"actual_age": "不明", "past_secrets": ["真笔记本", "半月之约误认"]},
+  "truth": {"true_name": "哈维·摩斯", "true_origin": "已死的原身与玩家意识重叠"},
+  "default_trust": 30,
+  "default_suspicion": 0,
+  "city_presence": [],
+  "dialogue_tree": "harvey_mors_main",
+  "portrait_path": "res://assets/textures/portraits/portrait_harvey_mors.png",
+  "available_intels": [
+    {
+      "intel_id": "intel_harvey_halfmoon_self_001",
+      "trust": 0,
+      "source_type": "self_dialogue",
+      "topic": "pseudo_god_contract",
+      "summary": "哈维自身线索确认半月之约把你误认为愚者隐神化身。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "halfmoon_self",
+  "commission_templates": [],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [],
+  "debuff_triggers_on_suspicion": []
+}

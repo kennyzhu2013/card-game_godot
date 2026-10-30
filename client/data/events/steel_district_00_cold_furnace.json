@@ -1,0 +1,1 @@
+{"id":"steel_cold_furnace","district":"steel_district","title":"冷掉的炉膛","narrative_template":"炉膛里没有火，却照出一截正在蠕动的铁影。","choices":[{"id":"search_ash","text":"翻灰","outcome":{"material_id":"铁屑","amount":3}},{"id":"seal","text":"用粉笔封住炉门","outcome":{"pollution":-2}}]}

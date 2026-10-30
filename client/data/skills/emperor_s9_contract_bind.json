@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "emperor_s9_contract_bind",
+  "display_name": "契约束缚",
+  "description": "纸面上多出一条细则，违背的人先被规则勒住。",
+  "pathway": "emperor",
+  "card_pool": "enemy_spell",
+  "sequence": 9,
+  "tier": 1,
+  "rarity": "common",
+  "element": "律",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 6, "heal": 0, "target": "single", "range": 4, "status_effects": [{"id": "bind", "duration": 1}]}
+}

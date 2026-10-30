@@ -1,0 +1,1 @@
+{"id":"shadow_alley_child_song","district":"shadow_alley","title":"楼梯上的童谣","narrative_template":"没有孩子的楼梯间传来童谣，节拍与你心跳一致。","choices":[{"id":"follow","text":"顺着歌声上楼","outcome":{"event_flag":"child_song_followed","pollution":5}},{"id":"hum","text":"反向哼唱","outcome":{"heal":8}}]}

@@ -1,0 +1,50 @@
+{
+  "tower_id": "ritual_tower_paper_blade_4f",
+  "tower_name": "纸刃仪式塔",
+  "size": "small",
+  "district": "ritual",
+  "floors": [
+    {
+      "floor_index": 0,
+      "event_type": "event",
+      "ai_gm_narrative": "你在旧纸页边缘看见最近一次击杀的折痕。",
+      "event_data": {
+        "title": "纸刃回声",
+        "narrative_template": "仪式要求你承认那次以纸为刃的出手。",
+        "choices": [
+          {"id": "accept", "text": "记录纸刃痕迹", "outcome": {}}
+        ]
+      }
+    },
+    {
+      "floor_index": 1,
+      "event_type": "battle",
+      "ai_gm_narrative": "纸屑在风里立起，逼你重演那次出手。",
+      "event_data": {
+        "enemy_pack_id": "ritual_paper_blade_floor_2",
+        "enemy_ids": ["vagrant"],
+        "victory_drops": {}
+      }
+    },
+    {
+      "floor_index": 2,
+      "event_type": "battle",
+      "ai_gm_narrative": "暗影模仿你的动作，等待你承认命运的线。",
+      "event_data": {
+        "enemy_pack_id": "ritual_paper_blade_floor_3",
+        "enemy_ids": ["shadow_wraith"],
+        "victory_drops": {}
+      }
+    },
+    {
+      "floor_index": 3,
+      "event_type": "boss",
+      "ai_gm_narrative": "最终的纸刃指向你自己，塔门在身后闭合。",
+      "event_data": {
+        "boss_id": "alley_horror",
+        "boss_pack": [],
+        "victory_drops": {"sequence_promotion": true}
+      }
+    }
+  ]
+}

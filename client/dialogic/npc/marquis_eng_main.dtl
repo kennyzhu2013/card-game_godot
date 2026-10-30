@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/marquis_eng_main
+# Slice 3 T4: Marquis Eng simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+侯爵·恩格: 哈维·摩斯，你的鞋不像贵族，也不像仆役。
+
+# branch:noble_plot
+侯爵·恩格: 阴谋这种东西，只有失败时才叫阴谋。成功时它叫秩序。
+
+# branch:ask_intel
+# grant_intel:intel_marquis_noble_plot_001
+侯爵·恩格: 石塔贵族正在借序列八晋升仪式筛人。
+# grant_intel:intel_marquis_sequence8_hint_001
+侯爵·恩格: 有些塔在序列八之前只是影子，之后才会开门。
+
+# branch:sequence_8_hint
+# commission_pool:stone_tower_commissions
+# dispatch_placeholder:R17 stone_tower_commissions
+侯爵·恩格: 晋升以后再来。现在告诉你，只会浪费一枚合适的棋子。
+
+# branch:leave
+侯爵·恩格: 退下吧。别让别人看出你听懂了。

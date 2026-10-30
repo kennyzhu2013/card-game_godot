@@ -1,0 +1,46 @@
+{
+  "tracks": {
+    "hub_sanctuary": {
+      "path": "res://assets/audio/bgm/hub_sanctuary.mp3",
+      "title": "Hub Sanctuary",
+      "loop": true,
+      "volume_db": -6.0
+    },
+    "tower_combat": {
+      "path": "res://assets/audio/bgm/tower_combat.mp3",
+      "title": "Lamplit Gambit",
+      "loop": true,
+      "volume_db": -8.0
+    },
+    "hammer_forge": {
+      "path": "res://assets/audio/bgm/hammer_forge.mp3",
+      "title": "Clockwork Grid",
+      "loop": true,
+      "volume_db": -6.0
+    },
+    "pendulum_dream": {
+      "path": "res://assets/audio/bgm/pendulum_dream.mp3",
+      "title": "Pendulum Under Glass",
+      "loop": true,
+      "volume_db": -8.0
+    },
+    "whisper_alley": {
+      "path": "res://assets/audio/bgm/whisper_alley.mp3",
+      "title": "Gaslamp Footsteps",
+      "loop": true,
+      "volume_db": -7.0
+    },
+    "foghorn_harbor": {
+      "path": "res://assets/audio/bgm/foghorn_harbor.mp3",
+      "title": "Fogline Harbor",
+      "loop": true,
+      "volume_db": -7.0
+    },
+    "hollow_cathedral": {
+      "path": "res://assets/audio/bgm/hollow_cathedral.mp3",
+      "title": "Hollow Cathedral",
+      "loop": true,
+      "volume_db": -6.0
+    }
+  }
+}

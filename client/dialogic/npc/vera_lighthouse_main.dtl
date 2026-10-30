@@ -1,0 +1,24 @@
+# Dialogic timeline: npc/vera_lighthouse_main
+# Slice 3 T4: Vera Lighthouse main dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+薇拉: 夜里来灯塔的人，不是迷路，就是故意装作迷路。
+薇拉: 你是哪一种？
+
+# branch:small_talk
+薇拉: 灯不是给船看的。船长看星，水手看浪，只有失踪的人看灯。
+
+# branch:ask_intel
+# grant_intel:intel_vera_lighthouse_tide_001
+薇拉: 夜潮退到第三声钟时，礁路会露出来。
+# grant_intel:intel_vera_lighthouse_moonlight_001
+薇拉: 月光草在灯塔影子最短时发光，错一刻就像普通杂草。
+
+# branch:moonlight_grass
+# commission_pool:misty_port_lighthouse
+# dispatch_placeholder:R17 commission_moonlight_grass_001
+薇拉: 要采月光草，别带火。它怕火，也怕看见火的人。
+
+# branch:leave
+薇拉: 下台阶时数七级。数错了，就在原地等雾过去。

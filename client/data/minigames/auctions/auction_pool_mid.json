@@ -1,0 +1,39 @@
+{
+  "$schema": "auction_v1",
+  "id": "misty_port_weekly",
+  "type": "auction",
+  "display_name": "雾港周末拍卖会",
+  "city": "misty_port",
+  "entry_npc": "carl_smuggler",
+  "ap_cost": 1,
+  "time_advance": 0,
+  "weekly_limit": 1,
+  "mechanic": "auction",
+  "visible_when": "day % 7 == 6 AND time_of_day == 'night'",
+  "lots": [
+    {
+      "id": "mid_brand_lot",
+      "display_name": "中阶烙印",
+      "currency": "lingstones",
+      "start_price": 600,
+      "appraised_value": 720,
+      "item": {"type": "brand", "id": "auction_mid_brand", "display_name": "拍卖中阶烙印", "amount": 1}
+    },
+    {
+      "id": "true_name_brand_lot",
+      "display_name": "真名烙印",
+      "currency": "dao_pages",
+      "start_price": 2,
+      "appraised_value": 3,
+      "item": {"type": "brand", "id": "auction_true_name_brand", "display_name": "拍卖真名烙印", "amount": 1}
+    },
+    {
+      "id": "strange_glyph_lot",
+      "display_name": "异符",
+      "currency": "dao_pages",
+      "start_price": 2,
+      "appraised_value": 3,
+      "item": {"type": "material", "id": "strange_glyph", "amount": 1}
+    }
+  ]
+}

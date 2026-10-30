@@ -1,0 +1,18 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_shadow_alley_old_li_relay",
+  "encounter_type": "encounter_npc",
+  "display_name": "Old Li's Relay",
+  "districts": ["shadow_alley"],
+  "time_of_day": ["evening", "night"],
+  "weight": 12,
+  "preconditions": [],
+  "step_count": 1,
+  "dialogue_tree": "npc/old_li_main",
+  "scene_payload": {"text": "Old Li sends you a warning through a street child.", "npc_id": "old_li", "choices": [{"id": "listen", "label": "Listen", "outcome": {}}]},
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

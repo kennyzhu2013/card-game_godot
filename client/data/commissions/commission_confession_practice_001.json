@@ -1,0 +1,20 @@
+{
+  "id": "commission_confession_practice_001",
+  "commission_type": "perform",
+  "difficulty": "small",
+  "display_name": "告解演练",
+  "description": "Thomas wants a confession role-play performed without naming the wrong god.",
+  "issuer_npc": "thomas_priest",
+  "district": "sacred_seven",
+  "min_day": 2,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 50,
+  "dispatch_target": {"kind": "drill", "drill_id": "confess_innocent", "district": "sacred_seven", "action_id": "confession_practice", "witness_check": true},
+  "time_limit_days": 2,
+  "rewards": [{"type": "rule_unlock", "id": "confession_without_name", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "confession_without_name",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

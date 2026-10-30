@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_ascetic_mountain_peak_cold",
+  "encounter_type": "flavor",
+  "display_name": "Peak Cold",
+  "districts": ["ascetic_mountain"],
+  "time_of_day": ["morning", "noon", "evening", "night"],
+  "weight": 30,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {"text": "The mountain cold reaches you before the path bends.", "choices": [{"id": "continue", "label": "Continue", "outcome": {}}]},
+  "pollution_variant": {
+    "0": {"text": "The mountain cold reaches you before the path bends."},
+    "1": {"text": "The cold leaves a thumbprint of frost on your wrist."},
+    "2": {"text": "The cold speaks from the stones without moving the air."},
+    "3": {"text": "The cold remembers your body more clearly than you do."}
+  },
+  "max_per_cycle": -1,
+  "cooldown_days": 1,
+  "chain_id": "",
+  "chain_step": 0,
+  "resolutions": []
+}

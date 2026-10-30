@@ -1,0 +1,1 @@
+{"id":"mist_smuggler_cache","district":"mist_harbor","title":"走私者暗格","narrative_template":"墙砖后的暗格还没被清空，货单却新得像刚写完。","choices":[{"id":"take_goods","text":"拿走货物","outcome":{"material_id":"血油","amount":2,"pollution":3}},{"id":"copy_manifest","text":"抄下货单","outcome":{"dao_page_fragment":1}}]}

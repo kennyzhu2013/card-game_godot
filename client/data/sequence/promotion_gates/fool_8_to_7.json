@@ -1,0 +1,10 @@
+{
+  "from_sequence": 8,
+  "to_sequence": 7,
+  "sequence_exp_required": 250,
+  "reactions_required": 18,
+  "pollution_max": 60,
+  "story_node_id": "node_4b_promotion_87",
+  "ritual_tower_id": "ritual_tower_paper_blade_4f",
+  "contract_rules_required": 3
+}

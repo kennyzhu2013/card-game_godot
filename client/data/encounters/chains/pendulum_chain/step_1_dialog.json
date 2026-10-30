@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_pendulum_dialog_1",
+  "encounter_type": "mystery_seed",
+  "display_name": "Pendulum's Old Title",
+  "districts": ["stone_tower", "ascetic_mountain"],
+  "time_of_day": ["evening", "night"],
+  "weight": 5,
+  "preconditions": [],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "Pendulum says one old title, then watches to see whether you flinch.",
+    "choices": [
+      {"id": "remember", "label": "Remember", "outcome": {"unlock_chain_step": 2}},
+      {"id": "forget", "label": "Forget", "outcome": {}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "pendulum_chain",
+  "chain_step": 1,
+  "resolutions": []
+}

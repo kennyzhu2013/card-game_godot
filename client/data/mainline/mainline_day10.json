@@ -1,0 +1,7 @@
+{
+  "day": 10,
+  "node_id": "node_4_promotion_98",
+  "title": "晋升仪式提示",
+  "popup_text": "Day 10 占位：晋升仪式塔的门槛浮现在道典边缘。",
+  "flags": {"promotion_day10_highlight": true}
+}

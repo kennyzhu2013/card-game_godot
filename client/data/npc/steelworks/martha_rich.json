@@ -1,0 +1,43 @@
+{
+  "id": "martha_rich",
+  "display_name": "玛莎·里奇",
+  "default_district": "steelworks",
+  "placeholder": false,
+  "public": {"role": "工人母亲", "appearance": "围裙上总有炉灰，手里攥着一枚断裂厂牌"},
+  "hidden": {"actual_age": "43", "past_secrets": ["失踪案委托发布人", "知道第七炼钢厂的旧入口"]},
+  "truth": {"true_name": "玛莎·里奇", "true_origin": "铸钢区旧工会联络人"},
+  "default_trust": 8,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "steelworks", "time_of_day": "morning", "label_suffix": "（在工棚外等消息）", "icon": "M", "interactable": true},
+    {"district": "steelworks", "time_of_day": "noon", "label_suffix": "（守着厂牌名册）", "icon": "M", "interactable": true}
+  ],
+  "dialogue_tree": "martha_rich_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_martha_missing_case_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "steelworks_missing_case",
+      "summary": "玛莎说第七炼钢厂的失踪名单被人从厂部档案里撕走。"
+    },
+    {
+      "intel_id": "intel_martha_worker_route_001",
+      "trust": 20,
+      "source_type": "npc_chat",
+      "topic": "old_factory_route",
+      "summary": "旧工会还保留一条通往炉底的巡检小路。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "steelworks_commissions",
+  "commission_templates": ["commission_steelworks_missing_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "free_temp_card", "payload": {"card_pool": "shadow_alley_low"}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

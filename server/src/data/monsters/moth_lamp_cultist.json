@@ -1,0 +1,62 @@
+{
+  "monsterId": "moth_lamp_cultist",
+  "templateHash": "moth_lamp_cultist-v1",
+  "displayName": "蛾灯信徒",
+  "speciesId": "cultist",
+  "spriteSheet": "res://assets/sprites/characters/enemy_moth_lamp_cultist_sheet.png",
+  "stats": {
+    "maxHp": 68,
+    "atk": 16,
+    "def": 5,
+    "spd": 11,
+    "shieldPoints": 3,
+    "weaknesses": ["lightning", "water"],
+    "skills": [
+      { "id": "lantern_spark", "name": "蛾灯火星", "type": "attack", "power": 1.1, "costAp": 1, "element": "fire" },
+      { "id": "moth_lure", "name": "引蛾幻光", "type": "control", "power": 0.8, "costAp": 2, "element": "psychic" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 5,
+    "visionConeDeg": 240,
+    "blockingTileTags": ["wall", "fence", "thick_fog"],
+    "alertCooldownMs": 1300
+  },
+  "aggro": {
+    "initial": "neutral",
+    "decayPerSec": 0.45,
+    "maxThreat": 100,
+    "alertThreshold": 30,
+    "huntThreshold": 55,
+    "huntPlayerSpeciesPenalty": 0,
+    "transformedPlayerImmunity": false
+  },
+  "patrol": {
+    "type": "stationary",
+    "radiusCells": 2,
+    "speedCellsPerSec": 0.4,
+    "idleMsRange": [1000, 3000],
+    "anchorOverride": null
+  },
+  "respawn": {
+    "timerMs": 90000,
+    "scatterRadiusCells": 1,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "lantern_cult_cell",
+    "role": "caster",
+    "callAlliesRadiusCells": 5,
+    "maxConcurrentMembers": 2
+  },
+  "loot": {
+    "table": "moth_lamp_cultist_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "prelude",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:leashed_back"]
+  }
+}

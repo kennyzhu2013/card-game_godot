@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "teahouse_pool",
+  "district": "ascetic_mountain",
+  "entries": [
+    {"id":"intel_teahouse_enemy_001","category":"tower_hint","display_text":"Teahouse talk reveals ascetic floor 1 intent","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"ascetic_medium","floor_index_min":0,"floor_index_max":0}},"truth_value":100,"weight":20},
+    {"id":"intel_teahouse_shrine_001","category":"tower_hint","display_text":"A tea master marks ascetic floor 3 shrine","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"ascetic_medium","floor_index":2}},"truth_value":90,"weight":12},
+    {"id":"intel_teahouse_event_001","category":"tower_hint","display_text":"The mountain asks for silence_over_speed","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"ascetic_medium","event_id":"mountain_choice","correct_choice_id":"silence_over_speed"}},"truth_value":80,"weight":10},
+    {"id":"intel_teahouse_boss_001","category":"tower_hint","display_text":"The pendulum boss is weak to broken rhythm","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"ascetic_medium","boss_id":"pendulum_boss","weakness_tag":"broken_rhythm"}},"truth_value":80,"weight":8},
+    {"id":"intel_teahouse_story_001","category":"main_story","display_text":"The teahouse names a quiet node 4 branch","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"permanent","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_4_pendulum","branch_id":"quiet_entry"}},"truth_value":100,"weight":8},
+    {"id":"intel_teahouse_npc_001","category":"npc","display_text":"Xuming answers questions about old routes","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"permanent","apply_target":{"kind":"npc_relation_boost.gift_topic","payload":{"npc_id":"xuming_recluse","topic_id":"old_route","trust_delta":5}},"truth_value":100,"weight":6},
+    {"id":"intel_teahouse_false_001","category":"false","display_text":"The wrong tea costs time and stones","source_type":"teahouse","source_district":"ascetic_mountain","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":70,"ap":1,"suspicion_delta":2}},"false_lead":{"cost":{"lingstone":70,"ap":1,"suspicion":2}},"truth_value":20,"weight":4}
+  ]
+}

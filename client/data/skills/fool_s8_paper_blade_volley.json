@@ -1,0 +1,17 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列8",
+  "id": "fool_s8_paper_blade_volley",
+  "display_name": "化纸为刃",
+  "description": "舞台上飞出的不是请柬，是写着对手名字的回执。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "纸",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 5, "heal": 0, "target": "multi", "range": 4, "status_effects": [{"id": "select_targets", "min": 1, "max": 3}, {"id": "per_use_damage_growth", "magnitude": 1, "cap": 3}]},
+  "tags": ["attack", "multi_target", "paper_blade"]
+}

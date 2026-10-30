@@ -1,0 +1,34 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "design/cards/fool-pathway.md 序列7",
+  "id": "fool_s7_illusion_weave",
+  "display_name": "幻象编织",
+  "description": "他们看见的火光、闻到的血味、听见的尖叫，没有一样是真的。",
+  "pathway": "fool",
+  "card_pool": "fool_pathway",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "幻",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 0, "heal": 0, "target": "random_enemies", "range": 5, "status_effects": [{"id": "confusion", "duration": 2, "targets": [1, 2]}, {"id": "reroll_next_damage_target"}]},
+  "social_effect": {
+    "type": "forget_event",
+    "duration_days": 1,
+    "forgets": "recent_meeting",
+    "parameters": {
+      "forgets": "recent_meeting",
+      "notes": "让目标把刚才那一幕错认成幻觉"
+    },
+    "church_awareness_delta": 2
+  },
+  "world_effect": {
+    "type": "alter_npc_state",
+    "npc_remembers_you_as": "illusory_presence",
+    "parameters": {
+      "npc_remembers_you_as": "illusory_presence"
+    }
+  },
+  "tags": ["skill", "control"]
+}

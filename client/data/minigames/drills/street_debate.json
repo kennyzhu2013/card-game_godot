@@ -1,0 +1,19 @@
+{
+  "$schema": "drill_v1",
+  "id": "street_debate",
+  "type": "drill",
+  "display_name": "街头辩论",
+  "city": "sacred_seven",
+  "ap_cost": 1,
+  "witness_npc_id": "thomas_priest",
+  "success_trust_delta": 5,
+  "mechanic": "dialogue_drill",
+  "rules": [
+    {"id": "no_god_name", "label": "不要直接称呼神名"},
+    {"id": "quote_scripture", "label": "至少引用一句经文"},
+    {"id": "avoid_sequence_word", "label": "避开愚者或序列字眼"}
+  ],
+  "rewards_perfect": [{"type": "rule_unlock", "id": "holy_silence"}],
+  "rewards_partial": [{"type": "acting_exp_bonus", "amount": 1}],
+  "punishment_fail": [{"type": "church_awareness", "amount": 5}]
+}

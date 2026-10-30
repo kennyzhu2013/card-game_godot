@@ -1,0 +1,20 @@
+{
+  "id": "commission_stone_tower_salon_001",
+  "commission_type": "perform",
+  "difficulty": "medium",
+  "display_name": "石塔沙龙",
+  "description": "Marquis Eng asks for a salon mask exercise among nobles.",
+  "issuer_npc": "marquis_eng",
+  "district": "stone_tower",
+  "min_day": 4,
+  "max_day": 14,
+  "min_sequence": 8,
+  "refresh_priority": 70,
+  "dispatch_target": {"kind": "drill", "drill_id": "noble_salon", "district": "stone_tower", "action_id": "salon_mask", "witness_check": true},
+  "time_limit_days": 3,
+  "rewards": [{"type": "lingstones", "amount": 180}, {"type": "dao_pages", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

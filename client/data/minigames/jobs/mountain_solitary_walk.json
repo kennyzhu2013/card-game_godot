@@ -1,0 +1,23 @@
+{
+  "$schema": "minigame_v1",
+  "id": "mountain_solitary_walk",
+  "type": "job",
+  "display_name": "山中独行",
+  "city": "ascetic_mountain",
+  "entry_npc": "xuming_recluse",
+  "ap_cost": 3,
+  "time_advance": 1,
+  "daily_limit": 1,
+  "weekly_limit": null,
+  "preconditions": ["mainline.node_4.completed == true"],
+  "mechanic": "mountain_dodge",
+  "mechanic_params": {
+    "duration_ms": 30000,
+    "qte_count": 3,
+    "fog_sequence_exp_bonus_source": "R19"
+  },
+  "outcome_table": [
+    {"grade": "perfect", "rewards": [{"type": "sequence_exp", "amount": 20}, {"type": "material", "id": "mica_powder", "amount": 1}]},
+    {"grade": "fail", "rewards": [{"type": "sequence_exp", "amount": 10}, {"type": "pollution", "amount": 2}]}
+  ]
+}

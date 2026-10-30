@@ -1,0 +1,48 @@
+{
+  "id": "ah_du_streettalker",
+  "display_name": "街角说书人·阿杜",
+  "default_district": "shadow_alley",
+  "placeholder": false,
+  "public": {"role": "街角说书人", "appearance": "总是拎着旧竹椅，茶缸上刻着许多日期"},
+  "hidden": {"actual_age": "未定", "past_secrets": ["情报网节点", "知道六城区流言源头"]},
+  "truth": {"true_name": "杜闻", "true_origin": "流动传言的收集者"},
+  "default_trust": 5,
+  "default_suspicion": 0,
+  "city_presence": [
+    {"district": "shadow_alley", "time_of_day": "morning", "label_suffix": "（在街角收茶钱）", "icon": "A", "interactable": true},
+    {"district": "shadow_alley", "time_of_day": "evening", "label_suffix": "（在街角开讲）", "icon": "A", "interactable": true}
+  ],
+  "dialogue_tree": "ah_du_streettalker_main",
+  "rumor_source": {
+    "source_type": "rumor_streettalker",
+    "rumor_pool": "shadow_alley_rumors",
+    "daily_district_limit": 2
+  },
+  "available_intels": [
+    {
+      "intel_id": "intel_ah_du_rumor_net_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "rumor_network",
+      "summary": "阿杜说同一条传言如果在三个城区都出现，就不是传言，是有人在放风。"
+    },
+    {
+      "intel_id": "intel_ah_du_street_tip_001",
+      "trust": 20,
+      "source_type": "npc_chat",
+      "topic": "street_rumor",
+      "summary": "影巷今天避开白鞋巡逻，去雾港问价会更安全。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "shadow_alley_rumor_commissions",
+  "commission_templates": ["commission_rumor_delivery_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "shop_discount", "payload": {"shop_id": "donen_blackmarket", "pct": 5}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 5}}
+  ]
+}

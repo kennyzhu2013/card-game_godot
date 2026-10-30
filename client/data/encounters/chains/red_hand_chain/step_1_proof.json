@@ -1,0 +1,23 @@
+{
+  "$schema": "encounter_v1",
+  "id": "enc_red_hand_proof_1",
+  "encounter_type": "mystery_seed",
+  "display_name": "First Proof",
+  "districts": ["steelworks"],
+  "time_of_day": ["night"],
+  "weight": 5,
+  "preconditions": ["cycle >= 1"],
+  "step_count": 1,
+  "scene_payload": {
+    "text": "The Red Hand asks for the first proof: a name no priest wrote down.",
+    "choices": [
+      {"id": "accept", "label": "Accept", "outcome": {"unlock_chain_step": 2}},
+      {"id": "stall", "label": "Stall", "outcome": {}}
+    ]
+  },
+  "max_per_cycle": 1,
+  "cooldown_days": 0,
+  "chain_id": "red_hand_chain",
+  "chain_step": 1,
+  "resolutions": []
+}

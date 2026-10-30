@@ -1,0 +1,44 @@
+.env
+.env.*
+!.env.example
+
+# Godot generated state and user data
+.godot/
+**/.godot/
+client/output/
+client/saves/
+
+# Node and test outputs
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+coverage/
+**/coverage/
+test-results/
+
+# WebQA generated dependencies and artifacts
+output/webqa/artifacts/
+output/webqa/browsers/
+output/webqa/npm-cache/
+output/webqa/pip-temp/
+output/webqa/py-deps/
+output/webqa/wheels/
+output/webqa/test-results/
+output/webqa/__pycache__/
+output/qa/**/*.png
+
+# Local and packaged artifacts
+*.log
+*.db
+*.sqlite
+*.sqlite3
+*.pck
+*.exe
+*.zip
+*.7z
+*.rar
+*.tmp
+
+# Local worktrees
+.worktrees/

@@ -1,0 +1,42 @@
+{
+  "id": "red_hand_carl",
+  "display_name": "红手会·卡尔",
+  "default_district": "steelworks",
+  "placeholder": false,
+  "public": {"role": "红手会试探者", "appearance": "手上总缠着红布，指节有烧痕"},
+  "hidden": {"actual_age": "未知", "past_secrets": ["红手会试探支线", "只在周二夜现身"]},
+  "truth": {"true_name": "卡尔·赤掌", "true_origin": "红手会铸钢前哨"},
+  "default_trust": 0,
+  "default_suspicion": 10,
+  "city_presence": [
+    {"district": "steelworks", "time_of_day": "night", "visible_when": "day % 7 == 2", "label_suffix": "（在铁桥下等人）", "icon": "R", "interactable": true}
+  ],
+  "dialogue_tree": "red_hand_carl_main",
+  "available_intels": [
+    {
+      "intel_id": "intel_red_hand_trial_001",
+      "trust": 0,
+      "source_type": "npc_chat",
+      "topic": "red_hand_trial",
+      "summary": "红手会的人只在周二夜晚接触可能的反教会同盟。"
+    },
+    {
+      "intel_id": "intel_red_hand_frontline_001",
+      "trust": 30,
+      "source_type": "npc_chat",
+      "topic": "anti_church_route",
+      "summary": "红手会在铸钢区留下了一条避开圣审庭巡逻的货道。"
+    }
+  ],
+  "available_drills": [],
+  "available_jobs": [],
+  "commission_pool": "steelworks_rumors",
+  "commission_templates": ["commission_red_hand_probe_001"],
+  "relation_thresholds": {"neutral": 0, "acquainted": 30, "friend": 60, "trusted": 80, "kin": 95},
+  "buff_unlocks_on_trust": [
+    {"trust": 60, "type": "shop_discount", "payload": {"shop_id": "donen_blackmarket", "pct": 5}}
+  ],
+  "debuff_triggers_on_suspicion": [
+    {"suspicion": 80, "type": "report_to_church", "payload": {"church_awareness": 10}}
+  ]
+}

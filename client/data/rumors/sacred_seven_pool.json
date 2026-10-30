@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "sacred_seven_rumors",
+  "district": "sacred_seven",
+  "entries": [
+    {"id":"intel_sacred_enemy_001","category":"tower_hint","display_text":"saints_small floor 1 enemy intent is known","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"saints_small","floor_index_min":0,"floor_index_max":0}},"truth_value":100,"weight":20},
+    {"id":"intel_sacred_shrine_001","category":"tower_hint","display_text":"A legal shrine sits behind the second arch","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"today","apply_target":{"kind":"tower_intel.shrine_location","payload":{"tower_template":"saints_small","floor_index":1}},"truth_value":90,"weight":12},
+    {"id":"intel_sacred_event_001","category":"tower_hint","display_text":"The confession event answer is humble_exit","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"saints_small","event_id":"confession_event","correct_choice_id":"humble_exit"}},"truth_value":80,"weight":10},
+    {"id":"intel_sacred_boss_001","category":"tower_hint","display_text":"The inquisitor hates silence","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"saints_small","boss_id":"inquisitor","weakness_tag":"silence"}},"truth_value":70,"weight":8},
+    {"id":"intel_sacred_story_001","category":"main_story","display_text":"Brendan's clerk recorded the node 5 side door","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"permanent","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_5_church_investigation","branch_id":"clerk_side_door"}},"truth_value":100,"weight":8},
+    {"id":"intel_sacred_npc_001","category":"npc","display_text":"Thomas notices plain stories more than gifts","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"permanent","apply_target":{"kind":"npc_relation_boost.gift_topic","payload":{"npc_id":"thomas_priest","topic_id":"plain_story","trust_delta":5}},"truth_value":90,"weight":6},
+    {"id":"intel_sacred_false_001","category":"false","display_text":"A forged indulgence costs stones and suspicion","source_type":"sermon_note","source_district":"sacred_seven","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":120,"ap":2,"suspicion_delta":5}},"false_lead":{"cost":{"lingstone":120,"ap":2,"suspicion":5}},"truth_value":10,"weight":4}
+  ]
+}

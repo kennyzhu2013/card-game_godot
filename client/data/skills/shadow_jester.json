@@ -1,0 +1,50 @@
+{
+  "$schema": "skill_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §C.1 / §L.4 反应 1",
+  "notes": "双重效果旗舰反应。Week 2 装备槽演示 + Week 4 §L 社交仪式演示均使用此技能。",
+  "id": "shadow_jester",
+  "display_name": "影代之诡",
+  "description": "目标把你看成另一个人",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "影",
+  "required_symbols": ["shadow", "jester"],
+  "tier": 2,
+  "mp_cost": 12,
+  "cooldown": 3,
+  "pollution_per_use": 3,
+
+  "combat_effect": {
+    "damage": 12,
+    "heal": 0,
+    "target": "single",
+    "range": 3,
+    "status_effects": [
+      {"id": "confusion", "chance": 1.0, "duration": 1, "notes": "敌人 1 回合无法攻击"}
+    ]
+  },
+
+  "social_effect": {
+    "type": "identity_mask",
+    "duration_days": 3,
+    "suspicion_delta": -20,
+    "parameters": {
+      "npc_perception": "他看你为某个他在意的死者",
+      "notes": "NPC 接下来 3 天看到你时叫你别人的名字（NPC 记忆中重要他人）",
+      "requires_npc_has_dead_relative": true
+    },
+    "church_awareness_delta": 2
+  },
+
+  "world_effect": {
+    "type": "create_residual_identity",
+    "duration_days": 3,
+    "parameters": {
+      "identity_id_template": "borrowed_face_{npc_target_memory}",
+      "can_pass_as": "NPC 记忆中的人",
+      "risk_note": "第二次使用同一身份 = 教会查觉 +2"
+    }
+  }
+}

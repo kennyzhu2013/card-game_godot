@@ -1,0 +1,20 @@
+# Dialogic timeline: npc/widow_isa_main
+# Slice 3 T4: Widow Isa simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+伊莎: 你不是我孩子的父亲。可他学会了用你的声音哭。
+
+# branch:haunting
+伊莎: 夜里别敲我家的门。门会先问你是谁，再决定要不要开。
+
+# branch:ask_intel
+# grant_intel:intel_widow_isa_child_001
+伊莎: 污染越高，孩子越会说出哈维没有说过的话。
+
+# branch:pollution_echo
+# commission_pool:shadow_alley_special
+伊莎: 如果他再叫一次爸爸，我会知道这不是梦。
+
+# branch:leave
+伊莎: 走吧。别让孩子记住你的脚步。

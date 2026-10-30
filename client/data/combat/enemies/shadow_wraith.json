@@ -1,0 +1,62 @@
+{
+  "$schema": "enemy_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §G.4",
+  "id": "shadow_wraith",
+  "display_name": "暗影游灵",
+  "actor_id": "reflection",
+  "description": "影巷井附近徘徊的失意亡魂，由污染汇聚而成",
+  "intent_text": "影爪在地面下收紧",
+  "sprite": "shadow_wraith.png",
+  "tier": 2,
+  "stats": {
+    "hp": 20,
+    "max_hp": 20,
+    "atk": 18,
+    "def": 0,
+    "spd": 14,
+    "crit_rate": 0.20
+  },
+  "element": "影",
+  "weakness": ["明"],
+  "resistance": ["影", "灵"],
+  "skills": [
+    {
+      "id": "shadow_grasp",
+      "name": "暗影攫取",
+      "damage": 16,
+      "element": "影",
+      "cooldown": 1,
+      "target": "single",
+      "description": "影爪自下而上捏紧目标",
+      "status_effects": [
+        {"id": "fear", "chance": 1.0, "duration": 1, "notes": "1 回合无法攻击"}
+      ]
+    },
+    {
+      "id": "phase_dash",
+      "name": "影闪",
+      "damage": 0,
+      "element": "影",
+      "cooldown": 3,
+      "target": "self",
+      "description": "短暂进入半实体态",
+      "status_effects": [
+        {"id": "invulnerable", "chance": 1.0, "duration": 1}
+      ]
+    }
+  ],
+  "ai_pattern": [
+    {"condition": "turn % 4 == 0", "action": "use_skill", "skill": "phase_dash"},
+    {"condition": "default", "action": "use_skill", "skill": "shadow_grasp"}
+  ],
+  "drops": [
+    {"item": "shadow_glyph_pure", "chance": 0.60, "notes": "精纯影"},
+    {"item": "lost_aspect", "chance": 0.30, "notes": "失意特质碎片"},
+    {"item": "yin_qi", "chance": 1.00, "amount_min": 1, "amount_max": 1, "notes": "材料：阴气"}
+  ],
+  "spawn_locations": ["shadow_alley_night", "abandoned_well"],
+  "spawn_weight": 15,
+  "time_modifier": {"period": "night", "weight_multiplier": 1.5},
+  "trigger_condition": null
+}

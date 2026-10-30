@@ -1,0 +1,58 @@
+{
+  "$schema": "enemy_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §G.2",
+  "id": "vagrant",
+  "display_name": "流民",
+  "actor_id": "old_li",
+  "description": "逃避教会迫害的城市流民，行动敏捷但脆弱",
+  "intent_text": "贴近阴影准备突刺",
+  "sprite": "vagrant.png",
+  "tier": 1,
+  "stats": {
+    "hp": 25,
+    "max_hp": 25,
+    "atk": 8,
+    "def": 1,
+    "spd": 12,
+    "crit_rate": 0.10
+  },
+  "element": "普通",
+  "weakness": ["离"],
+  "resistance": ["影"],
+  "skills": [
+    {
+      "id": "dagger_thrust",
+      "name": "短刀刺",
+      "damage": 12,
+      "element": "普通",
+      "cooldown": 2,
+      "target": "single",
+      "description": "迅捷的一击"
+    },
+    {
+      "id": "flee_attempt",
+      "name": "试图逃跑",
+      "damage": 0,
+      "heal": 10,
+      "element": "普通",
+      "cooldown": 4,
+      "target": "self",
+      "description": "缩进暗处，回复体力",
+      "trigger_condition": "hp_below_30_percent"
+    }
+  ],
+  "ai_pattern": [
+    {"condition": "hp_below_30_percent", "action": "use_skill", "skill": "flee_attempt"},
+    {"condition": "default", "action": "use_skill", "skill": "dagger_thrust"}
+  ],
+  "drops": [
+    {"item": "fortune_glyph_raw", "chance": 0.30},
+    {"item": "shadow_glyph_raw", "chance": 0.15},
+    {"item": "silver_coin", "chance": 1.00, "amount_min": 8, "amount_max": 20},
+    {"item": "rumor_fragment", "chance": 0.10}
+  ],
+  "spawn_locations": ["shadow_alley", "steelworks"],
+  "spawn_weight": 35,
+  "trigger_condition": null
+}

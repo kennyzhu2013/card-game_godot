@@ -1,0 +1,14 @@
+{
+  "$schema": "rumor_pool_v1",
+  "pool_id": "tavern_pool",
+  "district": "misty_port",
+  "entries": [
+    {"id":"intel_tavern_brag_001","category":"tower_hint","display_text":"Tavern brag reveals mist_small floor 1 enemy intent","source_type":"tavern","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"tower_intel.enemy_intent_reveal","payload":{"tower_template":"mist_small","floor_index_min":0,"floor_index_max":0}},"truth_value":100,"weight":20},
+    {"id":"intel_tavern_brag_002","category":"tower_hint","display_text":"Tavern brag marks the smuggler captain weakness","source_type":"tavern","source_district":"misty_port","expires_after":"until_sleep","apply_target":{"kind":"tower_intel.boss_weakness","payload":{"tower_template":"mist_small","boss_id":"smuggler_captain","weakness_tag":"salt"}},"truth_value":90,"weight":16},
+    {"id":"intel_smuggle_mainline_001","category":"main_story","display_text":"Smuggle roleplay uncovers the Halfmoon shipping branch","source_type":"smuggle_role","source_district":"misty_port","expires_after":"permanent","apply_target":{"kind":"main_story_unlock.branch","payload":{"node_id":"node_3_halfmoon_contact","branch_id":"smuggler_manifest"}},"truth_value":100,"weight":14},
+    {"id":"intel_tavern_event_001","category":"tower_hint","display_text":"The tavern sailor says to choose low_tide","source_type":"tavern","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"tower_intel.event_choice_correct","payload":{"tower_template":"mist_small","event_id":"tide_event","correct_choice_id":"low_tide"}},"truth_value":80,"weight":10},
+    {"id":"intel_tavern_shop_001","category":"shop_offer","display_text":"A tavern receipt discounts temporary cards","source_type":"tavern","source_district":"misty_port","expires_after":"permanent","apply_target":{"kind":"shop_discount.one_time","payload":{"shop_id":"donen_blackmarket","pct":9,"sku_filter":"temporary_card"}},"truth_value":80,"weight":8},
+    {"id":"intel_tavern_npc_001","category":"npc","display_text":"Eel Fan respects a named loss before a win","source_type":"tavern","source_district":"misty_port","expires_after":"permanent","apply_target":{"kind":"npc_relation_boost.gift_topic","payload":{"npc_id":"eel_fan","topic_id":"named_loss","trust_delta":5}},"truth_value":100,"weight":6},
+    {"id":"intel_tavern_false_001","category":"false","display_text":"A drunk sailor points at a sealed empty crate","source_type":"tavern","source_district":"misty_port","expires_after":"today","apply_target":{"kind":"false_lead.cost","payload":{"lingstones_lost":60,"ap":1,"suspicion_delta":3}},"false_lead":{"cost":{"lingstone":60,"ap":1,"suspicion":3}},"truth_value":20,"weight":4}
+  ]
+}

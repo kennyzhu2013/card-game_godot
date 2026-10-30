@@ -1,0 +1,21 @@
+{
+  "id": "commission_shadow_well_inquiry_001",
+  "commission_type": "investigate",
+  "difficulty": "medium",
+  "display_name": "影井问询",
+  "description": "Xiao Ran points you to a well-bottom event in Shadow Alley.",
+  "issuer_npc": "xiao_ran",
+  "district": "shadow_alley",
+  "min_day": 2,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 25,
+  "dispatch_target": {"district": "shadow_alley", "tower_size": "medium", "required_event_id": "well_bottom", "accepted_choices": ["listen"]},
+  "time_limit_days": 2,
+  "allowed_modifiers": ["dangerous", "extra_evidence", "trust_bonus"],
+  "rewards": [{"type": "dao_pages", "amount": 2}, {"type": "lingstones", "amount": 90}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "skill_v3",
+  "version": "1.0",
+  "source_spec": "docs/superpowers/specs/2026-05-19-detailed-systems-spec.md §C.1 / §L.4",
+  "notes": "纯战斗反应（影 + 箭）。无 social_effect / world_effect — 这是设计意图：纯输出技能只在战斗中生效，避免每个技能都强行社交化。",
+  "id": "shadow_arrow",
+  "display_name": "影箭",
+  "description": "一道暗影箭穿过空气",
+  "pathway": "common",
+  "card_pool": "common",
+  "sequence": 9,
+  "element": "影",
+  "required_symbols": ["shadow", "arrow"],
+  "tier": 1,
+  "mp_cost": 10,
+  "cooldown": 2,
+  "pollution_per_use": 2,
+
+  "combat_effect": {
+    "damage": 12,
+    "heal": 0,
+    "target": "single",
+    "range": 5,
+    "status_effects": []
+  },
+  "social_effect": null,
+  "world_effect": null
+}

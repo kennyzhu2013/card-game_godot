@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "hermit_s7_spell_backlash",
+  "display_name": "反咒回响",
+  "description": "被打断的咒句折返，击中施法者的影子。",
+  "pathway": "hermit",
+  "card_pool": "enemy_spell",
+  "sequence": 7,
+  "tier": 3,
+  "rarity": "rare",
+  "element": "秘",
+  "energy_cost": 2,
+  "mp_cost": 2,
+  "combat_effect": {"damage": 12, "heal": 0, "target": "single", "range": 5, "status_effects": [{"id": "silence", "duration": 1}, {"id": "counter_spell"}]}
+}

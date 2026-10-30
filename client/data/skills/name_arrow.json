@@ -1,0 +1,21 @@
+{
+  "id": "name_arrow",
+  "display_name": "名箭",
+  "description": "射出的箭上写着目标的名字，必定命中",
+  "pathway": "common",
+  "card_pool": "tower_pickup",
+  "sequence": 9,
+  "element": "普通",
+  "required_symbols": ["name", "arrow"],
+  "tier": 2,
+  "mp_cost": 12,
+  "cooldown": 2,
+  "pollution_per_use": 3,
+  "combat_effect": {
+    "damage": 16,
+    "heal": 0,
+    "target": "single",
+    "range": 6,
+    "status_effects": [{"id": "mark", "magnitude": 2}]
+  }
+}

@@ -1,0 +1,23 @@
+# Dialogic timeline: npc/ah_du_streettalker_main
+# Slice 3 T4: Ah Du streettalker simplified dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+阿杜: 坐，哈维。你站着听故事，故事会以为你还在赶路。
+
+# branch:street_rumor
+阿杜: 一条传言传到第三条街，就该问是谁想让它跑这么远。
+
+# branch:ask_intel
+# grant_intel:intel_ah_du_rumor_net_001
+阿杜: 同一条传言如果在三个城区都出现，就不是传言，是有人在放风。
+# grant_intel:intel_ah_du_street_tip_001
+阿杜: 今天避开白鞋巡逻，去雾港问价更安全。
+
+# branch:rumor_source
+# commission_pool:shadow_alley_rumor_commissions
+# dispatch_placeholder:R26 shadow_alley_rumors
+阿杜: 想听新鲜的，拿旧消息来换。消息也要呼吸。
+
+# branch:leave
+阿杜: 走吧。故事讲完了，听故事的人还没完。

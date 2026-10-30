@@ -1,0 +1,146 @@
+{
+  "id": "tide_priestess",
+  "name": "潮汐祭司",
+  "name_en": "Tide Priestess",
+  "description": "治疗/概率干涉/占卜",
+  "god_name": "潮汐之母 Maris Mater",
+  "sequences": {
+    "9": {
+      "title": "半身礁工", "title_en": "Half Reefkin",
+      "tier": "apprentice",
+      "potion_name": "潮汐之初",
+      "materials": [
+        {"id": "sea_salt", "name": "海盐", "count": 10},
+        {"id": "seaweed", "name": "海藻", "count": 5},
+        {"id": "moonlight_grass", "name": "月光草", "count": 2},
+        {"id": "silver_pot", "name": "银壶", "count": 1}
+      ],
+      "abilities": [
+        {"name": "治疗术", "type": "heal", "power": 15, "cost_mp": 8},
+        {"name": "嗅水", "type": "detect", "range": 5}
+      ],
+      "stats_bonus": {"hp": 20, "mp": 10, "spd": 5},
+      "acting_task": "为5个口渴的旅人提供清水",
+      "loss_of_control_form": {"name": "礁石爬行者", "hp": 30},
+      "ritual_types": ["divine", "enhance"],
+      "ritual_limits": {"radius": 1, "sanity_cost": 5},
+      "sanity_per_action": 1.0
+    },
+    "8": {
+      "title": "盐渍诵经者", "title_en": "Brine Cantor",
+      "tier": "apprentice",
+      "potion_name": "盐之诵",
+      "materials": [
+        {"id": "seq9_potion", "name": "序列9灵药", "count": 1},
+        {"id": "deep_coral", "name": "深海珊瑚", "count": 3},
+        {"id": "silver_salt", "name": "银盐", "count": 5},
+        {"id": "moonlight_grass", "name": "月光草", "count": 4},
+        {"id": "whale_candle", "name": "鲸蜡蜡烛", "count": 3}
+      ],
+      "abilities": [
+        {"name": "群体小治疗", "type": "heal_aoe", "power": 12, "cost_mp": 15, "targets": 3},
+        {"name": "净化", "type": "dispel", "cost_mp": 10}
+      ],
+      "stats_bonus": {"hp": 30, "mp": 20, "heal_bonus": 0.1},
+      "acting_task": "在沿海村庄为10名村民净化瘟疫",
+      "loss_of_control_form": {"name": "哭嚎诵经者", "hp": 120},
+      "ritual_types": ["divine", "enhance", "commune"],
+      "ritual_limits": {"radius": 2, "sanity_cost": 8},
+      "sanity_per_action": 1.5
+    },
+    "7": {
+      "title": "月相占者", "title_en": "Moon Glimmer",
+      "tier": "apprentice",
+      "potion_name": "月相之眼",
+      "abilities": [
+        {"name": "占卜术", "type": "divine", "cost_mp": 12},
+        {"name": "运气倾斜", "type": "buff", "power": 10, "cost_mp": 15, "duration": 3}
+      ],
+      "stats_bonus": {"hp": 40, "mp": 30, "crit_rate": 0.05},
+      "acting_task": "在月圆之夜成功占卜3次重要事件",
+      "loss_of_control_form": {"name": "失神预言者", "hp": 130},
+      "ritual_types": ["divine", "enhance", "commune", "curse"],
+      "ritual_limits": {"radius": 3, "sanity_cost": 10},
+      "sanity_per_action": 2.0,
+      "note": "小成门槛，之后绑定途径"
+    },
+    "6": {
+      "title": "浪痕祭司", "title_en": "Wavemark Priest",
+      "tier": "walker",
+      "potion_name": "浪痕受洗",
+      "abilities": [
+        {"name": "群体中治疗", "type": "heal_aoe", "power": 30, "cost_mp": 25, "targets": 4},
+        {"name": "潮汐护盾", "type": "shield", "power": 60, "cost_mp": 20, "duration": 3}
+      ],
+      "stats_bonus": {"hp": 60, "mp": 50, "heal_bonus": 0.2},
+      "acting_task": "带领一支队伍击败一只海渊精英Boss且全员存活",
+      "loss_of_control_form": {"name": "海雾教士", "hp": 300},
+      "ritual_types": ["divine", "enhance", "commune", "curse", "summon"],
+      "ritual_limits": {"radius": 4, "sanity_cost": 12},
+      "sanity_per_action": 2.0,
+      "note": "绑定途径，不可再洗点"
+    },
+    "5": {
+      "title": "潮汐织手", "title_en": "Tide Weaver",
+      "tier": "walker",
+      "potion_name": "潮汐之织",
+      "abilities": [
+        {"name": "概率反转", "type": "special", "cost_mp": 40, "uses_per_battle": 1},
+        {"name": "召唤水灵", "type": "summon", "cost_mp": 35, "summon_hp": 100, "summon_atk": 30, "duration": 5}
+      ],
+      "stats_bonus": {"hp": 90, "mp": 80, "crit_rate": 0.1, "heal_bonus": 0.3},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 18},
+      "sanity_per_action": 3.0
+    },
+    "4": {
+      "title": "深渊聆听者", "title_en": "Abyss Listener",
+      "tier": "walker",
+      "potion_name": "深渊回响",
+      "abilities": [
+        {"name": "占卜本周事件", "type": "divine_weekly", "uses_per_week": 3},
+        {"name": "命运链", "type": "debuff_spread", "cost_mp": 50, "targets": 3}
+      ],
+      "stats_bonus": {"hp": 120, "mp": 120, "all_resist": 0.15},
+      "ritual_types": ["all"],
+      "ritual_limits": {"radius": 5, "sanity_cost": 22},
+      "sanity_per_action": 3.5
+    },
+    "3": {
+      "title": "海誓审判", "title_en": "Oath Adjudicator",
+      "tier": "saint",
+      "potion_name": "海誓裁决",
+      "abilities": [
+        {"name": "群体复活", "type": "revive_aoe", "uses_per_week": 1},
+        {"name": "区域时停", "type": "time_stop", "cost_mp": 80, "duration": 1}
+      ],
+      "stats_bonus": {"hp": 180, "mp": 200, "all_resist": 0.25},
+      "sanity_per_action": 4.0,
+      "note": "圣者阶起，进入封圣冲击候选名单"
+    },
+    "2": {
+      "title": "巨潮使徒", "title_en": "Tidal Apostle",
+      "tier": "saint",
+      "potion_name": "巨潮回归",
+      "abilities": [
+        {"name": "召唤海怪", "type": "summon", "summon_hp": 1000, "duration": 3},
+        {"name": "地形改写", "type": "terrain", "terrain_type": "water", "duration": 3}
+      ],
+      "stats_bonus": {"hp": 250, "mp": 280, "all_resist": 0.3},
+      "sanity_per_action": 4.5
+    },
+    "1": {
+      "title": "月之新娘", "title_en": "Bride of the Moon",
+      "tier": "saint",
+      "potion_name": "月华婚誓",
+      "abilities": [
+        {"name": "全场再生", "type": "regen_all", "power_percent": 0.05},
+        {"name": "命运重写", "type": "time_rewind", "uses_per_week": 1, "rewind_hours": 1}
+      ],
+      "stats_bonus": {"hp": 400, "mp": 400, "all_resist": 0.5},
+      "sanity_per_action": 5.0,
+      "note": "全服每途径仅1名序列1玩家",
+      "max_per_server": 1
+    }
+  }
+}

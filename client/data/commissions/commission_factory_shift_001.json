@@ -1,0 +1,20 @@
+{
+  "id": "commission_factory_shift_001",
+  "commission_type": "gather",
+  "difficulty": "small",
+  "display_name": "工厂打工",
+  "description": "Peter needs a signed furnace-shift voucher from the steelworks job floor.",
+  "issuer_npc": "peter_furnace",
+  "district": "steelworks",
+  "min_day": 1,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 3,
+  "dispatch_target": {"kind": "job", "job_id": "factory_shift", "district": "steelworks", "item_id": "factory_voucher", "count": 1},
+  "time_limit_days": 1,
+  "rewards": [{"type": "lingstones", "amount": 90}, {"type": "material", "id": "iron_scrap", "amount": 1}],
+  "main_story_hook": "",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

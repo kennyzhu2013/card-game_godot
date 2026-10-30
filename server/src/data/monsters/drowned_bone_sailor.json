@@ -1,0 +1,63 @@
+{
+  "monsterId": "drowned_bone_sailor",
+  "templateHash": "drowned_bone_sailor-v1",
+  "displayName": "溺骨水手",
+  "speciesId": "undead",
+  "spriteSheet": "res://assets/sprites/characters/enemy_bone_sailor_sheet.png",
+  "stats": {
+    "maxHp": 82,
+    "atk": 18,
+    "def": 8,
+    "spd": 10,
+    "shieldPoints": 4,
+    "weaknesses": ["blunt", "light"],
+    "skills": [
+      { "id": "bone_cutlass", "name": "骨刃斩", "type": "attack", "power": 1.2, "costAp": 1, "element": "physical" },
+      { "id": "brine_roar", "name": "盐雾战吼", "type": "buff", "power": 1.4, "costAp": 2, "element": "water" }
+    ]
+  },
+  "sense": {
+    "radiusCells": 5,
+    "visionConeDeg": 220,
+    "blockingTileTags": ["wall", "fence", "heavy_mist"],
+    "alertCooldownMs": 1400
+  },
+  "aggro": {
+    "initial": "neutral",
+    "decayPerSec": 0.4,
+    "maxThreat": 100,
+    "alertThreshold": 30,
+    "huntThreshold": 60,
+    "huntPlayerSpeciesPenalty": 0,
+    "transformedPlayerImmunity": false
+  },
+  "patrol": {
+    "type": "route",
+    "radiusCells": 4,
+    "speedCellsPerSec": 0.6,
+    "idleMsRange": [600, 2000],
+    "anchorOverride": null,
+    "route": [{ "x": 0, "y": 0 }, { "x": 2, "y": 0 }, { "x": 2, "y": 2 }]
+  },
+  "respawn": {
+    "timerMs": 90000,
+    "scatterRadiusCells": 1,
+    "weeklyOnlyOnReset": false
+  },
+  "pack": {
+    "packId": "drowned_sailor_watch",
+    "role": "guard",
+    "callAlliesRadiusCells": 5,
+    "maxConcurrentMembers": 2
+  },
+  "loot": {
+    "table": "drowned_bone_sailor_loot",
+    "rolls": 1
+  },
+  "encounter": {
+    "combatLockRadiusCells": 2,
+    "preferredCombatLockMode": "prelude",
+    "victoryDeltas": ["entity_removed"],
+    "defeatDeltas": ["state_changed:leashed_back"]
+  }
+}

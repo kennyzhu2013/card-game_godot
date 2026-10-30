@@ -1,0 +1,24 @@
+# Dialogic timeline: npc/peter_furnace_main
+# Slice 3 T4: Peter Furnace main dialogue tree.
+
+# branch:first_meet
+# hook:npc_first_meet
+彼得: 新来的？别站在炉口正前方，风一倒灌，连祷词都来不及念。
+彼得: 你要找工作、找传闻、找麻烦，都先把袖口扎紧。
+
+# branch:small_talk
+彼得: 炉房里最不值钱的是汗，最值钱的是谁在换班表上消失。
+
+# branch:ask_intel
+# grant_intel:intel_peter_furnace_shift_001
+彼得: 夜班表里有一个从不签名的空班，厂长却每天给它留饭。
+# grant_intel:intel_peter_furnace_smoke_001
+彼得: 蓝黑色炉烟一出，塔影就贴近厂区了。
+
+# branch:factory_job
+# commission_pool:steelworks_jobs
+# dispatch_placeholder:R25 factory_shift
+彼得: 真想赚点干净钱，来帮一班。别问什么叫干净，铸钢区只分活着和没活着。
+
+# branch:leave
+彼得: 走吧，听见三声短哨就别回头。

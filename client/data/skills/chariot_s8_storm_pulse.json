@@ -1,0 +1,16 @@
+{
+  "$schema": "skill_v3",
+  "source_spec": "docs/requirements/R15_Pathway_Data_System.md §4 enemy_spell",
+  "id": "chariot_s8_storm_pulse",
+  "display_name": "暴风脉冲",
+  "description": "湿冷风压横扫战场，逼迫每个人换位。",
+  "pathway": "chariot",
+  "card_pool": "enemy_spell",
+  "sequence": 8,
+  "tier": 2,
+  "rarity": "common",
+  "element": "风",
+  "energy_cost": 1,
+  "mp_cost": 1,
+  "combat_effect": {"damage": 7, "heal": 0, "target": "all_enemies", "range": 4, "status_effects": [{"id": "displace", "magnitude": 1, "duration": 1}]}
+}

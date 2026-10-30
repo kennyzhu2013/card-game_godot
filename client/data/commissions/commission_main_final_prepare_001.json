@@ -1,0 +1,20 @@
+{
+  "id": "commission_main_final_prepare_001",
+  "commission_type": "battle",
+  "difficulty": "large",
+  "display_name": "最终准备",
+  "description": "Make final preparations in a large tower before the cycle ends.",
+  "issuer_npc": "reflection",
+  "district": "ascetic_mountain",
+  "min_day": 13,
+  "max_day": 14,
+  "min_sequence": 9,
+  "refresh_priority": 0,
+  "dispatch_target": {"district": "ascetic_mountain", "tower_size": "large", "theme": "final_prepare", "boss": "pseudo_god_shadow"},
+  "time_limit_days": 1,
+  "rewards": [{"type": "lingstones", "amount": 300}, {"type": "mainline_node", "id": "node_6_final_prepare", "amount": 1}],
+  "main_story_hook": "node_6_final_prepare",
+  "contract_rule_hook": "",
+  "deposit": {"lingstones": 0},
+  "escrow": {"enabled": false}
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "minigame_v1",
+  "id": "worship_observation",
+  "type": "job",
+  "display_name": "礼拜旁观",
+  "city": "sacred_seven",
+  "entry_npc": "thomas_priest",
+  "ap_cost": 1,
+  "time_advance": 1,
+  "daily_limit": null,
+  "weekly_limit": 1,
+  "preconditions": ["day % 7 == 0 AND time_of_day == 'morning'", "pollution <= 49"],
+  "mechanic": "worship_rhythm",
+  "mechanic_params": {
+    "node_count": 3,
+    "action": "prayer"
+  },
+  "outcome_table": [
+    {"grade": "perfect", "rewards": [{"type": "sequence_exp", "amount": 5}, {"type": "church_awareness", "amount": -2}]},
+    {"grade": "fail", "rewards": [{"type": "sequence_exp", "amount": 0}, {"type": "church_awareness", "amount": 3}]}
+  ]
+}
